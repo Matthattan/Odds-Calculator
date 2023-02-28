@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Calculator for Normal Loomians and their odds-->
+<head>
+    <title>Gleaming Odds</title>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Russo+One">
+</head>
+<style>
+    body {
+      font-family: 'Russo One', sans-serif;
+      font-size: 20px;
+    }
+  </style>
+<body>
+    <div>
+        <form name="GleamingCalc">
+            <!-- all the factors to account for when calculating odds-->
+            <div>
+                <label id="LoomianListLabel">Choose a Loomian:
+                    <select name="LoomianList" id="LoomianList">
+                        <option value="Ampole">Ampole</option>
+                        <option value="Antsee">Antsee</option>
+                        <option value="Babore">Babore</option>
+                        <option value="Boonary">Boonary</option>
+                        <option value="Bunpuff">Bunpuff</option>
+                        <option value="Burroach">Burroach</option>
+                        <option value="Cafnote">Cafnote (Male & Female)</option>
+                        <option value="Cathorn">Cathorn</option>
+                        <option value="Cavenish">Cavenish</option>
+                        <option value="Ceratot">Ceratot</option>
+                        <option value="Chompactor">Chompactor</option>
+                        <option value="Cinnaboo">Cinnaboo</option>
+                        <option value="Copling">Copling</option>
+                        <option value="Cosmiore">Cosmiore</option>
+                        <option value="Craytal">Craytal</option>
+                        <option value="Event Craytal">Winter Craytal</option>
+                        <option value="Cryocub">Cryocub</option>
+                        <option value="Cupoink">Cupoink</option>
+                        <option value="Dobo">Dobo</option>
+                        <option value="Dractus">Dractus</option>
+                        <option value="Dripple">Dripple</option>
+                        <option value="Eaglit">Eaglit</option>
+                        <option value="Embit">Embit</option>
+                        <option value="Fevine">Fevine</option>
+                        <option value="Florant">Florant</option>
+                        <option value="Geklow">Geklow</option>
+                        <option value="Gobbidemic">Gobbidemic</option>
+                        <option value="Goppie">Goppie</option>
+                        <option value="Grubby">Grubby</option>
+                        <option value="Gumpod">Gumpod</option>
+                        <option value="Gwurm">Gwurm</option>
+                        <option value="Hydrini">Hydrini</option>
+                        <option value="Icigool">Icigool</option>
+                        <option value="Igneol">Igneol</option>
+                        <option value="Impkin">Impkin</option>
+                        <option value="Kabunga">Kabunga</option>
+                        <option value="Event Kabunga">Halloween Kabunga</option>
+                        <option value="Kanki">Kanki</option>
+                        <option value="Kittone">Kittone</option>
+                        <option value="Kleptyke">Kleptyke</option>
+                        <option value="Koyogo">Koyogo</option>
+                        <option value="Lumica">Lumica</option>
+                        <option value="Makame">Makame</option>
+                        <option value="Mistlebud">Mistlebud</option>
+                        <option value="Mochibi">Mochibi</option>
+                        <option value="Nymaurae">Nymaurae</option>
+                        <option value="Operaptor">Operaptor</option>
+                        <option value="Phancub">Phancub</option>
+                        <option value="Pipsee">Pipsee</option>
+                        <option value="Poochrol">Poochrol</option>
+                        <option value="Protogon">Protogon</option>
+                        <option value="Pwuff">Pwuff</option>
+                        <option value="Pyder">Pyder</option>
+                        <option value="Pyke">Pyke</option>
+                        <option value="Pyramind">Pyramind</option>
+                        <option value="Rakrawla">Rakrawla</option>
+                        <option value="Scorb">Scorb</option>
+                        <option value="Sharpod">Sharpod</option>
+                        <option value="Shawchi">Shawchi</option>
+                        <option value="Skilava">Skilava</option>
+                        <option value="Slugling">Slugling</option>
+                        <option value="Snagull">Snagull</option>
+                        <option value="Snocub">Snocub</option>
+                        <option value="Snowl">Snowl</option>
+                        <option value="Spirivii">Spirivii</option>
+                        <option value="Swimp">Swimp</option>
+                        <option value="Swirelle">Swirelle (Raspberry/Blueberry/Lemon)</option>
+                        <option value="SwirelleS">Swirelle (Strawberry)</option>
+                        <option value="Swishy">Swishy</option>
+                        <option value="Taoshi">Taoshi</option>
+                        <option value="Territi">Territi</option>
+                        <option value="Twilat">Twilat</option>
+                        <option value="Twittle">Twittle</option>
+                        <option value="Vambat">Vambat</option>
+                        <option value="Weevolt">Weevolt</option>
+                        <option value="Whimpor">Whimpor</option>
+                        <option value="Whispup">Whispup</option>
+                        <option value="Wiledile">Wiledile</option>
+                        <option value="Vari">Vari</option>
+                        <option value="Volpup">Volpup</option>
+                        <option value="Zaleo">Zaleo</option>
+                    </select>
+                </label>
+            <br>
+            <label>Gleaming Charm
+                <input type="checkbox" id="CharmID" name="Charm">
+            </label>
+            <br>
+            <label>Gleaming Boost
+                <input type="checkbox" id="BoostID" name="Boost">
+            </label>
+            <br>
+            <input type="button" value="Calculate" onclick="Multiply()">
+        </form>
+        <br>
+        <label id="AlphaResult">Alpha Odds: </label>
+        <br>
+        <label id="GammaResult">Gamma Odds: </label>
+
+        <h4>Wanting to Calculate the odds for variants/reskins? use <a href="Variant Calculator.html">this calculator</a></h4>
+        <h4>Wanting to Calculate the odds for Roamings? use <a href="Github-Roaming-Odds.html">this calculator</a></h4>
+    </div>
+    <script>
+        var LoomianList = document.getElementById("LoomianList");
+        var OutputResult = document.getElementById("Result");
+        var Charm = document.getElementById("CharmID");
+        var Boost = document.getElementById("BoostID");
+
+        var CharmMultiplier = 1/2;
+        var BoostMultiplier = 1/16;
+        
+        var LoomianMultiplier = 1;
+
+        function Multiply(){
+            var Gamma = 20480;
+            var Alpha = 4096;
+            switch (LoomianList.value) {
+                case "Impkin":
+                    LoomianMultiplier = 2;
+                    break;
+                case "Mochibi":
+                    LoomianMultiplier = 3;
+                    break;
+                case "Shawchi":
+                case "Antsee":
+                case "Cupoink":
+                case "Gumpod":
+                case "Territ":
+                case "Whimpor":
+                case "Phancub":
+                case "Kleptyke":
+                case "Poochrol":
+                    LoomianMultiplier = 10;
+                    break;
+                case "Copling":
+                    LoomianMultiplier = 17/20;
+                    break;
+                case "Kanki":
+                    LoomianMultiplier = 12.5;
+                    break;
+                case "Sharpod":
+                    LoomianMultiplier = 20;
+                    break;
+                case "Wiledile":
+                    LoomianMultiplier = 23;
+                    break;
+                case "Gobbidemic":
+                    LoomianMultiplier = 3/100;
+                    break;
+                case "Cryocub":
+                case "Volpup":
+                    LoomianMultiplier = 40;
+                    break;
+                case "Igneol":
+                case "Bunpuff":
+                case "Operaptor":
+                    LoomianMultiplier = 50;
+                    break;
+                case "Icigool":
+                    LoomianMultiplier = 90;
+                    break;
+                case "Pyramind":
+                    LoomianMultiplier = 300;
+                    break;
+                case "Pipsee":
+                case "Hydrini":
+                    LoomianMultiplier = 64;
+                    break;
+                case "Swirelle":
+                    LoomianMultiplier = (10/3)*80;
+                    break;
+                case "SwirelleS":
+                    LoomianMultiplier = 800;
+                    break;
+                case "Dractus":
+                case "Vari":
+                    LoomianMultiplier = 100;  
+                    break;   
+                case "Cosmiore":
+                    LoomianMultiplier = 128;
+                    break;           
+                default:
+                    LoomianMultiplier = 1;
+                    break;
+            }
+
+            if (Charm.checked) {
+                Alpha *= CharmMultiplier
+                Gamma *= CharmMultiplier
+            } else {Alpha = Alpha
+                Gamma = Gamma}
+            
+            if (Boost.checked) {
+                Gamma *= BoostMultiplier
+                Alpha *= BoostMultiplier
+            } else {Gamma = Gamma
+                Alpha = Alpha}
+            
+            document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + (Alpha*LoomianMultiplier).toFixed(2);
+            document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + (Gamma*LoomianMultiplier).toFixed(2);
+            }
+    </script>
+</body>
+</html>

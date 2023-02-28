@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roaming Odds</title>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+</head>
+<style>
+    body {
+      font-family: 'Russo One', sans-serif;
+      font-size: 20px;
+    }
+</style>
+<body>
+    <form name="RoamingCalc">
+        <!-- all the factors to account for when calculating odds-->
+        <label style="font-weight: bold;">Roaming:
+            <select type="text" id="RoamingNameID" name="RoamingName">
+                <option value="Duskit">Duskit</option>
+                <option value="Ikazune">Ikazune</option>
+                <option value="Protogon">Protogon</option>
+                <option value="Mutagon">Mutagon</option>
+                <option value="Cephalops">Cephalops</option>
+                <option value="Elephage">Elephage</option>
+                <option value="Metronette">Metronette</option>
+                <option value="Wabalisc">Wabalisc</option>
+                <option value="Nevermare">Nevermare</option>
+                <option value="Akhalos">Akhalos</option>
+                <option value="Gargolem">Gargolem</option>
+                <option value="Celesting">Celesting</option>
+            </select>
+        </label>
+        <br>
+        <label style="font-weight: bold;">Roaming Charm
+            <input type="checkbox" id="CharmID" name="Charm">
+        </label>
+        <br>
+        <label style="font-weight: bold;">Roaming Boost
+            <input type="checkbox" id="BoostID" name="Boost">
+        </label>
+        <br>
+        <label id="SetEncounterLabel" style="display: none;" style="font-weight: bold;">Set Encounter
+            <input type="checkbox" id="SetEncounterID">
+        </label>
+        <br>
+        <label style="font-weight: bold;">Amount of Roamings Unlocked: 
+            <input type="number" id="RoamingAmountID">
+        </label>
+        <br>
+        <input type="button" value="Calculate" onclick="Multiply()">
+    </form>
+    <br>
+
+    <label id="Result" style="font-weight: bold;" > Result </label>
+    <p>note: Event Loomians (excluding Nevermare and maybe Akhalos) become part of the roaming encounter table after their debut event<br><TL:DR></TL:DR> a wabalisc found in 2022's xmas event is rarer than a wabalisc found in the 2020 xmas event</p>
+
+
+    <h4>Wanting to Calculate the odds for Route Rares/Common Loomians? use <a href="Normal Loomians Odds.html">this calculator</a></h4>
+    <h4>Wanting to Calculate the odds for variants/reskins? use <a href="Variant Calculator.html">this calculator</a></h4>
+
+    <h1> Formula: </h1>
+    <p> Dan put formula here</p>
+
+    <script>
+        var RoamingName = document.getElementById("RoamingNameID");
+        var OutputResult = document.getElementById("Result");
+        var Charm = document.getElementById("CharmID");
+        var Boost = document.getElementById("BoostID");
+        var SetEncounterLabel = document.getElementById("SetEncounterLabel");
+        var SetEncounter = document.getElementById("SetEncounterID");
+        var RoamingAmount = document.getElementById("RoamingAmountID");
+    
+        var SelectedRoaming = document.getElementById("RoamingNameID").value;
+    
+        var CharmMultiplier = 0.5;
+        var BoostMultiplier = 0.25;
+    
+        RoamingName.addEventListener('change', function GetSetEncounter() {
+            switch (this.value) {
+                case "Mutagon":
+                case "Cephalops":
+                case "Elephage":
+                    SetEncounterLabel.style.display = "inline";
+                    SetEncounter.checked = false;
+                    break;
+                case "Metronette":
+                case "Wabalisc":
+                case "Nevermare":
+                case "Akhalos":
+                case "Gargolem":
+                case "Celesting":
+                    SetEncounterLabel.style.display = "inline";
+                    SetEncounter.checked = false;
+                    break;
+                default:
+                    SetEncounterLabel.style.display = "none";
+                    SetEncounter.checked = false;
+                    break;
+            }  
+        })
+            
+    
+        function Multiply() { 
+            let RoamingOdds = 1024;
+    
+            if (Charm.checked) {
+                RoamingOdds *= CharmMultiplier
+            } else {RoamingOdds = RoamingOdds}
+            
+            if (Boost.checked) {
+                RoamingOdds *= BoostMultiplier
+            } else {RoamingOdds = RoamingOdds
+            }
+    
+            RoamingAmount = Number(document.getElementById("RoamingAmountID").value) || 1;
+            RoamingOdds *= RoamingAmount;
+    
+            switch (SetEncounter.checked) {
+                case true:
+                    RoamingOdds = 1
+                    console.log("True")
+                    break;
+                case false:
+                    RoamingOdds = RoamingOdds
+                    console.log("False")
+                default:
+                    break;
+            }
+            
+            document.getElementById("Result").innerHTML = "Result: 1 in " + RoamingOdds;
+        }
+            
+    
+    </script>
+</body>
+</html>
