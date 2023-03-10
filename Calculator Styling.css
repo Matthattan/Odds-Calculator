@@ -1,0 +1,77 @@
+body {
+    font-family: 'Russo One', sans-serif;
+    font-size: 28px;
+    padding: 20px;
+    background-color: rgb(96,96,96);
+    height: 100vh;
+    line-height: 63px;
+  }
+
+.layer1{
+  margin: auto;
+  background-color: skyblue;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -40px;
+  height: auto;
+}
+
+input[type="checkbox"].checkbox-bigger {
+    transform: scale(1.33);
+  }
+
+  .calculate-button {
+    font-family: Russo One, sans-serif;
+    font-size: 1em;
+    margin: auto;
+    padding: 10px 20px;
+  }
+
+  .calculate-button:hover {
+    background-color: rgb(96, 96, 96);
+  }
+/*Grid Section for other calculators*/
+
+.grid-container {
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #2196F3;
+    padding: 10px;
+    width: 1000px;
+    margin-bottom: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    width:auto;
+}
+
+h1{
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: #219DD7;
+}
+
+@media screen and (max-width: 1080px) {
+  .grid-container {
+    display: block;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container {
+    display: block;
+    width: 275px;
+  }
+}
