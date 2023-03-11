@@ -3,7 +3,7 @@ table {
     border-collapse: collapse;
   }
   
-  td, th {
+  td{
     border: 3px solid black; /* Updated border */
     padding: 8px;
     background-color: rgba(255, 255, 255, 0.8); /* Updated background color */
