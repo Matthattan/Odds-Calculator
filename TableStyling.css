@@ -64,7 +64,6 @@ table {
     .container {
       width: 600px;
     }
-
   }
 
   @media screen and (max-width: 700px) {
@@ -72,5 +71,4 @@ table {
       width: 275px;
       height: auto;
     }
-
   }
