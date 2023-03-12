@@ -62,9 +62,18 @@ footer a{
   color: #219DD7;
 }
 
+p{
+  width: 1000px;
+  margin: auto;
+}
+
 @media screen and (max-width: 1080px) {
   .grid-container {
     display: block;
+    width: 600px;
+  }
+
+  p{
     width: 600px;
   }
 }
@@ -74,4 +83,10 @@ footer a{
     display: block;
     width: 275px;
   }
+
+  p{
+    width: 275px;
+  }
 }
+
+
