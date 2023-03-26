@@ -4,4 +4,3 @@ Calculator Website for Loomian Legacy Loomians. From your common loomians to Roa
 
 Future additions(?):
 - Compound Odds calculator
-- GR calculator
