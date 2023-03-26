@@ -48,6 +48,9 @@ function Multiply(){
         case "Gobbidemic":
             LoomianMultiplier = 100/3;
             break;
+        case "SnagullS":
+            LoomianMultiplier = 35;
+            break;
         case "Cryocub":
         case "Volpup":
         case "Spirivii":
