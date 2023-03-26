@@ -126,6 +126,13 @@
 
   #AmountRoamings{
     font-size: 20px;
+    text-align: center;
+  }
+
+  #RoamingAmountID{
+    width: 75px;
+    height: 20px;
+    font-size: 20px;
   }
 
   
