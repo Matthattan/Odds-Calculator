@@ -11,7 +11,7 @@
 <body>
     <!-- The actual form stuff (reformatting the styling) -->
     <div class="layer1">
-        <h1>Roaming Odds Calculator</h1>
+        <h1>Gleam Roaming Odds Calculator</h1>
         <div class="container">
             <div class="row1">
                 <label class="Select" id="SelectRoaming">Roaming:
@@ -36,13 +36,27 @@
                 <div class="row2">
                     <label>Roaming Charm
                         <br>
-                        <input type="checkbox" id="CharmID" name="Charm" class="checkbox-bigger">
+                        <input type="checkbox" id="RCharmID" name="RoamingCharm" class="checkbox-bigger">
                     </label>
                 </div>
                 <div class="row2">
                     <label class="checkbox-bigger">Roaming Boost
                         <br>
-                        <input type="checkbox" id="BoostID" name="Boost" class="checkbox-bigger">
+                        <input type="checkbox" id="RBoostID" name="RoamingBoost" class="checkbox-bigger">
+                    </label>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="row2">
+                    <label>Gleaming Charm
+                        <br>
+                        <input type="checkbox" id="GCharmID" name="GleamingCharm" class="checkbox-bigger">
+                    </label>
+                </div>
+                <div class="row2">
+                    <label class="checkbox-bigger">Gleaming Boost
+                        <br>
+                        <input type="checkbox" id="GBoostID" name="GleamingBoost" class="checkbox-bigger">
                     </label>
                 </div>
             </div>
@@ -61,12 +75,19 @@
             </div>
             <div class="row1">
                 <input type="button" value="Calculate" class="calculate-button" onclick="Multiply()">
-                <script src="Scripts/RoamingLoomians.js"></script>    
+                <script src=""></script>    
             </div>
-            <div class="row1">
-                <div id="Result">Result: </div>
+            <div class="flex">
+                <div class="row2">
+                    <label id="AlphaResult">Alpha Roaming Odds: </label>
+                </div>
+                <div class="row2">
+                    <label id="GammaResult">Gamma Roaming Odds: </label>
+                </div>
             </div>
         </div> 
+    <script src="Scripts/GRCalc.js"></script>
+    
     <p>note: Event Loomians (excluding Nevermare and maybe Akhalos) become part of the roaming encounter table after their debut event<br> e.g a wabalisc found in 2022's xmas event is rarer than a wabalisc found in the 2020 xmas event</p>
     <div class="grid-container">
         <div class="grid-item">
@@ -76,7 +97,7 @@
             <h4>Wanting to Calculate the odds for variants/reskins? use <a href="VariantOddsCalculator.html">this calculator</a></h4>
         </div>
         <div class="grid-item">
-            <h4>Wanting to Calculate the odds for Gleam Roamings? use <a href="GRCalculator.html">this calculator</a></h4>
+            <h4>Wanting to Calculate the odds for Roamings? use <a href="RoamingOddsCalculator.html">this calculator</a></h4>
         </div>
     </div>
     <footer>
