@@ -32,7 +32,6 @@ VLoomianList.addEventListener("change", function GammaLabel() {
             break;
     }})
 
-
 function Multiply(){
     var Gamma = 20480;
     var Alpha = 4096;
@@ -64,6 +63,9 @@ function Multiply(){
         case "EventScorbs":
             LoomianMultiplier = 12;
             break;
+        case "Jelly Gumpod":
+            LoomianMultiplier = 50;
+            break;
         case "EventBunpuff":
             LoomianMultiplier = 60;
             break;
@@ -71,7 +73,6 @@ function Multiply(){
             LoomianMultiplier = 80
             break;
         case "GeklowB":
-        case "Jelly Gumpod":
         case "EventPhancub":
             LoomianMultiplier = 100;
             break;
