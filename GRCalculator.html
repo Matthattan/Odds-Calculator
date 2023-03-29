@@ -10,84 +10,82 @@
 </head>
 <body>
     <!-- The actual form stuff (reformatting the styling) -->
-    <div class="layer1">
-        <h1>Gleam Roaming Odds Calculator</h1>
-        <div class="container">
-            <div class="row1">
-                <label class="Select" id="SelectRoaming">Roaming:
+    <h1>Gleam Roaming Odds Calculator</h1>
+    <div class="container">
+        <div class="row1">
+            <label class="Select" id="SelectRoaming">Roaming:
+                <br>
+                <select type="text" id="RoamingNameID" name="RoamingName">
+                    <option value="Duskit">Duskit</option>
+                    <option value="Ikazune">Ikazune</option>
+                    <option value="Protogon">Protogon</option>
+                    <option value="Mutagon">Mutagon</option>
+                    <option value="Cephalops">Cephalops</option>
+                    <option value="Elephage">Elephage</option>
+                    <option value="Metronette">Metronette</option>
+                    <option value="Wabalisc">Wabalisc</option>
+                    <option value="Nevermare">Nevermare</option>
+                    <option value="Akhalos">Akhalos</option>
+                    <option value="Gargolem">Gargolem</option>
+                    <option value="Celesting">Celesting</option>
+                </select>
+            </label>
+        </div>
+        <div class="flex">
+            <div class="row2">
+                <label>Roaming Charm
                     <br>
-                    <select type="text" id="RoamingNameID" name="RoamingName">
-                        <option value="Duskit">Duskit</option>
-                        <option value="Ikazune">Ikazune</option>
-                        <option value="Protogon">Protogon</option>
-                        <option value="Mutagon">Mutagon</option>
-                        <option value="Cephalops">Cephalops</option>
-                        <option value="Elephage">Elephage</option>
-                        <option value="Metronette">Metronette</option>
-                        <option value="Wabalisc">Wabalisc</option>
-                        <option value="Nevermare">Nevermare</option>
-                        <option value="Akhalos">Akhalos</option>
-                        <option value="Gargolem">Gargolem</option>
-                        <option value="Celesting">Celesting</option>
-                    </select>
+                    <input type="checkbox" id="RCharmID" name="RoamingCharm" class="checkbox-bigger">
                 </label>
             </div>
-            <div class="flex">
-                <div class="row2">
-                    <label>Roaming Charm
-                        <br>
-                        <input type="checkbox" id="RCharmID" name="RoamingCharm" class="checkbox-bigger">
-                    </label>
-                </div>
-                <div class="row2">
-                    <label class="checkbox-bigger">Roaming Boost
-                        <br>
-                        <input type="checkbox" id="RBoostID" name="RoamingBoost" class="checkbox-bigger">
-                    </label>
-                </div>
+            <div class="row2">
+                <label class="checkbox-bigger">Roaming Boost
+                    <br>
+                    <input type="checkbox" id="RBoostID" name="RoamingBoost" class="checkbox-bigger">
+                </label>
             </div>
-            <div class="flex">
-                <div class="row2">
-                    <label>Gleaming Charm
-                        <br>
-                        <input type="checkbox" id="GCharmID" name="GleamingCharm" class="checkbox-bigger">
-                    </label>
-                </div>
-                <div class="row2">
-                    <label class="checkbox-bigger">Gleaming Boost
-                        <br>
-                        <input type="checkbox" id="GBoostID" name="GleamingBoost" class="checkbox-bigger">
-                    </label>
-                </div>
+        </div>
+        <div class="flex">
+            <div class="row2">
+                <label>Gleaming Charm
+                    <br>
+                    <input type="checkbox" id="GCharmID" name="GleamingCharm" class="checkbox-bigger">
+                </label>
             </div>
-            <div class="flex">
-                <div class="row2" id="AmountRoamings">
-                    <label>Amount of Roamings Unlocked: 
-                        <input type="number" id="RoamingAmountID">
-                    </label>
-                </div>
-                <div class="row2">
-                    <label id="SetEncounterLabel" class="checkbox-bigger">Set Encounter
-                        <br>
-                        <input type="checkbox" id="SetEncounterID">
-                    </label>
-                </div>
+            <div class="row2">
+                <label class="checkbox-bigger">Gleaming Boost
+                    <br>
+                    <input type="checkbox" id="GBoostID" name="GleamingBoost" class="checkbox-bigger">
+                </label>
             </div>
-            <div class="row1">
-                <input type="button" value="Calculate" class="calculate-button" onclick="Multiply()">
-                <script src=""></script>    
+        </div>
+        <div class="flex">
+            <div class="row2" id="AmountRoamings">
+                <label>Amount of Roamings Unlocked: 
+                    <input type="number" id="RoamingAmountID">
+                </label>
             </div>
-            <div class="flex">
-                <div class="row2">
-                    <label id="AlphaResult">Alpha Roaming Odds: </label>
-                </div>
-                <div class="row2">
-                    <label id="GammaResult">Gamma Roaming Odds: </label>
-                </div>
+            <div class="row2">
+                <label id="SetEncounterLabel" class="checkbox-bigger">Set Encounter
+                    <br>
+                    <input type="checkbox" id="SetEncounterID">
+                </label>
             </div>
-        </div> 
+        </div>
+        <div class="row1">
+            <input type="button" value="Calculate" class="calculate-button" onclick="Multiply()">
+            <script src=""></script>    
+        </div>
+        <div class="flex">
+            <div class="row2">
+                <label id="AlphaResult">Alpha Roaming Odds: </label>
+            </div>
+            <div class="row2">
+                <label id="GammaResult">Gamma Roaming Odds: </label>
+            </div>
+        </div>
+    </div> 
     <script src="Scripts/GRCalc.js"></script>
-    
     <p>note: Event Loomians (excluding Nevermare and maybe Akhalos) become part of the roaming encounter table after their debut event<br> e.g a wabalisc found in 2022's xmas event is rarer than a wabalisc found in the 2020 xmas event</p>
     <div class="grid-container">
         <div class="grid-item">

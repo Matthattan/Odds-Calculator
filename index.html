@@ -10,127 +10,125 @@
     <link rel="stylesheet" href="CSS/TableStyling.css">
 </head>
 <body>
-    <div class="layer1">
-            <h1>Loomian Odds Calculator</h1>
-            <form name="GleamingCalc">
-                <!-- all the factors to account for when calculating odds-->
-                <div class="container">
-                    <div class="row1">
-                        <label id="LoomianListLabel">Choose a Loomian:
-                            <br>
-                            <select name="LoomianList" id="LoomianList">
-                                <option value="Ampole">Ampole</option>
-                                <option value="Antsee">Antsee</option>
-                                <option value="Babore">Babore</option>
-                                <option value="Boonary">Boonary</option>
-                                <option value="Bunpuff">Bunpuff</option>
-                                <option value="Burroach">Burroach</option>
-                                <option value="Cafnote">Cafnote (Male & Female)</option>
-                                <option value="Cathorn">Cathorn</option>
-                                <option value="Cavenish">Cavenish</option>
-                                <option value="Ceratot">Ceratot</option>
-                                <option value="Chompactor">Chompactor</option>
-                                <option value="Cinnaboo">Cinnaboo</option>
-                                <option value="Copling">Copling</option>
-                                <option value="Cosmiore">Cosmiore</option>
-                                <option value="Craytal">Craytal</option>
-                                <option value="Event Craytal">Winter Craytal</option>
-                                <option value="Cryocub">Cryocub</option>
-                                <option value="Cupoink">Cupoink</option>
-                                <option value="Dobo">Dobo</option>
-                                <option value="Dractus">Dractus</option>
-                                <option value="Dripple">Dripple</option>
-                                <option value="Eaglit">Eaglit</option>
-                                <option value="Embit">Embit</option>
-                                <option value="Fevine">Fevine</option>
-                                <option value="Florant">Florant</option>
-                                <option value="Geklow">Geklow</option>
-                                <option value="Gobbidemic">Gobbidemic</option>
-                                <option value="Goppie">Goppie</option>
-                                <option value="Grubby">Grubby</option>
-                                <option value="Gumpod">Gumpod</option>
-                                <option value="Gwurm">Gwurm</option>
-                                <option value="Hydrini">Hydrini</option>
-                                <option value="Icigool">Icigool</option>
-                                <option value="Igneol">Igneol</option>
-                                <option value="Impkin">Impkin</option>
-                                <option value="Kabunga">Kabunga</option>
-                                <option value="Kanki">Kanki</option>
-                                <option value="Kittone">Kittone</option>
-                                <option value="Kleptyke">Kleptyke</option>
-                                <option value="Koyogo">Koyogo</option>
-                                <option value="Lumica">Lumica</option>
-                                <option value="Makame">Makame</option>
-                                <option value="Mistlebud">Mistlebud</option>
-                                <option value="Mochibi">Mochibi</option>
-                                <option value="Nymaurae">Nymaurae</option>
-                                <option value="Operaptor">Operaptor</option>
-                                <option value="Phancub">Phancub</option>
-                                <option value="Pipsee">Pipsee</option>
-                                <option value="Poochrol">Poochrol</option>
-                                <option value="Pwuff">Pwuff</option>
-                                <option value="Pyder">Pyder</option>
-                                <option value="Pyke">Pyke</option>
-                                <option value="Pyramind">Pyramind</option>
-                                <option value="Rakrawla">Rakrawla</option>
-                                <option value="Scorb">Scorb</option>
-                                <option value="Sharpod">Sharpod</option>
-                                <option value="Shawchi">Shawchi</option>
-                                <option value="Skilava">Skilava</option>
-                                <option value="Slugling">Slugling</option>
-                                <option value="Snagull">Snagull</option>
-                                <option value="SnagullS">Snagull (Sandwich)</option>
-                                <option value="Snocub">Snocub</option>
-                                <option value="Snowl">Snowl</option>
-                                <option value="Spirivii">Spirivii</option>
-                                <option value="Swimp">Swimp</option>
-                                <option value="Swirelle">Swirelle (Raspberry/Blueberry/Lemon)</option>
-                                <option value="SwirelleS">Swirelle (Strawberry)</option>
-                                <option value="Swishy">Swishy</option>
-                                <option value="Taoshi">Taoshi</option>
-                                <option value="Territi">Territi</option>
-                                <option value="Twilat">Twilat</option>
-                                <option value="Twittle">Twittle</option>
-                                <option value="Vambat">Vambat</option>
-                                <option value="Weevolt">Weevolt</option>
-                                <option value="Whimpor">Whimpor</option>
-                                <option value="Whispup">Whispup</option>
-                                <option value="Wiledile">Wiledile</option>
-                                <option value="Vari">Vari</option>
-                                <option value="Volpup">Volpup</option>
-                                <option value="Zaleo">Zaleo</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="flex">
-                        <div class="row2">
-                            <label>Gleaming Charm
-                                <br>
-                                <input type="checkbox" class="checkbox-bigger" id="GleamingCharmID" name="Gleamingharm">
-                            </label>
-
-                        </div>
-                        <div class="row2">
-                            <label>Gleaming Boost
-                                <br>
-                                <input type="checkbox" class="checkbox-bigger" id="GleamingBoostID" name="GleamingBoost">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row1">
-                        <input type="button" value="Calculate" class="calculate-button" onclick="Multiply()">
-                    </div>
-                    <div class="flex">
-                        <div class="row2">
-                            <label id="AlphaResult">Alpha Odds: </label>
-                        </div>
-                        <div class="row2">
-                            <label id="GammaResult">Gamma Odds: </label>
-                        </div>
-                    </div>
+    <h1>Loomian Odds Calculator</h1>
+    <form name="GleamingCalc">
+        <!-- all the factors to account for when calculating odds-->
+        <div class="container">
+            <div class="row1">
+                <label id="LoomianListLabel">Choose a Loomian:
+                    <br>
+                    <select name="LoomianList" id="LoomianList">
+                        <option value="Ampole">Ampole</option>
+                        <option value="Antsee">Antsee</option>
+                        <option value="Babore">Babore</option>
+                        <option value="Boonary">Boonary</option>
+                        <option value="Bunpuff">Bunpuff</option>
+                        <option value="Burroach">Burroach</option>
+                        <option value="Cafnote">Cafnote (Male & Female)</option>
+                        <option value="Cathorn">Cathorn</option>
+                        <option value="Cavenish">Cavenish</option>
+                        <option value="Ceratot">Ceratot</option>
+                        <option value="Chompactor">Chompactor</option>
+                        <option value="Cinnaboo">Cinnaboo</option>
+                        <option value="Copling">Copling</option>
+                        <option value="Cosmiore">Cosmiore</option>
+                        <option value="Craytal">Craytal</option>
+                        <option value="Event Craytal">Winter Craytal</option>
+                        <option value="Cryocub">Cryocub</option>
+                        <option value="Cupoink">Cupoink</option>
+                        <option value="Dobo">Dobo</option>
+                        <option value="Dractus">Dractus</option>
+                        <option value="Dripple">Dripple</option>
+                        <option value="Eaglit">Eaglit</option>
+                        <option value="Embit">Embit</option>
+                        <option value="Fevine">Fevine</option>
+                        <option value="Florant">Florant</option>
+                        <option value="Geklow">Geklow</option>
+                        <option value="Gobbidemic">Gobbidemic</option>
+                        <option value="Goppie">Goppie</option>
+                        <option value="Grubby">Grubby</option>
+                        <option value="Gumpod">Gumpod</option>
+                        <option value="Gwurm">Gwurm</option>
+                        <option value="Hydrini">Hydrini</option>
+                        <option value="Icigool">Icigool</option>
+                        <option value="Igneol">Igneol</option>
+                        <option value="Impkin">Impkin</option>
+                        <option value="Kabunga">Kabunga</option>
+                        <option value="Kanki">Kanki</option>
+                        <option value="Kittone">Kittone</option>
+                        <option value="Kleptyke">Kleptyke</option>
+                        <option value="Koyogo">Koyogo</option>
+                        <option value="Lumica">Lumica</option>
+                        <option value="Makame">Makame</option>
+                        <option value="Mistlebud">Mistlebud</option>
+                        <option value="Mochibi">Mochibi</option>
+                        <option value="Nymaurae">Nymaurae</option>
+                        <option value="Operaptor">Operaptor</option>
+                        <option value="Phancub">Phancub</option>
+                        <option value="Pipsee">Pipsee</option>
+                        <option value="Poochrol">Poochrol</option>
+                        <option value="Pwuff">Pwuff</option>
+                        <option value="Pyder">Pyder</option>
+                        <option value="Pyke">Pyke</option>
+                        <option value="Pyramind">Pyramind</option>
+                        <option value="Rakrawla">Rakrawla</option>
+                        <option value="Scorb">Scorb</option>
+                        <option value="Sharpod">Sharpod</option>
+                        <option value="Shawchi">Shawchi</option>
+                        <option value="Skilava">Skilava</option>
+                        <option value="Slugling">Slugling</option>
+                        <option value="Snagull">Snagull</option>
+                        <option value="SnagullS">Snagull (Sandwich)</option>
+                        <option value="Snocub">Snocub</option>
+                        <option value="Snowl">Snowl</option>
+                        <option value="Spirivii">Spirivii</option>
+                        <option value="Swimp">Swimp</option>
+                        <option value="Swirelle">Swirelle (Raspberry/Blueberry/Lemon)</option>
+                        <option value="SwirelleS">Swirelle (Strawberry)</option>
+                        <option value="Swishy">Swishy</option>
+                        <option value="Taoshi">Taoshi</option>
+                        <option value="Territi">Territi</option>
+                        <option value="Twilat">Twilat</option>
+                        <option value="Twittle">Twittle</option>
+                        <option value="Vambat">Vambat</option>
+                        <option value="Weevolt">Weevolt</option>
+                        <option value="Whimpor">Whimpor</option>
+                        <option value="Whispup">Whispup</option>
+                        <option value="Wiledile">Wiledile</option>
+                        <option value="Vari">Vari</option>
+                        <option value="Volpup">Volpup</option>
+                        <option value="Zaleo">Zaleo</option>
+                    </select>
+                </label>
+            </div>
+            <div class="flex">
+                <div class="row2">
+                    <label>Gleaming Charm
+                        <br>
+                        <input type="checkbox" class="checkbox-bigger" id="GleamingCharmID" name="Gleamingharm">
+                    </label>
                 </div>
-            </form>
-        <script src="Scripts/CommonLoomians.js"></script>
+                <div class="row2">
+                    <label>Gleaming Boost
+                        <br>
+                        <input type="checkbox" class="checkbox-bigger" id="GleamingBoostID" name="GleamingBoost">
+                    </label>
+                </div>
+            </div>
+            <div class="row1">
+                <input type="button" value="Calculate" class="calculate-button" onclick="Multiply()">
+            </div>
+            <div class="flex">
+                <div class="row2">
+                    <label id="AlphaResult">Alpha Odds: </label>
+                </div>
+                <div class="row2">
+                    <label id="GammaResult">Gamma Odds: </label>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="Scripts/CommonLoomians.js"></script>
         <div class="grid-container">
             <div class="grid-item">
                 <h4>Wanting to Calculate the odds for variants/reskins? use <a href="VariantOddsCalculator.html">this calculator</a></h4>
