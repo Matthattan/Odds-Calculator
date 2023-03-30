@@ -20,7 +20,6 @@
   text-align: center;
   border: 1px solid black;
   font: 48px;
-  padding: 10px;
 
 }
 
@@ -31,8 +30,6 @@
   text-align: center;
   border: 1px solid black;
   float: 1;
-  padding: 10px;
-
 }
 
 .Select{
@@ -81,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .container{
     width: 400px;
   }
@@ -91,9 +88,9 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .container{
-    width: 300px;
+    width: 320px;
   }
 
   .flex{
@@ -107,6 +104,46 @@
 
   #AmountRoamings{
     font-size: 24px;
+  }
+  
+}
+
+
+@media screen and (max-width: 400px) {
+  .container{
+    width: 320px;
+  }
+
+  .flex{
+    display: block;
+  }
+
+  .row2{
+    width: auto;
+    height: 100px;
+  }
+
+  #AmountRoamings{
+    font-size: 24px;
+  }
+
+  .row1{
+    width: 320px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    font: 48px;
+  
+  }
+  
+  .row2{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    float: 1;
   }
   
 }
