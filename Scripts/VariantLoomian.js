@@ -26,11 +26,13 @@ VLoomianList.addEventListener("change", function GammaLabel() {
         case "EventScorb":
         case "EventScorbs":
             GammaL.style.display = "none";
-            
+            RW.style.display = "none";
             break;
         default:
             GammaL.style.display = "inline";
             document.getElementById("GammaResult").innerHTML = "Gamma Odds: "
+            RW.style.display = "none";
+            RW.innerHTML = "Rainbow Wisp Odds: ";
             break;
     }})
 
