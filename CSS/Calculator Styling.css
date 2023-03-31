@@ -70,10 +70,11 @@ footer a{
   color: #219DD7;
 }
 
-p{
+.footnote{
   width: 1000px;
   margin: auto;
 }
+
 
 @media screen and (max-width: 1080px) {
   .grid-container {
