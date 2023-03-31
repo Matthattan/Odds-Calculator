@@ -3,6 +3,7 @@ var OutputResult = document.getElementById("Result");
 var GCharm = document.getElementById("GleamingCharmID");
 var GBoost = document.getElementById("GleamingBoostID");
 var GammaL = document.getElementById("GammaResult");
+var RW = document.getElementById("RW");
 
 var GCharmMultiplier = 1/2;
 var GBoostMultiplier = 1/16;
@@ -19,12 +20,13 @@ VLoomianList.addEventListener("change", function GammaLabel() {
         case "GeklowG":
         case "GeklowE":
         case "GeklowR":
-        case "GeklowS":
+        case "GeklowSP":
         case "RareIcigool2019":
         case "XMASRagoon":
         case "EventScorb":
         case "EventScorbs":
             GammaL.style.display = "none";
+            
             break;
         default:
             GammaL.style.display = "inline";
@@ -35,6 +37,10 @@ VLoomianList.addEventListener("change", function GammaLabel() {
 function Multiply(){
     var Gamma = 20480;
     var Alpha = 4096;
+    var RainbowWisp = 125
+    var GCharmMultiplier = 1/2;
+    var GBoostMultiplier = 1/16;
+
     // Checking if Gleaming odds were halved
     switch (VLoomianList.value) {
         case "GeklowB":
@@ -42,12 +48,16 @@ function Multiply(){
         case "GeklowG":
         case "GeklowE":
         case "GeklowR":
-        case "GeklowS":
-            GCharmMultiplier *= 1/2;
+        case "GeklowSP":
+            GCharmMultiplier = 1/4;
+            GBoostMultiplier = 1/64;
+            console.log("Odds Halved")
             break;
         case "RareIcigool2020":
         case "RBShawchi":
-        case "RBVari":
+        case "XMASRagoon":
+        case "HWSlugling":
+        case "HWShawchi":
             Gamma *= 1/2;
             Alpha *= 1/2;
             break;
@@ -95,14 +105,16 @@ function Multiply(){
             break;
         case "GeklowG":
         case "XMASPropae":
-        case "HWShawci":
+        case "HWShawchi":
             LoomianMultiplier = 500;
             break;
         case "RareIcigool2019":
-        case "RareIcigool2020":
         case "RareIcigools":
         case "EventBunpuffR":
             LoomianMultiplier = 600;
+            break;
+        case "RareIcigool2020":
+            LoomianMultiplier = 630;
             break;
         case "GeklowE":
         case "Jelly Gumpod":
@@ -113,11 +125,8 @@ function Multiply(){
         case "GeklowR":
             LoomianMultiplier = 2000;
             break;
-        case "GeklowS":
+        case "GeklowSP":
             LoomianMultiplier = 10000;
-            break;
-        case "RBVari":
-            LoomianMultiplier = 15000;
             break;
         default:
             LoomianMultiplier = 1;
@@ -138,4 +147,6 @@ function Multiply(){
         
         document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + Alpha*LoomianMultiplier;
         document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + Gamma*LoomianMultiplier;
+
+        RW.innerHTML = "Rainbow Wisp Odds: i in " + Gamma*LoomianMultiplier*RainbowWisp;
     }

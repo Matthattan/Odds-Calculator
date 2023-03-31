@@ -11,6 +11,7 @@ var LoomianMultiplier = 1;
 function Multiply(){
     var Gamma = 20480;
     var Alpha = 4096;
+    var RainbowWisp = 125;
     switch (LoomianList.value) {
         case "Impkin":
             LoomianMultiplier = 2;
@@ -86,9 +87,13 @@ function Multiply(){
             break;   
         case "Cosmiore":
             LoomianMultiplier = 128;
+            var Gamma = 10240;
+            var Alpha = 2048;
             break;
         default:
             LoomianMultiplier = 1;
+            var Gamma = 20480;
+            var Alpha = 4096;
             break;
     }
 
@@ -106,4 +111,6 @@ function Multiply(){
     
     document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + (Alpha*LoomianMultiplier).toFixed(2);
     document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + (Gamma*LoomianMultiplier).toFixed(2);
+
+    document.getElementById("RW").innerHTML = "Rainbow Wisp Odds: 1 in " + (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
     }
