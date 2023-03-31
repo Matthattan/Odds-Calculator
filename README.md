@@ -10,3 +10,9 @@ Current Features:
 
 Future additions(?):
 - Compound Odds calculator
+
+Version 1:
+- Initial Release
+
+Version 1.1:
+- Added RW Odds
