@@ -20,6 +20,7 @@ var RCharmMultiplier = 1/2;
 var RBoostMultiplier = 1/4;
 
 var LoomianMultiplier = 1;
+var RW = document.getElementById("RW")
 
 RoamingName.addEventListener('change', function GetSetEncounter() {
     switch (this.value) {
@@ -52,9 +53,12 @@ RoamingName.addEventListener('change', function GetSetEncounter() {
 SetEncounter.addEventListener('change', function NoGamma(){
     if (this.checked) {
         GammaResult.style.display = "none";
+        RW.style.display = "none";
     } else {
         GammaResult.style.display = "inline";
         GammaResult.innerHTML = "Gamma Roaming Odds:";
+        RW.style.display = "inline";
+        RW.innerHTML = "Rainbow Wisp Odds: "
     }
 })
 
@@ -64,6 +68,7 @@ function Multiply(){
     var RoamingOdds = 1024;
     var GR = 1;
     var GGR = 1;
+    var RainbowWisp = 125
 
     if (RoamingCharm.checked) {
         RoamingOdds *= RCharmMultiplier
@@ -107,4 +112,6 @@ function Multiply(){
     
     document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + (ATotal).toFixed(2);
     document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + (GTotal).toFixed(2);
+
+    RW.innerHTML = "Rainbow Wisp Odds: 1 in " + (GTotal*RainbowWisp).toFixed(2);
     }
