@@ -7,6 +7,7 @@ Current Features:
 - Calculate Gleaming Odds for Route Rares/less than common Loomians
 - Calculate **True** Roaming enounter odds
 - Calculate Gleaming Roaming encounter odds (both set encounter and wild)
+- Calculate Secret Ability Odds (Limited to common/route rares, weather, rallying and petrolith)
 
 Future additions(?):
 - Compound Odds calculator
@@ -16,3 +17,8 @@ Version 1:
 
 Version 1.1:
 - Added RW Odds
+
+Version 2:
+- Added SA Calculator
+- reworked pre-existing sizing for different devices
+- Media query now supports devices approximately 360px wide
