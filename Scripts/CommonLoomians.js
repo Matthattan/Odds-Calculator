@@ -23,7 +23,7 @@ function Multiply(){
         case "Antsee":
         case "Cupoink":
         case "Gumpod":
-        case "Territ":
+        case "Territi":
         case "Taoshi":
         case "Whimpor":
         case "Phancub":
