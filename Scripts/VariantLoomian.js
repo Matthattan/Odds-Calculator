@@ -31,7 +31,7 @@ VLoomianList.addEventListener("change", function GammaLabel() {
         default:
             GammaL.style.display = "inline";
             document.getElementById("GammaResult").innerHTML = "Gamma Odds: "
-            RW.style.display = "none";
+            RW.style.display = "inline";
             RW.innerHTML = "Rainbow Wisp Odds: ";
             break;
     }})
@@ -130,6 +130,22 @@ function Multiply(){
         case "GeklowSP":
             LoomianMultiplier = 10000;
             break;
+        case "KyeggoDefault":
+            LoomianMultiplier = (10*(100/37));
+            break;
+        case "KyeggoFrilly":
+        case "KyeggoZigZag":
+        case "KyeggoStripes":
+            LoomianMultiplier = (10*(100/18.7));
+            break;
+        case "KyeggoStar":
+            LoomianMultiplier = (10*(100/6))
+            break;
+        case "KyeggoFRed":
+        case "KyeggoFGreen":
+        case "KyeggoFBlue":
+            LoomianMultiplier = (10*(100/0.33));
+            break;
         default:
             LoomianMultiplier = 1;
             break;
@@ -147,8 +163,8 @@ function Multiply(){
         } else {Gamma = Gamma
             Alpha = Alpha}
         
-        document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + Alpha*LoomianMultiplier;
-        document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + Gamma*LoomianMultiplier;
+        document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + (Alpha*LoomianMultiplier).toFixed(2);
+        document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + (Gamma*LoomianMultiplier).toFixed(2);
 
-        RW.innerHTML = "Rainbow Wisp Odds: i in " + Gamma*LoomianMultiplier*RainbowWisp;
+        RW.innerHTML = "Rainbow Wisp Odds: 1 in " + (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
     }
