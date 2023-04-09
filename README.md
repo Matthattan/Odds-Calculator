@@ -22,3 +22,8 @@ Version 2:
 - Added SA Calculator
 - reworked pre-existing sizing for different devices
 - Media query now supports devices approximately 360px wide
+
+Version 2.1:
+- Fixed RW odds on the variant calculator
+- Adding Kyeggo and its different reskins
+(Compound Odds calculator coming in nicely)
