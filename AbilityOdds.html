@@ -10,58 +10,61 @@
     </head>
     <body>
         <h1>Secret Ability Odds Calculator</h1>
-        <div class="container">
-            <div class="row1">
-				<form name="SAOddsForm">
-                <label id="LSLabel" class="SelectForm">SA Encounter:
-                    <br>
-                    <select id="LSID" class="SelectBox">
-                        <option value="" disabled selected>Select Location</option>
-                        <option value="RallyRanch">Rally Ranch</option>
-                        <option value="Encounter">Wild/Set Encounter</option>
-                        <option value="Petrolith">Petrolith</option>
-                        <option value="Weather">Weather (Acting Strangely)</option>
-                    </select>
-                </label>
-            </div>
-            <div class="flex">
-                <div class="row2">
-                    <label>Ability Charm
+        <form name="SACalculator">
+            <div class="container">
+                <div class="row1">
+                    <label id="LSLabel" class="SelectForm">SA Encounter:
                         <br>
-                        <input type="checkbox" class="checkbox-bigger" id="AbilityCharmID" name="AbilityCharm">
-                        <p id="footnote2">Charm is Required for non-weather Wild/Set Encounters</p>
+                        <select id="LSID" class="SelectBox">
+                            <option value="" disabled selected>Select Location</option>
+                            <option value="RallyRanch">Rally Ranch</option>
+                            <option value="Encounter">Wild/Set Encounter</option>
+                            <option value="Petrolith">Petrolith</option>
+                            <option value="Weather">Weather (Acting Strangely)</option>
+                        </select>
                     </label>
                 </div>
-                <div class="row2">
-                    <label id="SALeaderLabel">Secret Ability Leader
-                        <br>
-                        <input type="checkbox" class="checkbox-bigger" id="SALeaderID" name="SALeader">
-                    </label>
+                <div class="flex">
+                    <div class="row2">
+                        <label>Ability Charm
+                            <br>
+                            <input type="checkbox" class="checkbox-bigger" id="AbilityCharmID" name="AbilityCharm">
+                            <p id="footnote2">Charm is Required for non-weather Wild/Set Encounters</p>
+                        </label>
+                    </div>
+                    <div class="row2">
+                        <label id="SALeaderLabel">Secret Ability Leader
+                            <br>
+                            <input type="checkbox" class="checkbox-bigger" id="SALeaderID" name="SALeader">
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="row1">
-                <input type="button" value="Calculate" class="calculate-button" disabled onclick="FindSARate()">
-            </div>
-            <div class="row1">
-                <label id="SAResult" class="Output">Secret Ability Odds: </label>
-            </div>
-            <div class="row1">
-                <label id="LoomianListLabel">Calculate SA odds for a Loomian:
+                <div class="row1">
+                    <input type="button" value="Calculate" class="calculate-button" disabled onclick="FindSARate()">
+                </div>
+                <div class="row1">
+                    <label id="SAResult" class="Output">Secret Ability Odds: </label>
+                </div>
+                <div class="row1">
+                    <label id="LoomianListLabel">Calculate SA odds for a Loomian:
+                        <br>
+                        <select name="LoomianList" id="LoomianList" class="SelectBox">
+                            <option value="" selected disabled>No options yet</option>
+                        </select>
+                    </label>
                     <br>
-                    <select name="LoomianList" id="LoomianList" class="SelectBox">
-                        <option value="" selected disabled>No options yet</option>
-                      </select>
-                </label>
-                <br>
-            </div>
-            <div class="row1">
-                <input type="button" value="Add to Odds" class="calculate-button" disabled onclick="CalculateOverallRate()">
-            </div>
-            <div class="row1">
-                <label id="TotalResult" class="Output">Overall SA Odds: </label>
+                </div>
+                <div class="row1">
+                    <input type="button" value="Add to Odds" class="calculate-button" disabled onclick="CalculateOverallRate()">
+                </div>
+                <div class="row1">
+                    <label id="TotalResult" class="Output">Overall SA Odds: </label>
+                </div>
+                <div class="row3">
+                    <button id="AbilityEncrypt" onclick="encrypt(event, AbilityOdds)">Export Secret Ability Odds</button>
+                </div>
             </div>
         </form>
-        </div>
         <script src="Scripts/SAodds.js"></script>
         <div class="grid-container">
             <div class="grid-item">
@@ -77,10 +80,13 @@
                 <h4>Wanting to Calculate the odds for Gleam Roamings? use <a href="GRCalculator.html">this calculator</a></h4>
             </div>
         </div>
+        <div class="CO-container">
+            <div class="grid-item">
+                <a href="CompoundCalculator.html">Compound Odds Calculator</a>
+            </div>
+        </div>
         <footer>
             <a href="https://www.discordapp.com/users/298479810345172994">Matthattan#0454</a> - <a href="https://twitter.com/stuntmanforlyf"> @stuntmanforlyf</a> - <a href="https://github.com/Matthattan/Matthattan.github.io">Link to Repository</a>
         </footer>
-        
     </body>
-
 </html>

@@ -59,13 +59,16 @@
                 </div>
             </div>
             <div class="row1">
-                <input type="button" value="Calculate" class="calculate-button" onclick="Multiply()">
-                <script src="Scripts/RoamingLoomians.js"></script>    
+                <input type="button" value="Calculate" class="calculate-button" onclick="Multiply()">  
             </div>
             <div class="row1">
                 <div id="Result">Result: </div>
             </div>
+            <div class="row3">
+                <button id="RoamingEncrypt" onclick="encrypt(event, RoamingOdds)">Export Roaming Odds</button>
+            </div>
         </div> 
+        <script src="Scripts/RoamingLoomians.js"></script>  
     <p class="footnote">note: Event Loomians (excluding Nevermare and maybe Akhalos) become part of the roaming encounter table after their debut event<br> e.g a wabalisc found in 2022's xmas event is rarer than a wabalisc found in the 2020 xmas event</p>
     <div class="grid-container">
         <div class="grid-item">
@@ -79,6 +82,11 @@
         </div>
         <div class="grid-item">
             <h4>Wanting to Calculate the odds for SA Loomians? use <a href="AbilityOdds.html">this calculator</a></h4>
+        </div>
+    </div>
+    <div class="CO-container">
+        <div class="grid-item">
+            <a href="CompoundCalculator.html">Compound Odds Calculator</a>
         </div>
     </div>
     <footer>

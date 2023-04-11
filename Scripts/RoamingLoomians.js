@@ -34,7 +34,6 @@ RoamingName.addEventListener('change', function GetSetEncounter() {
             break;
     }  
 })
-    
 
 function Multiply() { 
     let RoamingOdds = 1024;
@@ -62,4 +61,27 @@ function Multiply() {
     }
     
     document.getElementById("Result").innerHTML = "Result: 1 in " + RoamingOdds;
+    return[RoamingOdds]
 }
+
+function encrypt(event, RoamingOdds) {
+    // Get a reference to the button that was clicked
+    const clickedButton = event.target;
+  
+    // Check the ID of the clicked button using an if statement
+    if (clickedButton.id === "RoamingEncrypt") {
+      // Do something if the AlphaEncrypt button was clicked
+      const RoamingEncrypted = window.btoa(RoamingOdds);
+      window.alert("Copy to Compound Calculator: " + RoamingEncrypted);
+    } else {
+      // Do something else if a different button was clicked
+      console.log("Unknown button clicked");
+    }
+}
+
+// Call multiply() to get the values and pass them as arguments to encrypt()
+  document.getElementById("RoamingEncrypt").addEventListener("click", function(event) {
+    const [RoamingOdds] = Multiply();
+    encrypt(event, RoamingOdds);
+});
+

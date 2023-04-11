@@ -134,6 +134,7 @@ const optionData = {
         { label: 'Cupoink', value: 'Cupoink' },
         { label: 'Dractus', value: 'Dractus' },
         { label: 'Dripple', value: 'Dripple' },
+        { label: 'Doreggo (Default)', value: 'Doreggo'},
         { label: 'Eaglit', value: 'Eaglit' },
         { label: 'Embit', value: 'Embit' },
         { label: 'Fevine', value: 'Fevine' },
@@ -381,7 +382,29 @@ function CalculateOverallRate() {
             LoomianMultiplier = 1;
         }
     
-    var Total = LoomianMultiplier*abilityRate;
+    var AbilityOdds = LoomianMultiplier*abilityRate;
 
-    document.getElementById("TotalResult").innerHTML = "Overall SA Odds: 1 in " + Total.toFixed(2);
+    document.getElementById("TotalResult").innerHTML = "Overall SA Odds: 1 in " + AbilityOdds.toFixed(2);
+    return[AbilityOdds];
 }
+
+function encrypt(event, AbilityOdds) {
+    // Get a reference to the button that was clicked
+    const clickedButton = event.target;
+  
+    // Check the ID of the clicked button using an if statement
+    if (clickedButton.id === "AbilityEncrypt") {
+      // Do something if the AlphaEncrypt button was clicked
+      const AbilityEncrypted = window.btoa(AbilityOdds);
+      window.alert("Copy to Compound Calculator: " + AbilityEncrypted);
+    } else {
+      // Do something else if a different button was clicked
+      console.log("Unknown button clicked");
+    }
+}
+
+// Call multiply() to get the values and pass them as arguments to encrypt()
+  document.getElementById("AbilityEncrypt").addEventListener("click", function(event) {
+    const [AbilityOdds] = CalculateOverallRate();
+    encrypt(event, AbilityOdds);
+});

@@ -108,9 +108,38 @@ function Multiply(){
         Alpha *= GBoostMultiplier
     } else {Gamma = Gamma
         Alpha = Alpha}
-    
-    document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + (Alpha*LoomianMultiplier).toFixed(2);
-    document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + (Gamma*LoomianMultiplier).toFixed(2);
 
-    document.getElementById("RW").innerHTML = "Rainbow Wisp Odds: 1 in " + (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
+    AlphaTotal = (Alpha*LoomianMultiplier).toFixed(2);
+    GammaTotal = (Gamma*LoomianMultiplier).toFixed(2);
+    RWTotal = (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
+
+    document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + (AlphaTotal);
+    document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + (GammaTotal);
+    document.getElementById("RW").innerHTML = "Rainbow Wisp Odds: 1 in " + (RWTotal);
+
+    return(AlphaTotal, GammaTotal, RWTotal);
     }
+
+function encrypt(event, AlphaTotal, GammaTotal, RWTotal) {
+    // Get a reference to the button that was clicked
+    const clickedButton = event.target;
+
+    // Check the ID of the clicked button using an if statement
+    if (clickedButton.id === "AlphaEncrypt") {
+    // Do something if the AlphaEncrypt button was clicked
+    const AlphaEncrypted = window.btoa(AlphaTotal);
+    window.alert("Copy to Compound Calculator: " + AlphaEncrypted);
+    } else if (clickedButton.id === "GammaEncrypt") {
+    // Do something if the GammaEncrypt button was clicked
+    const GammaEncrypt = window.btoa(GammaTotal);
+    window.alert("Copy to Compound Calculator: " + GammaEncrypt);
+    } else if (clickedButton.id === "RWEncrypt") {
+    // Do something if the RWEncrypt button was clicked
+    const RWEncrypt = window.btoa(RWTotal)
+    window.alert("Copy to Compound Calculator: " + RWEncrypt);
+    } else {
+    // Do something else if a different button was clicked
+    console.log("Unknown button clicked");
+    }
+}
+      

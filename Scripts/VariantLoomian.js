@@ -5,6 +5,9 @@ var GBoost = document.getElementById("GleamingBoostID");
 var GammaL = document.getElementById("GammaResult");
 var RW = document.getElementById("RW");
 
+var GammaEncrypt = document.getElementById("GammaEncrypt");
+var RWEncrypt = document.getElementById("RWEncrypt");
+
 var GCharmMultiplier = 1/2;
 var GBoostMultiplier = 1/16;
 
@@ -26,12 +29,16 @@ VLoomianList.addEventListener("change", function GammaLabel() {
         case "EventScorb":
         case "EventScorbs":
             GammaL.style.display = "none";
+            GammaEncrypt.style.display = "none";
             RW.style.display = "none";
+            RWEncrypt.style.display = "none";
             break;
         default:
             GammaL.style.display = "inline";
+            GammaEncrypt.style.display = "inline";
             document.getElementById("GammaResult").innerHTML = "Gamma Odds: "
             RW.style.display = "inline";
+            RWEncrypt.style.display = "inline";
             RW.innerHTML = "Rainbow Wisp Odds: ";
             break;
     }})
@@ -131,20 +138,20 @@ function Multiply(){
             LoomianMultiplier = 10000;
             break;
         case "KyeggoDefault":
-            LoomianMultiplier = (10*(100/37));
+            LoomianMultiplier = (6*(100/37));
             break;
         case "KyeggoFrilly":
         case "KyeggoZigZag":
         case "KyeggoStripes":
-            LoomianMultiplier = (10*(100/18.7));
+            LoomianMultiplier = (6*(100/18.7));
             break;
         case "KyeggoStar":
-            LoomianMultiplier = (10*(100/6))
+            LoomianMultiplier = (6*(100/6))
             break;
         case "KyeggoFRed":
         case "KyeggoFGreen":
         case "KyeggoFBlue":
-            LoomianMultiplier = (10*(100/0.33));
+            LoomianMultiplier = (6*(100/0.33));
             break;
         default:
             LoomianMultiplier = 1;
@@ -162,9 +169,38 @@ function Multiply(){
             Alpha *= GBoostMultiplier
         } else {Gamma = Gamma
             Alpha = Alpha}
-        
-        document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + (Alpha*LoomianMultiplier).toFixed(2);
-        document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + (Gamma*LoomianMultiplier).toFixed(2);
 
-        RW.innerHTML = "Rainbow Wisp Odds: 1 in " + (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
+        AlphaTotal = (Alpha*LoomianMultiplier).toFixed(2);
+        GammaTotal = (Gamma*LoomianMultiplier).toFixed(2);
+        RWTotal = (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
+        
+        document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + (AlphaTotal);
+        document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + (GammaTotal);
+
+        RW.innerHTML = "Rainbow Wisp Odds: 1 in " + (RWTotal);
+
+        return(AlphaTotal, GammaTotal, RWTotal);
+    }
+
+    function encrypt(event, AlphaTotal, GammaTotal, RWTotal) {
+        // Get a reference to the button that was clicked
+        const clickedButton = event.target;
+      
+        // Check the ID of the clicked button using an if statement
+        if (clickedButton.id === "AlphaEncrypt") {
+          // Do something if the AlphaEncrypt button was clicked
+          const AlphaEncrypted = window.btoa(AlphaTotal);
+          window.alert("Copy to Compound Calculator: " + AlphaEncrypted);
+        } else if (clickedButton.id === "GammaEncrypt") {
+          // Do something if the GammaEncrypt button was clicked
+          const GammaEncrypt = window.btoa(GammaTotal);
+          window.alert("Copy to Compound Calculator: " + GammaEncrypt);
+        } else if (clickedButton.id === "RWEncrypt") {
+          // Do something if the RWEncrypt button was clicked
+          const RWEncrypt = window.btoa(RWTotal)
+          window.alert("Copy to Compound Calculator: " + RWEncrypt);
+        } else {
+          // Do something else if a different button was clicked
+          console.log("Unknown button clicked");
+        }
     }
