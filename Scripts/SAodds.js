@@ -102,6 +102,7 @@ const optionData = {
       { label: 'Whimpor', value: 'Whimpor' },
       { label: 'Whispup', value: 'Whispup' },
       { label: 'Wiledile', value: 'Wiledile' },
+      { label: 'Wispur', value: 'Wispur' },
       { label: 'Vari', value: 'Vari' },
       { label: 'Volpup', value: 'Volpup' },
     ],
@@ -180,6 +181,7 @@ const optionData = {
         { label: 'Whimpor', value: 'Whimpor' },
         { label: 'Whispup', value: 'Whispup' },
         { label: 'Wiledile', value: 'Wiledile' },
+        { label: 'Wispur', value: 'Wispur' },
         { label: 'Vari', value: 'Vari' },
         { label: 'Volpup', value: 'Volpup' },
       ],
@@ -358,6 +360,7 @@ function CalculateOverallRate() {
             break;
         case "Pipsee":
         case "Hydrini":
+        case "Wispur":   
             LoomianMultiplier = 64;
             break;
         case "Swirelle":

@@ -73,6 +73,7 @@ function Multiply(){
             break;
         case "Pipsee":
         case "Hydrini":
+        case "Wispur":
             LoomianMultiplier = 64;
             break;
         case "Swirelle":
