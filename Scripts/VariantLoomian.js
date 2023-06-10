@@ -3,9 +3,11 @@ var OutputResult = document.getElementById("Result");
 var GCharm = document.getElementById("GleamingCharmID");
 var GBoost = document.getElementById("GleamingBoostID");
 var GammaL = document.getElementById("GammaResult");
+var AlphaL = document.getElementById("AlphaResult");
 var RW = document.getElementById("RW");
 
 var GammaEncrypt = document.getElementById("GammaEncrypt");
+var AlphaEncrypt = document.getElementById("AlphaEncrypt");
 var RWEncrypt = document.getElementById("RWEncrypt");
 
 var GCharmMultiplier = 1/2;
@@ -13,7 +15,7 @@ var GBoostMultiplier = 1/16;
 
 var LoomianMultiplier = 1;
 
-// Checking if the Loomian has a gamma form
+// Checking if the Loomian has a gleaming forms
 VLoomianList.addEventListener("change", function GammaLabel() {
     switch (this.value) {
         case "HWShawchi":
@@ -32,11 +34,34 @@ VLoomianList.addEventListener("change", function GammaLabel() {
             GammaEncrypt.style.display = "none";
             RW.style.display = "none";
             RWEncrypt.style.display = "none";
+            AlphaL.style.display = "inline";
+            AlphaEncrypt.style.display = "inline";
+            break;
+        case "ColouredGoppie":
+            AlphaL.style.display = "none";
+            AlphaEncrypt.style.display = "none";
+            RW.style.display = "none";
+            RWEncrypt.style.display = "none";
+            GammaL.style.display = "inline";
+            GammaEncrypt.style.display = "inline";
+            break;
+        case "RBNymaurae":
+        case "RBPyramind":
+        case "RBGoppie":
+            GammaL.style.display = "none";
+            GammaEncrypt.style.display = "none";
+            RW.style.display = "inline";
+            RWEncrypt.style.display = "inline";
+            AlphaL.style.display = "none";
+            AlphaEncrypt.style.display = "none";
             break;
         default:
             GammaL.style.display = "inline";
             GammaEncrypt.style.display = "inline";
+            AlphaL.style.display = "inline";
+            AlphaEncrypt.style.display = "inline";
             document.getElementById("GammaResult").innerHTML = "Gamma Odds: "
+            document.getElementById("AlphaResult").innerHTML = "Alpha Odds: "
             RW.style.display = "inline";
             RWEncrypt.style.display = "inline";
             RW.innerHTML = "Rainbow Wisp Odds: ";
@@ -86,6 +111,7 @@ function Multiply(){
             LoomianMultiplier = 50;
             break;
         case "EventBunpuff":
+        case "ColouredGoppie":
             LoomianMultiplier = 60;
             break;
         case "EventAntsee":
@@ -129,12 +155,14 @@ function Multiply(){
         case "Jelly Gumpod":
         case "XMASRagoon":
         case "RBShawchi":
+        case "RBFlorant":
             LoomianMultiplier = 1000;
             break;
         case "GeklowR":
             LoomianMultiplier = 2000;
             break;
         case "GeklowSP":
+        case "RBGoppie":
             LoomianMultiplier = 10000;
             break;
         case "KyeggoDefault":
@@ -152,6 +180,12 @@ function Multiply(){
         case "KyeggoFGreen":
         case "KyeggoFBlue":
             LoomianMultiplier = (6*(100/0.33));
+            break;
+        case "RBNymaurae":
+            LoomianMultiplier = 15000;
+            break;
+        case "RBPyramind":
+            LoomianMultiplier = 20000;
             break;
         default:
             LoomianMultiplier = 1;
@@ -172,7 +206,26 @@ function Multiply(){
 
         AlphaTotal = (Alpha*LoomianMultiplier).toFixed(2);
         GammaTotal = (Gamma*LoomianMultiplier).toFixed(2);
-        RWTotal = (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
+
+
+        //2023 Rainbow added wisp but no gamma loomians, I cried fixing this
+        switch (VLoomianList.value) {
+            case "RBNymaurae":
+            case "RBPyramind":
+            case "RBGoppie":
+                RWTotal = (LoomianMultiplier).toFixed(2); 
+                break;
+            case "ColouredGoppie":
+                //ColouredGoppie isn't actually gamma afaik, but it has a wisp form so its going here cuz Im lazy
+                GammaTotal = (LoomianMultiplier*100).toFixed(2);
+                RWTotal = (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
+                break;
+            default:
+                RWTotal = (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
+                break;
+        }
+        
+        
         
         document.getElementById("AlphaResult").innerHTML = "Alpha Odds: 1 in " + (AlphaTotal);
         document.getElementById("GammaResult").innerHTML = "Gamma Odds: 1 in " + (GammaTotal);
