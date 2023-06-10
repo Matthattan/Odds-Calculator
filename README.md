@@ -27,3 +27,17 @@ Version 2.1:
 - Fixed RW odds on the variant calculator
 - Adding Kyeggo and its different reskins
 (Compound Odds calculator coming in nicely)
+
+Version 3.0:
+- Added Compound Calculator
+
+Version 3.1:
+- Added Wispur 
+
+Version 3.2:
+- Loomunity Loomians added including:
+  - Rainbow Nymaurae
+  - Rainbow Pyramind
+  - Rainbow Florant
+  - Rainbow Goppie
+  - Coloured Goppies
