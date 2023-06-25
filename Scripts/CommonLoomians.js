@@ -31,6 +31,9 @@ function Multiply(){
         case "Poochrol":
             LoomianMultiplier = 10;
             break;
+        case "Sherbot":
+            LoomianMultiplier = 17;
+            break;
         case "Copling":
             LoomianMultiplier = 20/17;
             break;
@@ -74,6 +77,7 @@ function Multiply(){
         case "Pipsee":
         case "Hydrini":
         case "Wispur":
+        case "Smoal":
             LoomianMultiplier = 64;
             break;
         case "Swirelle":

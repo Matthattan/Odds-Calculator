@@ -90,8 +90,10 @@ const optionData = {
       { label: 'Scorb', value: 'Scorb' },
       { label: 'Sharpod', value: 'Sharpod' },
       { label: 'Shawchi', value: 'Shawchi' },
+      { label: 'Sherbot', value: 'Sherbot' },
       { label: 'Skilava', value: 'Skilava' },
       { label: 'Slugling', value: 'Slugling' },
+      { label: 'Smoal', value: 'Smoal' },
       { label: 'Snagull', value: 'Snagull' },
       { label: 'Snowl', value: 'Snowl' },
       { label: 'Swimp', value: 'Swimp' },
@@ -166,8 +168,10 @@ const optionData = {
         { label: 'Scorb', value: 'Scorb' },
         { label: 'Sharpod', value: 'Sharpod' },
         { label: 'Shawchi', value: 'Shawchi' },
+        { label: 'Sherbot', value: 'Sherbot' },
         { label: 'Skilava', value: 'Skilava' },
         { label: 'Slugling', value: 'Slugling' },
+        { label: 'Smoal', value: 'Smoal' },
         { label: 'Snagull', value: 'Snagull' },
         { label: 'Snocub', value: 'Snocub' },
         { label: 'Snowl', value: 'Snowl' },
@@ -217,6 +221,7 @@ const optionData = {
         { label: 'Scorb', value: 'Scorb' },
         { label: 'Sharpod', value: 'Sharpod' },
         { label: 'Shawchi', value: 'Shawchi' },
+        { label: 'Sherbot', value: 'Sherbot' },
         { label: 'Skilava', value: 'Skilava' },
         { label: 'Slugling', value: 'Slugling' },
         { label: 'Snagull', value: 'Snagull' },
@@ -287,7 +292,6 @@ function FindSARate() {
             SAOdds = 256;
             break;
     }
-
     Result.innerHTML = "1 in " + SAOdds.toFixed(2);
 
     var AbilityRate = SAOdds

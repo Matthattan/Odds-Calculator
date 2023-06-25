@@ -38,6 +38,7 @@ VLoomianList.addEventListener("change", function GammaLabel() {
             AlphaEncrypt.style.display = "inline";
             break;
         case "ColouredGoppie":
+        case "ColouredPyramind":
             AlphaL.style.display = "none";
             AlphaEncrypt.style.display = "none";
             RW.style.display = "none";
@@ -129,6 +130,7 @@ function Multiply(){
             LoomianMultiplier = 200;
             break;
         case "HWSlugling":
+        case "ColouredPyramind":
             LoomianMultiplier = 300;
             break;
         case "EventScorb":
@@ -216,7 +218,8 @@ function Multiply(){
                 RWTotal = (LoomianMultiplier).toFixed(2); 
                 break;
             case "ColouredGoppie":
-                //ColouredGoppie isn't actually gamma afaik, but it has a wisp form so its going here cuz Im lazy
+            case "ColouredPyramind":
+                //isn't actually gamma afaik, but it has a wisp form so its going here cuz Im lazy
                 GammaTotal = (LoomianMultiplier*100).toFixed(2);
                 RWTotal = (Gamma*LoomianMultiplier*RainbowWisp).toFixed(2);
                 break;
