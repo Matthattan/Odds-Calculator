@@ -41,3 +41,8 @@ Version 3.2:
   - Rainbow Florant
   - Rainbow Goppie
   - Coloured Goppies
+
+Version 3.3:
+- Coloured Pyraminds added
+- Smoal added
+- Sherbot added
