@@ -76,6 +76,7 @@ const optionData = {
       { label: 'Kanki', value: 'Kanki' },
       { label: 'Kittone', value: 'Kittone' },
       { label: 'Kleptyke', value: 'Kleptyke' },
+      { label: 'Llamba', value: 'Llamba' },
       { label: 'Lumica', value: 'Lumica' },
       { label: 'Makame', value: 'Makame' },
       { label: 'Mochibi', value: 'Mochibi' },
@@ -155,6 +156,7 @@ const optionData = {
         { label: 'Kanki', value: 'Kanki' },
         { label: 'Kittone', value: 'Kittone' },
         { label: 'Kleptyke', value: 'Kleptyke' },
+        { label: 'Llamba', value: 'Llamba' },
         { label: 'Lumica', value: 'Lumica' },
         { label: 'Makame', value: 'Makame' },
         { label: 'Mochibi', value: 'Mochibi' },
@@ -355,6 +357,9 @@ function CalculateOverallRate() {
         case "Bunpuff":
         case "Operaptor":
             LoomianMultiplier = 50;
+            break;
+        case "Llamba":
+            LoomianMultiplier = 60;
             break;
         case "Icigool":
             LoomianMultiplier = 90;

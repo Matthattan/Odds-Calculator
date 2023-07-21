@@ -68,6 +68,9 @@ function Multiply(){
         case "Operaptor":
             LoomianMultiplier = 50;
             break;
+        case "Llamba":
+            LoomianMultiplier = 60;
+            break;
         case "Icigool":
             LoomianMultiplier = 90;
             break;
