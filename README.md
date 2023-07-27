@@ -46,3 +46,9 @@ Version 3.3:
 - Coloured Pyraminds added
 - Smoal added
 - Sherbot added
+
+Version 4.0:
+- Added Gem Copling Odds
+- Fixed some other odds
+Happy 4th anniversary to Loomian Legacy 🥳
+
