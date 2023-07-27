@@ -30,6 +30,12 @@ VLoomianList.addEventListener("change", function GammaLabel() {
         case "XMASRagoon":
         case "EventScorb":
         case "EventScorbs":
+        case "CoplingB":
+        case "CoplingS":
+        case "CoplingG":
+        case "CoplingE":
+        case "CoplingR":
+        case "CoplingSP":
             GammaL.style.display = "none";
             GammaEncrypt.style.display = "none";
             RW.style.display = "none";
@@ -84,6 +90,12 @@ function Multiply(){
         case "GeklowE":
         case "GeklowR":
         case "GeklowSP":
+        case "CoplingB":
+        case "CoplingS":
+        case "CoplingG":
+        case "CoplingE":
+        case "CoplingR":
+        case "CoplingSP":
             GCharmMultiplier = 1/4;
             GBoostMultiplier = 1/64;
             console.log("Odds Halved")
@@ -120,14 +132,18 @@ function Multiply(){
             break;
         case "GeklowB":
         case "EventPhancub":
+        case "CoplingB":
             LoomianMultiplier = 100;
             break;
         case "XMASTotemochi":
             LoomianMultiplier = 150;
             break;
-        case "GeklowS":
         case "SRSlugling":
             LoomianMultiplier = 200;
+            break;
+        case "GeklowS":
+        case "CoplingS":
+            LoomianMultiplier = 250;
             break;
         case "HWSlugling":
         case "ColouredPyramind":
@@ -143,6 +159,7 @@ function Multiply(){
         case "GeklowG":
         case "XMASPropae":
         case "HWShawchi":
+        case "CoplingG":
             LoomianMultiplier = 500;
             break;
         case "RareIcigool2019":
@@ -153,18 +170,23 @@ function Multiply(){
         case "RareIcigool2020":
             LoomianMultiplier = 630;
             break;
-        case "GeklowE":
         case "Jelly Gumpod":
         case "XMASRagoon":
         case "RBShawchi":
         case "RBFlorant":
             LoomianMultiplier = 1000;
             break;
-        case "GeklowR":
+        case "GeklowE":
+        case "CoplingE":
             LoomianMultiplier = 2000;
+            break;
+        case "GeklowR":
+        case "CoplingR":
+            LoomianMultiplier = 5000;
             break;
         case "GeklowSP":
         case "RBGoppie":
+        case "CoplingSP":
             LoomianMultiplier = 10000;
             break;
         case "KyeggoDefault":
