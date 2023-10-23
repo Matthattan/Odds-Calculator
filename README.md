@@ -51,3 +51,11 @@ Version 4.0
 - Added Gem Coplings Odds
 - Fixed other odds
 Happy 4th Anniverary Loomian Legacy 🥳
+
+Version 4.1
+- complete overhaul
+    - New JS with better optimisation
+    - Website is completely different
+    - Bug fixes
+    - Some odds have been removed due to redundancy 
+- See you at Atlanthian Part 2

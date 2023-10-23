@@ -1,0 +1,491 @@
+if (!selectedLoomian.SetEncounter && selectedLoomian.roamingtable) {
+        setEncounterCB.checked = false;
+        setEncounterCB.disabled = true;
+        gammaResult.style.display = "block";
+        rwResult.style.display = "block";
+        roamingResult.style.display = "block";
+    } else if (selectedLoomian.SetEncounter && !selectedLoomian.roamingtable) {
+        setEncounterCB.checked = false;
+        setEncounterCB.disabled = false;
+        gammaResult.style.display = "block";
+        rwResult.style.display = "block";
+        roamingResult.style.display = "block";
+    } else if (selectedLoomian.SetEncounter && selectedLoomian.roamingtable) {
+        setEncounterCB.checked = false;
+        setEncounterCB.disabled = false;
+        gammaResult.style.display = "block";
+        rwResult.style.display = "block";
+        roamingResult.style.display = "block";
+    } else if (!selectedLoomian.setEncounter && !selectedLoomian.roamingtable) {
+        setEncounterCB.checked = false;
+        setEncounterCB.disabled = true;
+        gammaResult.style.display = "block";
+        rwResult.style.display = "block";
+        roamingResult.style.display = "none";
+    } else {
+        return null
+    }
+       
+       
+       
+        for (let i = loomianSelectBox.options.length - 1; i >= 0; i--) {
+          loomianSelectBox.remove(i);
+        }
+
+        oddsDisplayButton.disabled = true;
+        calculateButton.disabled = true;
+
+        //for every item in the common Loomian array, add it to the 2nd select box
+        for (let Loomian of commonLoomianData) {
+          let option = document.createElement('option');
+          option.value = Loomian.name; // Set the value to the object's name
+          option.text = `${Loomian.name}`; // Set the label to a combination of name and option1
+          let selectElement = document.getElementById("mySelect")
+          selectElement.appendChild(option);
+        }
+        oddsDisplayButton.disabled = false;
+        calculateButton.disabled = false;
+
+
+class Loomian {
+  constructor(name, odds, gamma){
+    this.name = name;
+    this.odds = odds;
+    this.gamma = gamma;
+  }
+
+  isGamma(){
+    if (this.gamma = true) {
+      console.log("Gamma Form")
+    } else {
+      console.log("No Gamma")
+    }
+  }
+}
+
+const LunarBunnecki = new Loomian("Lunar Bunnecki", 60, true);
+
+LunarBunnecki.isGamma()
+console.log(LunarBunnecki.name)
+
+class Loomian {
+    constructor(name, odds, alphaG, gammaG, rW, quadMultiplier, doubledCharm, halvedGleaming){
+        this.name = name //string
+        this.odds = odds //float
+        this.alphaG = alphaG //boolean
+        this.gammaG = gammaG //boolean
+        this.rW = rW //boolean
+        this.quadMultiplier = quadMultiplier //boolean
+        this.doubledCharm = doubledCharm //boolean
+        this.halvedGleaming = halvedGleaming //boolean
+    }
+
+    getOdds(selectedName) {
+        // Convert the selectedName to lowercase to make the lookup case-insensitive
+        const lowercaseSelectedName = selectedName.toLowerCase();
+        // Check if the selectedName matches the Loomian's name
+        if (this.name.toLowerCase() === lowercaseSelectedName) {
+          return this.odds;
+        } else {
+          // Return null or any other value to indicate Loomian not found
+          return null;
+        }
+    } 
+
+    isAlpha() {
+        // Check if Alpha Form is available
+        if (this.alphaG() === true) {
+            // set HTML box to disappear or smth
+            alphaLabel.style.display = "none"; 
+            alphaExport.style.display = "none";
+        } else if (this.alphaG === false) {
+            alphaLabel.style.display = "block"; 
+            alphaExport.style.display = "block";
+        } else {
+            // Return null or any other value to indicate alphaG not found
+            return null;
+        }
+    }
+
+    isGamma() {
+        // Check if the Gamma Form is available
+        if (this.gammaG() === true) {
+            // set HTML box to disappear or smth
+            gammaLabel.style.display = "none"; 
+            gammaExport.style.display = "none";
+        } else if (this.gammaG() === false) {
+            gammaLabel.style.display = "block"; 
+            gammaExport.style.display = "block";
+        } else {
+            // Return null or any other value to indicate gammaG not found
+            return null;
+        }
+    }
+
+    isrW() {
+        // Check if the selectedName matches the Loomian's name
+        if (this.rW() === true) {
+            // set HTML box to disappear or smth;
+            rWLabel.style.display = "none"; 
+            rWExport.style.display = "none";
+        } else if (this.rW() === false) {
+            rWLabel.style.display = "block"; 
+            rWExport.style.display = "block";
+        } else {
+            // Return null or any other value to indicate Loomian not found
+            return null;
+        }
+    }
+
+    isHalvedGleaming() {
+        // Check if Gleaming base odds are halved
+        if (this.halvedGleaming === true) {
+            alpha = 2048;
+            gamma = 10240; 
+        } else if (this.halvedGleaming === false) {
+        // Else its the default
+            alpha = 4096;
+            gamma = 20480;
+        } else {
+            // Return null
+            return null;
+        }
+    }
+
+    isDoubledCharm() {
+        // Check if Gleam Charm is 4x
+        if (this.quadMultiplier === true) {
+            gCharmMultiplier = 1/4; 
+        } else if (this.quadMultiplier === false) {
+        // Else its the default 2x
+            gCharmMultiplier = 1/2;
+        } else {
+            // Return null
+            return null;
+        }
+    }
+
+    isQuadMultiplier() {
+        // Check if Gleam Boost is 64x
+        if (this.quadMultiplier === true) {
+            gBoostMultiplier = 1/64; 
+        } else if (this.quadMultiplier === false) {
+        // Else its the default 16x
+            gBoostMultiplier = 1/16;
+        } else {
+            // Return null
+            return null;
+        }
+    }
+}
+
+export {Loomian};
+
+name, odds, alphaG, gammaG, rW, increasedMultipliers, increasedOdds, alpha, gamma, gcharm, gboost
+
+
+// derived classes
+
+const christmasGlassScorbs = new Loomian("Christmas Scorbs (Normal)", 12, true, false, false, false, false, false);
+
+const jellyGumpod = new Loomian("Jelly Gumpod", 50, true, true, true, false, false, false);
+
+const lunarBunpuff = new Loomian("Lunar New Year Bunpuff", 60, true, true, true, false, false, false);
+
+const colouredGoppies = new Loomian("Coloured Goppies (2023 Loomunity)", 60, false, false, false, false, false, false);
+
+const valentinesAntsee = new Loomian("Valentines Antsee", 80, true, true, true, false, false, false);
+
+const bronzeGeklow = new Loomian("bronzeGeklow", 100, true, false, false, true, true, false);
+
+class christmasScorbNormal extends Loomian {
+    constructor() {
+        super("Christmas Scorbs (Normal)", 12, true, false, false, false, false, false);
+    }
+}
+
+class jellyGumpod extends Loomian {
+    constructor() {
+        super("Jelly Gumpod", 50, true, true, true, false, false, false);
+    }
+}
+
+class lunarBunpuff extends Loomian {
+    constructor() {
+        super("Lunar New Year Bunpuff", 60, true, true, true, false, false, false);
+    }
+}
+
+class colouredGoppies extends Loomian {
+    constructor() {
+        super("Coloured Goppies (2023 Loomunity)", 60, false, false, false, false, false, false);
+    }
+}
+
+class valentinesAntsee extends Loomian {
+    constructor() {
+        super("Valentines Antsee", 80, true, true, true, false, false, false);
+    }
+}
+
+class bronzeGeklow extends Loomian {
+    constructor() {
+        super("Bronze Geklow (2020 Anniversary)", 100, true, false, false, true, true, false);
+    }
+}
+
+class bronzeCopling extends Loomian {
+    constructor() {
+        super("Bronze Copling (2023 Anniversary)", 100, true, false, false, true, true, false);
+    }
+}
+
+class sweetsPhancub extends Loomian {
+    constructor() {
+        super("Sweets Phancub (Sweet Retreat)", 100, true, true, true, false, false, false);
+    }
+}
+
+class snowmanTotemochi extends Loomian {
+    constructor() {
+        super("Snowman Totemochi (2022 Christmas)", 150, true, false, false, false, false, false);
+    }
+}
+
+class cakeSlugling extends Loomian {
+    constructor() {
+        super("Cake Slugling (Sweet Retreat)", 200, true, true, true, false, false, false);
+    }
+}
+
+class silverGeklow extends Loomian {
+    constructor() {
+        super("Silver Geklow (2020 Anniversary)", 250, true, false, false, true, true, false);
+    }
+}
+
+class silverCopling extends Loomian {
+    constructor() {
+        super("Silver Copling (2023 Anniversary)", 250, true, false, false, true, true, false);
+    }
+}
+
+class halloweenSlugling extends Loomian {
+    constructor() {
+        super("Halloween Slugling (2019 Halloween)", 300, true, false, false, false, false, true);
+    }
+}
+
+class colouredPyraminds extends Loomian {
+    constructor() {
+        super("Coloured Pyraminds (2023 Loomunity)", 300, true, false, false, false, false, false);
+    }
+}
+
+class christmasGlassScorb extends Loomian {
+    constructor() {
+        super("Glass Scorb (2022 Christmas)", 372, true, false, false, false, false, false);
+    }
+}
+
+class halloweenToashi extends Loomian {
+    constructor() {
+        super("Halloween Toashi (2022 Halloween)", 450, true, true, true, false, false, false);
+    }
+}
+
+class halloweenTerriti extends Loomian {
+    constructor() {
+        super("Halloween Territi (2022 Halloween)", 450, true, true, true, false, false, false);
+    }
+}
+
+class goldGeklow extends Loomian {
+    constructor() {
+        super("Gold Geklow (2020 Anniversary)", 500, true, false, false, true, true, false);
+    }
+}
+
+class goldCopling extends Loomian {
+    constructor() {
+        super("Gold Copling (2020 Anniversary)", 500, true, false, false, true, true, false);
+    }
+}
+
+class christmasPropae extends Loomian {
+    constructor() {
+        super("Santa Propae (2021 Christmas)", 500, true, true, true, false, false, false);
+    }
+}
+
+class halloweenShawchi extends Loomian {
+    constructor() {
+        super("Halloween Shawchi (2019 Halloween)", 500, true, false, false, false, false, true);
+    }
+}
+
+class colouredIcigools2019 extends Loomian {
+    constructor() {
+        super("Coloured Icigools (2019 Christmas)", 600, true, false, false, false, false, false);
+    }
+}
+
+class colouredIcigools2020 extends Loomian {
+    constructor() {
+        super("Coloured Icigools (2020 Christmas)", 600, true, true, true, false, false, true);
+    }
+}
+
+class colouredIcigools extends Loomian {
+    constructor() {
+        super("Coloured Icigools (2021 Christmas onwards)", 600, true, true, true, false, false, false);
+    }
+}
+
+class christmasRagoon extends Loomian {
+    constructor() {
+        super("Santa Ragoon (2019 Christmas)", 1000, true, false, false, false, false, true);
+    }
+}
+
+class rainbowShawchi extends Loomian {
+    constructor() {
+        super("Rainbow Shawchi (2022 Loomunity)", 1000, true, false, false, true, true, false);
+    }
+}
+
+class rainbowFlorant extends Loomian {
+    constructor() {
+        super("Rainbow Florant (2023 Loomunity)", 1000, true, false, false, false, false, false);
+    }
+}
+
+class emeraldGeklow extends Loomian {
+    constructor() {
+        super("Emerald Geklow (2020 Anniversary)", 1000, true, false, false, true, true, false);
+    }
+}
+
+class emeraldCopling extends Loomian {
+    constructor() {
+        super("Emerald Coping (2023 Anniversary)", 1000, true, false, false, true, true, false);
+    }
+}
+
+class rubyGeklow extends Loomian {
+    constructor() {
+        super("Ruby Geklow (2020 Anniversary)", 1000, true, false, false, true, true, false);
+    }
+}
+
+class rubyCopling extends Loomian {
+    constructor() {
+        super("Ruby Coping (2023 Anniversary)", 1000, true, false, false, true, true, false);
+    }
+}
+
+class normalKyeggo extends Loomian {
+    constructor() {
+        super("Default Kyeggo (2023 Easter)", (6*(100/37)), true, true, true, false, false, false);
+    }
+}
+
+class frillyKyeggo extends Loomian {
+    constructor() {
+        super("Frilly Kyeggo (2023 Easter)", (6*(100/18.7)), true, true, true, false, false, false);
+    }
+}
+
+class zigZagKyeggo extends Loomian {
+    constructor() {
+        super("Zig-Zag Kyeggo (2023 Easter)", (6*(100/8.7)), true, true, true, false, false, false);
+    }
+}
+
+class starKyeggo extends Loomian {
+    constructor() {
+        super("Star Kyeggo (2023 Easter)", (6*(100/6)), true, true, true, false, false, false);
+    }
+}
+
+class fabergeKyeggo extends Loomian {
+    constructor() {
+        super("All Faberge Kyeggos (2023 Easter)", (6*(100/0.33)), true, true, true, false, false, false);
+    }
+}
+
+class sapphireGeklow extends Loomian {
+    constructor() {
+        super("Sapphire Geklow (2020 Anniversary)", 10000, true, false, false, true, true, false);
+    }
+}
+
+class sapphireCopling extends Loomian {
+    constructor() {
+        super("Sapphire Copling (2023 Anniversary)", 10000, true, false, false, true, true, false);
+    }
+}
+
+class rainbowGoppie extends Loomian {
+    constructor() {
+        super("Rainbow Goppie (2023 Loomunity)", 10000, false, false, false, false, false, false);
+    }
+}
+
+class rainbowNymaurae extends Loomian {
+    constructor() {
+        super("Rainbow Nymaurae (2023 Loomunity)", 15000, false, false, false, false, false, false);
+    }
+}
+
+class rainbowPyramind extends Loomian {
+    constructor() {
+        super("Rainbow Pyramind (2023 Loomunity)", 20000, false, false, false, false, false, false);
+    }
+}
+
+
+exports.loomians = [
+    new Loomian("Christmas Scorbs (Normal)", 12, true, false, false, false, false, false),
+    new Loomian("Jelly Gumpod", 50, true, true, true, false, false, false),
+    new Loomian("Lunar New Year Bunpuff", 60, true, true, true, false, false, false),
+    new Loomian("Coloured Goppies (2023 Loomunity)", 60, false, false, false, false, false, false),
+    new Loomian("Valentines Antsee", 80, true, true, true, false, false, false),
+    new Loomian("Bronze Geklow (2020 Anniversary)", 100, true, false, false, true, true, false),
+    new Loomian("Bronze Copling (2023 Anniversary)", 100, true, false, false, true, true, false),
+    new Loomian("Sweets Phancub (Sweet Retreat)", 100, true, true, true, false, false, false),
+    new Loomian("Snowman Totemochi (2022 Christmas)", 150, true, false, false, false, false, false),
+    new Loomian("Cake Slugling (Sweet Retreat)", 200, true, true, true, false, false, false),
+    new Loomian("Silver Geklow (2020 Anniversary)", 250, true, false, false, true, true, false),
+    new Loomian("Silver Copling (2023 Anniversary)", 250, true, false, false, true, true, false),
+    new Loomian("Halloween Slugling (2019 Halloween)", 300, true, false, false, false, false, true),
+    new Loomian("Coloured Pyraminds (2023 Loomunity)", 300, true, false, false, false, false, false),
+    new Loomian("Glass Scorb (2022 Christmas)", 372, true, false, false, false, false, false),
+    new Loomian("Halloween Toashi (2022 Halloween)", 450, true, true, true, false, false, false),
+    new Loomian("Halloween Territi (2022 Halloween)", 450, true, true, true, false, false, false),
+    new Loomian("Gold Geklow (2020 Anniversary)", 500, true, false, false, true, true, false),
+    new Loomian("Gold Copling (2020 Anniversary)", 500, true, false, false, true, true, false),
+    new Loomian("Santa Propae (2021 Christmas)", 500, true, true, true, false, false, false),
+    new Loomian("Halloween Shawchi (2019 Halloween)", 500, true, false, false, false, false, true),
+    new Loomian("Coloured Icigools (2019 Christmas)", 600, true, false, false, false, false, false),
+    new Loomian("Coloured Icigools (2020 Christmas)", 600, true, true, true, false, false, true),
+    new Loomian("Coloured Icigools (2021 Christmas onwards)", 600, true, true, true, false, false, false),
+    new Loomian("Santa Ragoon (2019 Christmas)", 1000, true, false, false, false, false, true),
+    new Loomian("Rainbow Shawchi (2022 Loomunity)", 1000, true, false, false, true, true, false),
+    new Loomian("Rainbow Florant (2023 Loomunity)", 1000, true, false, false, false, false, false),
+    new Loomian("Emerald Geklow (2020 Anniversary)", 1000, true, false, false, true, true, false),
+    new Loomian("Emerald Coping (2023 Anniversary)", 1000, true, false, false, true, true, false),
+    new Loomian("Ruby Geklow (2020 Anniversary)", 1000, true, false, false, true, true, false),
+    new Loomian("Ruby Coping (2023 Anniversary)", 1000, true, false, false, true, true, false),
+    new Loomian("Default Kyeggo (2023 Easter)", (6*(100/37)), true, true, true, false, false, false),
+    new Loomian("Frilly Kyeggo (2023 Easter)", (6*(100/18.7)), true, true, true, false, false, false),
+    new Loomian("Zig-Zag Kyeggo (2023 Easter)", (6*(100/8.7)), true, true, true, false, false, false),
+    new Loomian("Star Kyeggo (2023 Easter)", (6*(100/6)), true, true, true, false, false, false),
+    new Loomian("All Faberge Kyeggos (2023 Easter)", (6*(100/0.33)), true, true, true, false, false, false),
+    new Loomian("Sapphire Geklow (2020 Anniversary)", 10000, true, false, false, true, true, false),
+    new Loomian("Sapphire Copling (2023 Anniversary)", 10000, true, false, false, true, true, false),
+    new Loomian("Rainbow Goppie (2023 Loomunity)", 10000, false, false, false, false, false, false),
+    new Loomian("Rainbow Nymaurae (2023 Loomunity)", 15000, false, false, false, false, false, false),
+    new Loomian("Rainbow Pyramind (2023 Loomunity)", 20000, false, false, false, false, false, false),
+]
+
