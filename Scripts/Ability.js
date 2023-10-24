@@ -42,7 +42,6 @@ class Loomian {
       return false
     }
   }
-
 }
 
 //Rallyable Event-Inclusive Loomians
@@ -250,6 +249,7 @@ const commonLoomianData = [
   wispur,
   zaleo
 ]
+
 const eventLoomianData = [
   sweetsPhancub,
   cakeSlugling,
@@ -288,6 +288,7 @@ const eventLoomianData = [
   starKyeggo,
   fabergeKyeggo
 ]
+
 var selectionList = []
 
 const eventSelectBox = document.getElementById("eventSelect");
@@ -449,6 +450,14 @@ function calculate() {
     console.log("SA Leader not Checked")
   } else {
     console.log("SA Leader Error")
+  }
+
+  if (selectedLoomian == variM) {
+    rallyOdds *= 5
+  } else if (selectedLoomian == variF) {
+    rallyOdds *= 1.25
+  } else {
+    rallyOdds
   }
 
   //Assign Rally Odds to Label
