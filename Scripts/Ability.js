@@ -53,7 +53,7 @@ const burroach = new Loomian("Burroach", 1, true, true, true, false, 256, 0.5);
 const cafnote = new Loomian("Cafnote (M/F)", 1, true, true, true, false, 256, 0.5);
 const cathorn =  new Loomian("Cathorn", 1, true, true, true, false, 256, 0.5);
 const cavenish =  new Loomian("Cavenish", 1, true, true, true, false, 256, 0.5);
-const ceratot = new Loomian("Ceratot", 1, false, false, false, true, 128, 0.5);
+const ceratot = new Loomian("Ceratot", 1, false, false, false, true, 256, 0.5);
 const chompactor = new Loomian("Chompactor", 1, true, true, true, false, 256, 0.5);
 const cinnaboo = new Loomian("Cinnaboo", 1, true, true, false, false, 256, 0.5);
 const copling = new Loomian("Copling", 20/17, true, true, false, false, 256, 0.5);
@@ -62,7 +62,7 @@ const craytal = new Loomian("Craytal", 1, true, true, false, false, 256, 0.5);
 const eventCraytal = new Loomian("Event Craytal", 1 , true, false, false, false, 256, 0.5);
 const cryocub = new Loomian("Cryocub", 40, true, true, false, false, 256, 0.5);
 const cupoink = new Loomian("Cupoink", 10, true, true, false, false, 256, 0.5);
-const dobo = new Loomian("Dobo", 1, false, false, false, true, 128, 0.5);
+const dobo = new Loomian("Dobo", 1, false, false, false, true, 256, 0.5);
 const dractus = new Loomian("Dractus", 100, true, true, false, false, 256, 0.5);
 const dripple = new Loomian("Dripple", 1, false, true, false, false, 256, 0.5);
 const eaglit = new Loomian ("Eaglit", 1, false, true, false, false, 256, 0.5);
@@ -83,19 +83,19 @@ const kabunga = new Loomian("Kabunga", 1, true, true, true, false, 256, 0.5);
 const kanki = new Loomian("Kanki", 12.5, true, true, true, false, 256, 0.5);
 const kittone = new Loomian("Kittone", 1, true, true, false, false, 256, 0.5);
 const kleptyke = new Loomian("Kleptyke", 1, true, true, true, false, 256, 0.5);
-const kyogo = new Loomian("Kyogo", 1, true, true, false, true, 128, 0.5);
+const kyogo = new Loomian("Kyogo", 1, true, true, false, true, 256, 0.5);
 const llamba = new Loomian("Llamba", 60, true, true, true, false, 256, 0.5);
 const lumica = new Loomian("Lumica", 1, true, true, true, false, 256, 0.5);
 const makame = new Loomian("Makame", 31, true, true, true, false, 256, 0.5);
 const mochibi = new Loomian("Mochibi", 1, true, true, false, false, 256, 0.5);
-const nymaurae = new Loomian("Nymaurae", 1, true, true, false, false, 256, 0.5);
+const nymaurae = new Loomian("Nymaurae", 1, true, false, false, false, 256, 0.5);
 const operaptor = new Loomian("Operaptor", 50, true, true, true, false, 256, 0.5);
 const phancub = new Loomian("Phancub", 10, true, true, true, false, 256, 0.5);
 const pipsee = new Loomian("Pipsee", 64, true, true, false, false, 256, 0.5);
 const poochrol = new Loomian("Poochrol", 10, true, true, false, false, 256, 0.5);
 const pwuff = new Loomian("Pwuff", 1, true, true, true, false, 256, 0.5);
 const pyder = new Loomian("Pyder", 10, true, true, true, false, 256, 0.5);
-const pyke = new Loomian("Pyke", 1, false, false, false, true, 128, 0.5);
+const pyke = new Loomian("Pyke", 1, false, false, false, true, 256, 0.5);
 const pyramind = new Loomian("Pyramind", 300, true, false, false, false, 256, 0.5);
 const rakrawla = new Loomian("Rakrawla", 1, true, true, true, false, 256, 0.5);
 const scorb = new Loomian("Scorb", 1, true, true, false, false, 256, 0.5);
@@ -120,11 +120,19 @@ const variF = new Loomian("Vari (Female)", 125, true, true, false, false, 256, 0
 const variM = new Loomian("Vari (Male)", 500, true, true, false, false, 256, 0.5);
 const volpup = new Loomian("Volpup", 40, true, true, false, false, 256, 0.5);
 const weevolt = new Loomian("Weevolt", 1, false, true, false, false, 256, 0.5);
-const whimpor = new Loomian("Whimpor", 1, true, true, true, false, 256, 0.5);
+const whimpor = new Loomian("Whimpor", 10, true, true, true, false, 256, 0.5);
 const whispup = new Loomian("Whispup", 1, true, true, true, false, 256, 0.5);
 const wiledile = new Loomian("Wiledile", 23, true, true, true, false, 256, 0.5);
 const wispur = new Loomian("Wispur", 64, true, true, false, false, 256, 0.5);
-const zaleo = new Loomian("Zaleo", 1, false, false, false, true, 128, 0.5);
+const zaleo = new Loomian("Zaleo", 1, false, false, false, true, 256, 0.5);
+const fentern = new Loomian("Fentern", 20, true, true, true, false, 256, 0.5);
+const dokan = new Loomian("Dokan", 20, true, true, true, false, 256, 0.5);
+const teripod = new Loomian("Teripod", 20, true, true, true, false, 256, 0.5);
+const polypi = new Loomian("Polypi", 10, true, true, true, false, 256, 0.5);
+const somata = new Loomian("Somata", 10, true, true, true, false, 256, 0.5);
+const crabushi = new Loomian("Crabushi", 1, true, true, true, false, 256, 0.5,);
+const skampi = new Loomian("Skampi", 1, true, true, true, false, 256, 0.5,);
+const singeel = new Loomian("Singeel", 1, true, true, true, false, 256, 0.5,);
 
 //Non-Rallyable Event Loomians
 const christmasGlassScorbs = new Loomian("Christmas Scorbs (Normal)", 12, true, false, false, false, 256, 0.5);
@@ -157,7 +165,7 @@ const emeraldGeklow = new Loomian("Emerald Geklow (2020 Anniversary)", 2000, tru
 const emeraldCopling = new Loomian("Emerald Copling (2023 Anniversary)", 2000, true, false, false, false, 256, 0.5);
 const rubyGeklow = new Loomian("Ruby Geklow (2020 Anniversary)", 5000, true, false, false, false, 256, 0.5);
 const rubyCopling = new Loomian("Ruby Copling (2023 Anniversary)", 5000, true, false, false, false, 256, 0.5);
-const normalKyeggo = new Loomian("Normal Kyeggo (2023 Easter)", (6*(100/37)), true, false, false, false, 256, 0.5);
+const normalKyeggo = new Loomian("Normal Kyeggo (2023 Easter)", (6*(100/37)), true, true, false, false, 256, 0.5);
 const frillyKyeggo = new Loomian("Frilly Kyeggo (2023 Easter)", (6*(100/18.7)), true, false, false, false, 256, 0.5);
 const zzKyeggo = new Loomian("Zig-Zag Kyeggo (2023 Easter)", (6*(100/8.7)), true, false, false, false, 256, 0.5);
 const starKyeggo = new Loomian("Star Kyeggo (2023 Easter)", (6*(100/6)), true, false, false, false, 256, 0.5);
@@ -167,7 +175,7 @@ const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000
 
 // collate all objects into an array
 
-const commonLoomianData = [
+var commonLoomianData = [
   ampole, 
   antsee,
   babore, 
@@ -181,16 +189,19 @@ const commonLoomianData = [
   cinnaboo,
   copling,
   cosmiore,
+  crabushi,
   craytal,
   eventCraytal,
   cryocub,
   cupoink,
   dobo,
+  dokan,
   dractus,
   dripple,
   eaglit,
   embit,
   fevine,
+  fentern,
   florant,
   geklow, 
   gobbidemic,
@@ -216,6 +227,7 @@ const commonLoomianData = [
   phancub,
   pipsee,
   poochrol,
+  polypi,
   pwuff,
   pyder,
   pyke,
@@ -225,6 +237,8 @@ const commonLoomianData = [
   sharpod,
   shawchi,
   sherbot,
+  singeel,
+  skampi,
   skilava,
   slugling,
   smoal,
@@ -232,9 +246,11 @@ const commonLoomianData = [
   snagullS,
   snocub,
   snowl,
+  somata,
   swimp,
   swimp,
   taoshi,
+  teripod,
   territi,
   twilat,
   twittle,
@@ -247,10 +263,10 @@ const commonLoomianData = [
   whispup,
   wiledile,
   wispur,
-  zaleo
+  zaleo,
 ]
 
-const eventLoomianData = [
+var eventLoomianData = [
   sweetsPhancub,
   cakeSlugling,
   lunarBunpuff,
@@ -336,7 +352,7 @@ eventSelectBox.addEventListener("change", function() {
         abilityLeaderID.disabled = false;
         weatherResult.style.display = "block";
 
-        console.log("Common Loomians loaded")
+        // console.log("Common Loomians loaded")
         break;
       case "Event Loomians":
         //for every item in the 2nd select box, remove it
@@ -369,10 +385,10 @@ eventSelectBox.addEventListener("change", function() {
         abilityLeaderID.disabled = true;
         weatherResult.style.display = "none";
 
-        console.log("Event Loomians loaded")
+        //console.log("Event Loomians loaded")
         break;
       default:
-        console.log("Option Loading Error")
+        //console.log("Option Loading Error")
         break;
     }
 })
@@ -409,21 +425,27 @@ function calculate() {
   let wildOdds = selectedLoomian.saOdds * selectedLoomian.odds
   let rallyOdds = selectedLoomian.saOdds
   let weatherOdds = selectedLoomian.saOdds * selectedLoomian.odds
+
+  //console.log(wildOdds)
  
-  console.log(selectedLoomian.name) 
+  //console.log(selectedLoomian.name) 
 
   //Check if the Loomian is a Petrolith and if the Charm has been selected
   switch (true) {
     case abilityCharmID.checked && selectedLoomian.isPetrolith():
+      wildOdds *= (selectedLoomian.abilityCharm*0.5)
+      break;
     case abilityCharmID.checked && !selectedLoomian.isPetrolith():
-      wildOdds *= selectedLoomian.abilityCharm;
+      //console.log("WildOdds Unchanged");
       break;
     case !abilityCharmID.checked && selectedLoomian.isPetrolith():
+      //console.log("WildOdds Unchanged");
+      break;   
     case !abilityCharmID.checked && !selectedLoomian.isPetrolith():
-      console.log("WildOdds Unchanged");
+      //console.log("WildOdds Unchanged");
       break;
     default:
-      console.log("WildOdds Error");
+      //console.log("WildOdds Error");
   }
 
   //Assign wild odds to label
@@ -437,19 +459,19 @@ function calculate() {
     case !abilityCharmID.checked && selectedLoomian.isRally():
     case abilityCharmID.checked && !selectedLoomian.isRally():
     case !abilityCharmID.checked && !selectedLoomian.isRally():
-      console.log("RallyOdds Unchanged");
+      //console.log("RallyOdds Unchanged");
       break;
     default:
-      console.log("RallyOdds Error");
+      //console.log("RallyOdds Error");
   }
 
   //Check if SA Leader has been checked
   if (abilityLeaderID.checked) {
     rallyOdds *= 0.25
   } else if (!abilityLeaderID.checked) {
-    console.log("SA Leader not Checked")
+    //console.log("SA Leader not Checked")
   } else {
-    console.log("SA Leader Error")
+    //console.log("SA Leader Error")
   }
 
   if (selectedLoomian == variM) {
@@ -466,20 +488,26 @@ function calculate() {
   //Check if Loomian can act strangely and if Charm is checked
   switch (true) {
     case selectedLoomian.isWeather() && abilityCharmID.checked:
-      weatherOdds = (selectedLoomian.saOdds * 0.5) * (selectedLoomian.abilityCharm * 0.5);
+      weatherOdds *= (selectedLoomian.abilityCharm * 0.5) * 0.5;
+      //console.log("option 1")
       break;
     case selectedLoomian.isWeather() && !abilityCharmID.checked:
-      weatherOdds = (selectedLoomian.saOdds * 0.5);
+      weatherOdds *= 0.5;
+      //console.log("option 2")
       break;
     case !selectedLoomian.isWeather() && abilityCharmID.checked:
-      weatherOdds = (selectedLoomian.saOdds * selectedLoomian.abilityCharm);
+      weatherOdds = 0;
+      //console.log("option 3")
       break;
     case !selectedLoomian.isWeather() && !abilityCharmID.checked:
-      console.log("WeatherOdds Unchanged");
+      //console.log("WeatherOdds Unchanged");
+      //console.log("option 4")
       break;
     default:
-      console.log("Weather Error");
+      //console.log("Weather Error");
   }
+
+  //console.log(weatherOdds)
 
   //Assign Weather Odds to Label
   weatherResult.innerHTML = "Weather: " + "<br> 1 in " + weatherOdds.toFixed(2)

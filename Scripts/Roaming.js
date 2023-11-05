@@ -46,6 +46,9 @@ const protogon = new Roaming("Protogon", 1024, true, true, true, false, 4096, 20
 const mutagon = new Roaming("Mutagon", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
 const cephalops = new Roaming("Cephalops", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
 const elephage = new Roaming("Elephage/Phagenaut", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
+const dakuda = new Roaming("Dakuda", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
+const arceros = new Roaming("Arceros", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
+const glacadia = new Roaming("Glacadia", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
 const metronette = new Roaming("Metronette", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
 const wabalisc = new Roaming("Wabalisc", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
 const nevermare = new Roaming("Nevermare", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
@@ -67,6 +70,9 @@ const optionData = [
     mutagon,
     cephalops,
     elephage,
+	dakuda,
+	arceros,
+	glacadia,
     metronette,
     wabalisc,
     nevermare,

@@ -24,6 +24,14 @@ class Loomian {
     }
 };
 
+const skampi = new Loomian("Skampi", 1, true, true, true, 4096, 20480, 0.5, 0.0625);
+const singeel = new Loomian("Singeel", 1, true, true, true, 4096, 20480, 0.5, 0.0625);
+const crabushi = new Loomian("Crabushi", 1, true, true, true, 4096, 20480, 0.5, 0.0625);
+const polypi = new Loomian("Polypi", 10, true, true, true, 4096, 20480, 0.5, 0.0625);
+const somata = new Loomian("Somata", 10, true, true, true, 4096, 20480, 0.5, 0.0625);
+const teripod = new Loomian("Teripod", 20, true, true, true, 4096, 20480, 0.5, 0.0625);
+const dokan = new Loomian("Dokan", 20, true, true, true, 4096, 20480, 0.5, 0.0625);
+const fentern = new Loomian("Fentern", 20, true, true, true, 4096, 20480, 0.5, 0.0625);
 const ampole = new Loomian("Ampole", 1, true, true, true, 4096, 20480, 0.5, 0.0625);
 const antsee = new Loomian("Antsee", 10, true, true, true, 4096, 20480, 0.5, 0.0625);
 const babore = new Loomian("Babore", 1, true, true, true, 4096, 20480, 0.5, 0.0625);
@@ -124,16 +132,19 @@ const optionData = [
     cinnaboo,
     copling,
     cosmiore,
+    crabushi,
     craytal,
     eventCraytal,
     cryocub,
     cupoink,
     dobo,
+    dokan,
     dractus,
     dripple,
     eaglit,
     embit,
     fevine,
+    fentern,
     florant,
     geklow,
     gobbidemic,
@@ -159,6 +170,7 @@ const optionData = [
     phancub,
     pipsee,
     poochrol,
+    polypi,
     pwuff,
     pyder,
     pyke,
@@ -168,6 +180,8 @@ const optionData = [
     sharpod,
     shawchi,
     sherbot,
+    singeel,
+    skampi,
     skilava,
     slugling,
     smoal,
@@ -175,12 +189,14 @@ const optionData = [
     snagullS,
     snocub,
     snowl,
+    somata,
     spirivii,
     swimp,
     swirelle,
     swirelleS,
     swishy,
     taoshi,
+    teripod,
     territi,
     twilat,
     twittle,
