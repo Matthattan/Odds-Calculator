@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Probability Calculator | Common Loomians</title>
+    <title>Roaming Probability Calculator</title>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
@@ -12,12 +12,12 @@
 </head>
 <body id="body">
     <header>
-        <h1>Loomian Probability Calculator</h1>
+        <h1>Roaming Probability Calculator</h1>
     </header>
     <nav class="topnav" id="myTopnav">
-        <a href="./index.html" class="active">Common Loomians</a>
+        <a href="./index.html">Common Loomians</a>
         <a href="./EventLoomians.html">Event Loomians</a>
-        <a href="./RoamingLoomians.html">Roaming Loomians</a>
+        <a href="./RoamingLoomians.html" class="active">Roaming Loomians</a>
         <a href="./AbilityOdds.html">Ability Odds</a>
         <a href="./CompoundCalculator.html">Compound Calculator</a>
         <a href="javascript:void(0);" class="icon" onclick="menuBar()" title="responsive">
@@ -28,26 +28,47 @@
     <div class="calculatorbody">
         <div class="row1">
             <select id="mySelect">
-                <option selected value="" disabled>Choose a Loomian</option> 
+                <option selected value="" disabled>Choose a Roaming Loomian</option> 
             </select>
             <br>
-            <button onclick="displayOdds()" id="displayOdds" disabled>Display Odds</button>
+            <button id="displayOdds" disabled>Display Odds</button>
+            <label> Set Encounter
+                <input type="checkbox" id="SetEncounterBox">
+            </label>
             <p id="odds"></p>
+        </div>
+        <div class="row3">
+            <input type="number" id="RoamingAmount" min="1" value="1">
         </div>
         <div class="flex">
             <div class="row2">
                 <label> Gleaming Charm
-                    <input type="checkbox" id="GleamingCharm">
+                    <input type="checkbox" id="GleamingCharmBox">
                 </label>
             </div>
             <div class="row2">
                 <label> Gleaming Boost
-                    <input type="checkbox" id="GleamingBoost">
+                    <input type="checkbox" id="GleamingBoostBox">
+                </label>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="row2">
+                <label> Roaming Charm
+                    <input type="checkbox" id="RoamingCharmBox">
+                </label>
+            </div>
+            <div class="row2">
+                <label> Roaming Boost
+                    <input type="checkbox" id="RoamingBoostBox">
                 </label>
             </div>
         </div>
         <div class="row3">
-            <button onclick="calculate()" id="calculate" disabled>Calculate</button>
+            <button id="calculate" disabled>Calculate</button>
+        </div>
+        <div class="row3">
+            <p id="RoamingResult">Roaming: </p>
         </div>
         <div class="flex">
             <div class="row4">
@@ -60,10 +81,7 @@
                 <p id="RWResult">Rainbow Wisp: </p>
             </div>
         </div>
-
-    
-    
-    <script src="Scripts\CommonLoomians.js"></script>
+    <script src="Scripts\Roaming.js"></script>
     </div>
     <footer>
         <a href="https://github.com/Matthattan/Odds-Calculator">GitHub Repository</a> -

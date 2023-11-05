@@ -1,92 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Secret Ability Odds Calculator</title>
-        <meta charset=utf-8>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
-        <link rel="stylesheet" href="CSS/Calculator Styling.css">
-        <link rel="stylesheet" href="CSS/TableStyling.css">
-    </head>
-    <body>
-        <h1>Secret Ability Odds Calculator</h1>
-        <form name="SACalculator">
-            <div class="container">
-                <div class="row1">
-                    <label id="LSLabel" class="SelectForm">SA Encounter:
-                        <br>
-                        <select id="LSID" class="SelectBox">
-                            <option value="" disabled selected>Select Location</option>
-                            <option value="RallyRanch">Rally Ranch</option>
-                            <option value="Encounter">Wild/Set Encounter</option>
-                            <option value="Petrolith">Petrolith</option>
-                            <option value="Weather">Weather (Acting Strangely)</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="flex">
-                    <div class="row2">
-                        <label>Ability Charm
-                            <br>
-                            <input type="checkbox" class="checkbox-bigger" id="AbilityCharmID" name="AbilityCharm">
-                            <p id="footnote2">Charm is Required for non-weather Wild/Set Encounters</p>
-                        </label>
-                    </div>
-                    <div class="row2">
-                        <label id="SALeaderLabel">Secret Ability Leader
-                            <br>
-                            <input type="checkbox" class="checkbox-bigger" id="SALeaderID" name="SALeader">
-                        </label>
-                    </div>
-                </div>
-                <div class="row1">
-                    <input type="button" value="Calculate" class="calculate-button" disabled onclick="FindSARate()">
-                </div>
-                <div class="row1">
-                    <label id="SAResult" class="Output">Secret Ability Odds: </label>
-                </div>
-                <div class="row1">
-                    <label id="LoomianListLabel">Calculate SA odds for a Loomian:
-                        <br>
-                        <select name="LoomianList" id="LoomianList" class="SelectBox">
-                            <option value="" selected disabled>No options yet</option>
-                        </select>
-                    </label>
-                    <br>
-                </div>
-                <div class="row1">
-                    <input type="button" value="Add to Odds" class="calculate-button" disabled onclick="CalculateOverallRate()">
-                </div>
-                <div class="row1">
-                    <label id="TotalResult" class="Output">Overall SA Odds: </label>
-                </div>
-                <div class="row3">
-                    <button id="AbilityEncrypt" onclick="encrypt(event, AbilityOdds)">Export Secret Ability Odds</button>
-                </div>
+<html lang="en">
+<head>
+    <title>Probability Calculator | Secret Ability </title>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+    <link rel="stylesheet" href="Styling\LoomianStyling.css">
+    <link rel="stylesheet" href="Styling\Navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body id="body">
+    <header>
+        <h1>Secret Ability Probability Calculator</h1>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="./index.html">Common Loomians</a>
+        <a href="./EventLoomians.html">Event Loomians</a>
+        <a href="./RoamingLoomians.html">Roaming Loomians</a>
+        <a href="./AbilityOdds.html" class="active">Ability Odds</a>
+        <a href="./CompoundCalculator.html">Compound Calculator</a>
+        <a href="javascript:void(0);" class="icon" onclick="menuBar()" title="responsive">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <script src="Scripts\NavBar.js"></script>
+    <div class="calculatorbody">
+        <div class="row1">
+            <select id="eventSelect">
+                <option selected value="" disabled>Choose a Category</option> 
+                <option value="Common Loomians">Common Loomians</option>
+                <option value="Event Loomians">Event Loomians</option> 
+            </select>
+        </div>
+        <div class="row1">
+            <select id="mySelect">
+                <option selected value="" disabled>Choose a Category First</option> 
+            </select>
+            <br>
+            <button onclick="displayOdds()" id="displayOdds" disabled>Display Odds</button>
+            <p id="odds"></p>
+        </div>
+        <div class="flex">
+            <div class="row2">
+                <label> Ability Charm
+                    <input type="checkbox" id="AbilityCharm">
+                </label>
             </div>
-        </form>
-        <script src="Scripts/SAodds.js"></script>
-        <div class="grid-container">
-            <div class="grid-item">
-                <h4>Wanting to Calculate the odds for Route Rares/Common Loomians? use <a href="index.html">this calculator</a></h4>
-            </div>
-            <div class="grid-item">
-                <h4>Wanting to Calculate the odds for variants/reskins? use <a href="VariantOddsCalculator.html">this calculator</a></h4>
-            </div>
-            <div class="grid-item">
-                <h4>Wanting to Calculate the odds for Roamings? use <a href="RoamingOddsCalculator.html">this calculator</a></h4>
-            </div>
-            <div class="grid-item">
-                <h4>Wanting to Calculate the odds for Gleam Roamings? use <a href="GRCalculator.html">this calculator</a></h4>
+            <div class="row2">
+                <label> Secret Ability Leader
+                    <input type="checkbox" id="AbilityLeader">
+                </label>
             </div>
         </div>
-        <div class="CO-container">
-            <div class="grid-item">
-                <a href="CompoundCalculator.html">Compound Odds Calculator</a>
-            </div>
+        <div class="row3">
+            <button onclick="calculate()" id="calculate" disabled>Calculate</button>
         </div>
-        <footer>
-            <a href="https://www.discordapp.com/users/298479810345172994">Matthattan#0454</a> - <a href="https://twitter.com/stuntmanforlyf"> @stuntmanforlyf</a> - <a href="https://github.com/Matthattan/Matthattan.github.io">Link to Repository</a>
-        </footer>
-    </body>
+        <div class="flex">
+            <div class="row4">
+                <p id="SAResult">Wild: </p>
+                <small>Ability Charm Required</small>
+            </div>
+            <div class="row4">
+                <p id="Weather">Acting Strangley: </p>
+            </div>
+            <div class="row4">
+                <p id="RallyResult">Rally Ranch: </p>
+            </div>
+            
+        </div>
+    <script src="Scripts\Ability.js"></script>
+    </div>
+    <footer>
+        <a href="https://github.com/Matthattan/Odds-Calculator">GitHub Repository</a> -
+        <a href="https://www.discordapp.com/users/298479810345172994">Discord</a> -
+        <a href="https://twitter.com/stuntmanforlyf">Twitter</a>
+    </footer>
+</body>
 </html>

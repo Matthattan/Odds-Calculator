@@ -51,3 +51,18 @@ Version 4.0
 - Added Gem Coplings Odds
 - Fixed other odds
 Happy 4th Anniverary Loomian Legacy 🥳
+
+Version 4.1
+- complete overhaul
+    - New JS with better optimisation
+    - Website is completely different
+    - Bug fixes
+    - Some odds have been removed due to redundancy 
+- See you at Atlanthian Part 2
+
+Version 5.0
+- Atlanthian Part 2 is Finally Here! 🥳
+- Completely redid the website
+- New Loomians of Part 2 have been added
+- Some Loomians (like Rainbow Pyramind) have been removed due to not being applicable to any calculations
+- fixed some bugs (with some new ones maybe appearing?)

@@ -1,0 +1,63 @@
+
+#numberList {
+  font-size: 20px;
+}
+
+.row1 {
+  height: 200px;
+}
+
+.row3 {
+  height: 300px;
+  overflow: scroll;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+  .calculatorbody {
+  width: 780px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .calculatorbody {
+    width: 580px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .calculatorbody {
+    width: 400px;
+  }
+
+  #numberList {
+    font-size: 16px;
+  }
+
+  .row3 {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  #numberList {
+    font-size: 12px;
+  }
+
+  .calculatorbody {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .calculatorbody {
+    width: 300px;
+  }
+}
+
+
+
+  
+
