@@ -66,3 +66,7 @@ Version 5.0
 - New Loomians of Part 2 have been added
 - Some Loomians (like Rainbow Pyramind) have been removed due to not being applicable to any calculations
 - fixed some bugs (with some new ones maybe appearing?)
+
+Version 5.1
+- Minor Bug Fixes
+- Updated Page Titles and Head Metadata
