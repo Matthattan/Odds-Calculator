@@ -62,6 +62,8 @@ const hwProtogon = new Roaming("Halloween Protogon (2021 Halloween)", 6144, true
 const xmasMutagon = new Roaming("Christmas Mutagon (2021 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
 const hwCephalops = new Roaming("Halloween Cephalops (2022 Halloween)", 1024, true, false, false, false, 2048, 0, 0.5, 0.0625, 0.5, 0.25, false);
 const xmasMetronette = new Roaming("Christmas Metronette (2022 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
+const odoyama = new Roaming("Odoyama (2023 Halloween)", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false)
+const hwAkhalos = new Roaming("Halloween Akhalos (2023 Halloween)", 1024, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false)
 
 const optionData = [
     duskit,
@@ -86,6 +88,9 @@ const optionData = [
     xmasMutagon,
     hwCephalops,
     xmasMetronette,
+	odoyama,
+	hwAkhalos
+
 ]
 
 // Declaring Variables

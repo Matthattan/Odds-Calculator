@@ -70,3 +70,12 @@ Version 5.0
 Version 5.1
 - Minor Bug Fixes
 - Updated Page Titles and Head Metadata
+
+Version 5.2.1
+- Added Loomians from Halloween 2023 part 1
+  - Due to no official odds being released for some event Loomians as of 23/11, I've gone ahead and tried calculating them myself:
+    - HW Mistlebud - 1/50
+    - HW Cryocub - 1/200
+    - Mirriam - 1/50
+    - Expect these to change frequently in the coming days
+  - Jamiy has mentioned that Metronette & Odoyaga are in their own encounter table (not with the other roamings) while Nevermare & Gargolem are indeed with other roamings. Please keep this in mind when calculating odds for these 4 Loomians. Happy Hunting! 🎃🎄
