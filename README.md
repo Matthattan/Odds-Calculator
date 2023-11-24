@@ -8,9 +8,10 @@ Current Features:
 - Calculate **True** Roaming enounter odds
 - Calculate Gleaming Roaming encounter odds (both set encounter and wild)
 - Calculate Secret Ability Odds (Limited to common/route rares, weather, rallying and petrolith)
+- Compound Odds calculator
 
 Future additions(?):
-- Compound Odds calculator
+- Secret Ability Calculator for Roamings
 
 Version 1:
 - Initial Release
