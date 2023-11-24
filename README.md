@@ -79,3 +79,8 @@ Version 5.2.1
     - Mirriam - 1/50
     - Expect these to change frequently in the coming days
   - Jamiy has mentioned that Metronette & Odoyaga are in their own encounter table (not with the other roamings) while Nevermare & Gargolem are indeed with other roamings. Please keep this in mind when calculating odds for these 4 Loomians. Happy Hunting! 🎃🎄
+
+Version 5.2.2
+- Odds for HW Cryocub, HW Mistlbud and Mirrami were officially released (dobby is free!)
+  - 1/320, 1/100 and 1/50 respectively
+- also slight change to the Halloween Roaming odds: Metronette, HW Akhalos and Odoyaga are indeed in their own encounter table but Nevermare & Gargolem are together in a seperate roaming table too (so they are not with the adventure roamings). 
