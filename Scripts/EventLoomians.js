@@ -124,8 +124,8 @@ const fabergeKyeggo = new Loomian("Faberge Kyeggo (2023 Easter)", (6*(100/0.33))
 const sapphireGeklow = new Loomian("Sapphire Geklow (2020 Anniversary)", 10000, true, false, false, true, false, 4096, 20480, 0.5, 0.015625);
 const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000, true, false, false, true, false, 4096, 20480, 0.5, 0.015625);
 const mirrami = new Loomian("Mirrami (2023 Halloween)", 50, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
-const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Halloween)", 50, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
-const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Halloween", 200, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
+const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Halloween)", 100, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
+const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Halloween", 320, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
 
 // collate all objects into an array
 const optionData = [
