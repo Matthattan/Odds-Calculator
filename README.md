@@ -85,3 +85,6 @@ Version 5.2.2
 - Odds for HW Cryocub, HW Mistlbud and Mirrami were officially released (dobby is free!)
   - 1/320, 1/100 and 1/50 respectively
 - also slight change to the Halloween Roaming odds: Metronette, HW Akhalos and Odoyaga are indeed in their own encounter table but Nevermare & Gargolem are together in a seperate roaming table too (so they are not with the adventure roamings). 
+
+Version 5.2.3
+- Devtruns released the - more accurate - odds for HW Mistlebud (1.6%) and HW Cryocub (0.3%) so now I'm adding that in (credible source go brrrr)
