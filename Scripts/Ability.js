@@ -173,8 +173,8 @@ const fabergeKyeggo = new Loomian("Faberge Kyeggo (2023 Easter)", (6*(100/0.33))
 const sapphireGeklow = new Loomian("Sapphire Geklow (2020 Anniversary)", 10000, true, false, false, false, 256, 0.5);
 const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000, true, false, false, false, 256, 0.5);
 const mirrami = new Loomian("Mirrami (2023 Halloween)", 50, true, true, false, false, 256, 0.5)
-const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Halloween)", 320, true, false, false, false, 256, 0.5)
-const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Halloween)", 100, true, false, false, false, 256, 0.5)
+const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Halloween)", (100/0.3), true, false, false, false, 256, 0.5)
+const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Halloween)", (100/1.6), true, false, false, false, 256, 0.5)
 // collate all objects into an array
 
 var commonLoomianData = [
