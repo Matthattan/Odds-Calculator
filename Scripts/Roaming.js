@@ -55,15 +55,16 @@ const nevermare = new Roaming("Nevermare", 1024, true, true, true, true, 4096, 2
 const akhalos = new Roaming("Akhalos", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
 const gargolem = new Roaming("Gargolem", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
 const celesting = new Roaming("Celesting", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const hwDuskit = new Roaming("Halloween Duskit (2020 Halloween", 2048, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false);
-const xmasIkazune = new Roaming("Christmas Ikazune (2020 Christmas", 2048, true, true, true, false, 2048, 10240, 0.5, 0.0625, 0.5, 0.25, false);
-const hwIkazune = new Roaming("Halloween Ikazune (2021 Halloween)", 3072, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false);
-const hwProtogon = new Roaming("Halloween Protogon (2021 Halloween)", 6144, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
-const xmasMutagon = new Roaming("Christmas Mutagon (2021 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
-const hwCephalops = new Roaming("Halloween Cephalops (2022 Halloween)", 1024, true, false, false, false, 2048, 0, 0.5, 0.0625, 0.5, 0.25, false);
-const xmasMetronette = new Roaming("Christmas Metronette (2022 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
-const odoyama = new Roaming("Odoyama (2023 Halloween)", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false)
-const hwAkhalos = new Roaming("Halloween Akhalos (2023 Halloween)", 1024, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false)
+const hwDuskit = new Roaming("Skeleton Duskit (2020 Halloween", 2048, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false);
+const xmasIkazune = new Roaming("Reindeer Ikazune (2020 Christmas", 2048, true, true, true, false, 2048, 10240, 0.5, 0.0625, 0.5, 0.25, false);
+const hwIkazune = new Roaming("Skeleton Ikazune (2021 Halloween)", 3072, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false);
+const hwProtogon = new Roaming("Withered Protogon (2021 Halloween)", 6144, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
+const xmasMutagon = new Roaming("Gem Mutagon (2021 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
+const hwCephalops = new Roaming("Skeleton Cephalops (2022 Halloween)", 1024, true, false, false, false, 2048, 0, 0.5, 0.0625, 0.5, 0.25, false);
+const xmasMetronette = new Roaming("Nutcracker Metronette (2022 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
+const odoyama = new Roaming("Odoyama (2023 Haunted Village)", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false)
+const hwAkhalos = new Roaming("Skeleton Akhalos (2023 Haunted Village)", 1024, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false)
+const hwWabalisc = new Roaming("Zombie Wabalisc (2023 Haunted Village", 4096, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false)
 
 const optionData = [
     duskit,
@@ -89,8 +90,8 @@ const optionData = [
     hwCephalops,
     xmasMetronette,
 	odoyama,
-	hwAkhalos
-
+	hwAkhalos,
+	hwWabalisc
 ]
 
 // Declaring Variables
