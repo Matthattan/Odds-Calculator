@@ -88,3 +88,7 @@ Version 5.2.2
 
 Version 5.2.3
 - Devtruns released the - more accurate - odds for HW Mistlebud (1.6%) and HW Cryocub (0.3%) so now I'm adding that in (credible source go brrrr)
+
+Version 5.3
+- Zombie Wabalisc has been added
+- Renamed some event Loomians to better represent the event/their appearance

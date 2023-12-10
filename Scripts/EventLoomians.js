@@ -123,9 +123,9 @@ const starKyeggo = new Loomian("Star Kyeggo (2023 Easter)", (6*(100/6)), true, t
 const fabergeKyeggo = new Loomian("Faberge Kyeggo (2023 Easter)", (6*(100/0.33)), true, true, true, false, false, 4096, 20480, 0.5, 0.150625);
 const sapphireGeklow = new Loomian("Sapphire Geklow (2020 Anniversary)", 10000, true, false, false, true, false, 4096, 20480, 0.5, 0.015625);
 const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000, true, false, false, true, false, 4096, 20480, 0.5, 0.015625);
-const mirrami = new Loomian("Mirrami (2023 Halloween)", 50, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
-const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Halloween)", (100/1.6), true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
-const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Halloween", (100/0.3), true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
+const mirrami = new Loomian("Mirrami (2023 Haunted Village)", 50, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
+const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Haunted Village)", (100/1.6), true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
+const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Haunted Village", (100/0.3), true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
 
 // collate all objects into an array
 const optionData = [
