@@ -40,6 +40,7 @@ class Roaming {
     }
 }
 
+// name, odds, is alpha, is gamma, rainbow wisp, soft reset, alpha odds, gamma odds, gcharm, gboost, rcharm, rboost, roaming table
 const duskit = new Roaming("Duskit", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
 const ikazune = new Roaming("Ikazune", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
 const protogon = new Roaming("Protogon", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
@@ -62,7 +63,7 @@ const hwProtogon = new Roaming("Withered Protogon (2021 Halloween)", 6144, true,
 const xmasMutagon = new Roaming("Gem Mutagon (2021 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
 const hwCephalops = new Roaming("Skeleton Cephalops (2022 Halloween)", 1024, true, false, false, false, 2048, 0, 0.5, 0.0625, 0.5, 0.25, false);
 const xmasMetronette = new Roaming("Nutcracker Metronette (2022 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
-const odoyama = new Roaming("Odoyama (2023 Haunted Village)", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false)
+const odoyaga = new Roaming("Odoyaga (2023 Haunted Village)", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false)
 const hwAkhalos = new Roaming("Skeleton Akhalos (2023 Haunted Village)", 1024, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false)
 const hwWabalisc = new Roaming("Zombie Wabalisc (2023 Haunted Village", 4096, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false)
 
@@ -89,7 +90,7 @@ const optionData = [
     xmasMutagon,
     hwCephalops,
     xmasMetronette,
-	odoyama,
+	odoyaga,
 	hwAkhalos,
 	hwWabalisc
 ]
@@ -138,10 +139,8 @@ function updateLabels(arg1) {
 
     if (selectedLoomian.SetEncounter || selectedLoomian.roamingtable) {
 			setEncounterCB.disabled = !selectedLoomian.SetEncounter;
-			roamingResult.style.display = "block";
     } else {
 			setEncounterCB.disabled = true;
-			roamingResult.style.display = "none";
     }
     
     if (selectedLoomian) {
