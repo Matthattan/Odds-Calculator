@@ -92,3 +92,9 @@ Version 5.2.3
 Version 5.3
 - Zombie Wabalisc has been added
 - Renamed some event Loomians to better represent the event/their appearance
+
+Version 5.3.1
+- Bug Fixes
+  - Loomians such as Zombie Wabalisc didn't have their Roaming Odds display which meant calculating with roaming charm etc. displayed no result
+  - fixed Odoyaga's name (my goofy aah conciously tried avoiding it but still did it anyways)
+- Upcoming - fixing alpha odds (real!?)
