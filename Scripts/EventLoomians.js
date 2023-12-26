@@ -1,29 +1,12 @@
 class Loomian {
-  constructor(name, odds, alphaG, gammaG, rW, increasedMultipliers, increasedOdds, alpha, gamma, gcharm, gboost){
-      this.name = name; //string
-      this.odds = odds; //float
-      this.alphaG = alphaG; //boolean
-      this.gammaG = gammaG; //boolean
-      this.rW = rW; //boolean
-      this.increasedMultipliers = increasedMultipliers; //boolean
-      this.increasedOdds = increasedOdds; //boolean
-      this.alpha = alpha; //float
-      this.gamma = gamma; //float
-      this.gcharm = gcharm; //float
-      this.gboost = gboost; //float
+  constructor(name, odds, alphaG, gammaG, rW, increasedMultipliers, increasedOdds){
+    this.name = name; //string
+    this.odds = odds; //float
+    this.alphaG = alphaG; //boolean
+    this.gammaG = gammaG; //boolean
+    this.increasedMultipliers = increasedMultipliers; //boolean
+    this.increasedOdds = increasedOdds; //boolean
   }
-
-  getOdds(selectedName) {
-    // Convert the selectedName to lowercase to make the lookup case-insensitive
-    const lowercaseSelectedName = selectedName.toLowerCase();
-    // Check if the selectedName matches the Loomian's name
-    if (this.name.toLowerCase() === lowercaseSelectedName) {
-      return this.odds;
-    } else {
-      // Return null or any other value to indicate Loomian not found
-      console.log("getOdds Error");
-    }
-  } 
 
   isAlpha() {
     // Check if Alpha Form is available
@@ -46,53 +29,15 @@ class Loomian {
       gammaResult.style.display = "none";
     }
   }
-
-  isrW() {
-    // Check if the selectedName matches the Loomian's name
-    if (this.rW) {
-        // set HTML box to disappear or smth;
-        rwResult.style.display = "block"; 
-        rwResult.innerHTML = "Rainbow Wisp: ";
-    } else {
-        rwResult.style.display = "none"; 	
-    }
-  }
-
-  getHalvedOdds(){
-    // Some Loomians have halved base odds e.g 4096 becomes 2048
-    if (this.halvedGleaming === true) {
-        return [this.alpha *= 0.5, this.gamma *= 0.5];
-    } else {
-        return [this.alpha = 4096, this.gamma = 20480];
-    }
-  }
-
-  getHalvedOdds(){
-    // Some Loomians have halved base odds e.g 4096 becomes 2048
-    if (this.increasedOdds === true) {
-        return [this.alpha *= 0.5, this.gamma *= 0.5];
-    } else {
-        return [this.alpha = 4096, this.gamma = 20480];
-    }
-  }
-
-  getIncreasedBoost(){
-    // Other Loomians make charm and boost multiply more
-    if (this.increasedMultipliers === true) {
-        return [this.alpha *= 0.5, this.gamma *= 0.5];
-    } else {
-        return [this.alpha = 4096, this.gamma = 20480];
-    }
-  }
 }
 
 //name, odds, alphaG, gammaG, rW, increasedMultipliers, increasedOdds, alpha, gamma, gcharm, gboost
-const christmasGlassScorbs = new Loomian("Christmas Scorbs (Normal)", 12, true, false, false, false, false, 4096, 20480, 0.5, 0.0625);
-const jellyGumpod = new Loomian("Jelly Gumpod (2022 Sweet Retreat)", 50, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
-const lunarBunpuff = new Loomian("Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
-const colouredGoppies = new Loomian("Coloured Goppies (2023 Loomunity)", 60, false, false, false, false, false, 0, 0, 0, 0,);
-const valentinesAntsee = new Loomian("Valentines Antsee (2023 Valentines)", 80, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
-const bronzeGeklow = new Loomian("Bronze Geklow (2020 Anniversary)", 100, true, false, false, true, false, 4096, 20480, 0.25, 0.015625);
+const christmasGlassScorbs = new Loomian("Christmas Scorbs (Normal)", 12, true, false, false, false);
+const jellyGumpod = new Loomian("Jelly Gumpod (2022 Sweet Retreat)", 50, true, true, false, false);
+const lunarBunpuff = new Loomian("Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, true, false, false);
+const colouredGoppies = new Loomian("Coloured Goppies (2023 Loomunity)", 60, false, false, false, false);
+const valentinesAntsee = new Loomian("Valentines Antsee (2023 Valentines)", 80, true, true, false, false);
+const bronzeGeklow = new Loomian("Bronze Geklow (2020 Anniversary)", 100, true, false, true, false);
 const bronzeCopling = new Loomian("Bronze Copling (2023 Anniversary)", 100, true, false, false, true, false, 4096, 20480, 0.25, 0.015625);
 const sweetsPhancub = new Loomian("Sweets Phancub (2022 Sweet Retreat)", 100, true, true, true, false, false, 4096, 20480, 0.5, 0.0625);
 const snowmanTotemochi = new Loomian("Snowman Totemochi (2022 Christmas)", 150, true, false, false, false, 4096, 20480, 0.5, 0.0625);
@@ -129,45 +74,45 @@ const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Haunted Village", 
 
 // collate all objects into an array
 const optionData = [
-        sweetsPhancub,
-        cakeSlugling,
-        lunarBunpuff,
-        jellyGumpod,
-        valentinesAntsee,
-        bronzeGeklow,
-        silverGeklow,
-        goldGeklow,
-        emeraldGeklow,
-        rubyGeklow,
-        sapphireGeklow,
-        bronzeCopling,
-        silverGeklow,
-        goldCopling,
-        emeraldCopling,
-        rubyCopling,
-        sapphireCopling,
-        halloweenSlugling,
-        halloweenShawchi,
-        christmasGlassScorb,
-        christmasGlassScorbs,
-        halloweenTaoshi,
-        halloweenTerriti,
-        Icigool2020,
-        Icigool2021,
-        christmasPropae,
-        snowmanTotemochi,
-        christmasRagoon,
-        rainbowShawchi,
-        rainbowFlorant,
-        normalKyeggo,
-        frillyKyeggo,
-        zzKyeggo,
-        starKyeggo,
-        fabergeKyeggo,
-        mirrami,
-        halloweenMistlebud,
-        halloweenCryocub
-    ]
+  sweetsPhancub,
+  cakeSlugling,
+  lunarBunpuff,
+  jellyGumpod,
+  valentinesAntsee,
+  bronzeGeklow,
+  silverGeklow,
+  goldGeklow,
+  emeraldGeklow,
+  rubyGeklow,
+  sapphireGeklow,
+  bronzeCopling,
+  silverGeklow,
+  goldCopling,
+  emeraldCopling,
+  rubyCopling,
+  sapphireCopling,
+  halloweenSlugling,
+  halloweenShawchi,
+  christmasGlassScorb,
+  christmasGlassScorbs,
+  halloweenTaoshi,
+  halloweenTerriti,
+  Icigool2020,
+  Icigool2021,
+  christmasPropae,
+  snowmanTotemochi,
+  christmasRagoon,
+  rainbowShawchi,
+  rainbowFlorant,
+  normalKyeggo,
+  frillyKyeggo,
+  zzKyeggo,
+  starKyeggo,
+  fabergeKyeggo,
+  mirrami,
+  halloweenMistlebud,
+  halloweenCryocub
+]
 
 // defining Variables
 let selectElement = document.getElementById("mySelect");
@@ -179,38 +124,50 @@ let gBoost = document.getElementById("GleamingBoost");
 let oddsDisplayButton = document.getElementById("displayOdds");
 let calculateButton = document.getElementById("calculate");
 
+// defining all JS data
+
+let gleamingOdds = 4096
+  // alpha is 4/5 of this so 1/5120
+  // gamma is 1/5 of this so 1/20480
+  // rainbow wisp is 1/125 of the gamma odds so 1/2560000
+
+// charm halves gleaming odds
+let gCharmMultiplier = 0.5
+
+// boost gleaming odds by 16 fold
+let gBoostMultiplier = 0.0625
+
 //load all loomians into select element
 for (let Loomian of optionData) {
-    let option = document.createElement('option');
-    option.value = Loomian.name; // Set the value to the object's name
-    option.text = `${Loomian.name}`; // Set the label to a combination of name and option1
-    let selectElement = document.getElementById("mySelect");
-    selectElement.appendChild(option);
+  let option = document.createElement('option');
+  option.value = Loomian.name; // Set the value to the object's name
+  option.text = `${Loomian.name}`; // Set the label to a combination of name and option1
+  let selectElement = document.getElementById("mySelect");
+  selectElement.appendChild(option);
 }
 
 // display the base odds in the form 1/n
 function displayOdds() {
-    let oddsDescription = document.getElementById("odds");
-    let selectedName = document.getElementById("mySelect").value;
-    let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
+  let oddsDescription = document.getElementById("odds");
+  let selectedName = document.getElementById("mySelect").value;
+  let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 
-    if (selectedLoomian) {
-        oddsDescription.innerHTML = "1 in " + selectedLoomian.odds.toFixed(2);
-    }
+  if (selectedLoomian) {
+    oddsDescription.innerHTML = "1 in " + selectedLoomian.odds.toFixed(2);
+  }
 }
 
 // update statistics
 selectElement.addEventListener("change", function updateLabels() {
-    let selectedName = document.getElementById("mySelect").value;
-    let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
+  let selectedName = document.getElementById("mySelect").value;
+  let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 
-    if (selectedLoomian) {
-      selectedLoomian.isAlpha();
-      selectedLoomian.isGamma();
-      selectedLoomian.isrW();
-      calculateButton.disabled = false;
-      oddsDisplayButton.disabled = false;
-    }
+  if (selectedLoomian) {
+    selectedLoomian.isAlpha();
+    selectedLoomian.isGamma();
+    calculateButton.disabled = false;
+    oddsDisplayButton.disabled = false;
+  }
 });
 
 // the actual calculations
@@ -219,30 +176,90 @@ function calculate() {
   let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 	let subtotal = selectedLoomian.odds;
 
-    // check if the charm box is enabled, uses the object's own multiplier if so
-    if (gCharm.checked){
-      subtotal *= selectedLoomian.gcharm; 
-    } else if (!gCharm.checked) {
-      console.log("Gleaming Charm not checked");
-    } else {
-      console.log("Gleaming Charm Error");
-    }
+  // some event Loomians have the things like the charm/boost or gleaming odds modified
+  // change gleaming odds
+  switch (selectedLoomian.name) {
+    case "Coloured Goppies (2023 Loomunity)":
+      gleamingOdds = 0;
+      break;
+    case "Coloured Icigool (2020 Christmas)":
+    case "Rainbow Shawchi (2022 Loomunity)":
+      gleamingOdds = 2048;
+      break;
+    default:
+      gleamingOdds = 4096;
+      break;
+  }
 
-    // check if the boost box is enabled, uses the object's own multiplier if so
-    if (gBoost.checked){
-      subtotal *= selectedLoomian.gboost;
-    } else if (!gBoost.checked){
-      console.log("Gleaming Boost not checked");
-    } else {
-      console.loi("Gleaming Boost Error");
-    } 
+  // change gCharmMultiplier
+  switch (selectedLoomian.name) {
+    case "Coloured Goppies (2023 Loomunity)":
+      gCharmMultiplier = 0;
+      break;
+    case "Bronze Geklow (2020 Anniversary)":
+    case "Silver Geklow (2020 Anniversary)":
+    case "Gold Geklow (2020 Anniversary)":
+    case "Emerald Geklow (2020 Anniversary)":
+    case "Ruby Geklow (2020 Anniversary)":
+    case "Sapphire Geklow (2020 Anniversary)":
+    case "Bronze Copling (2023 Anniversary)":
+    case "Silver Copling (2023 Anniversary)":
+    case "Gold Copling (2023 Anniversary)":
+    case "Emerald Copling (2023 Anniversary)":
+    case "Ruby Copling (2023 Anniversary)":
+    case "Sapphire Copling (2023 Anniversary)":
+      gCharmMultiplier = 0.25;
+      break;
+    default:
+      gCharmMultiplier = 0.5;
+      break;
+  }
 
-    let alphaTotal = subtotal*selectedLoomian.alpha;
-    let gammaTotal = subtotal*selectedLoomian.gamma;
-    let rwTotal = gammaTotal*125;
+  // change gBoostMultiplier
+  switch (selectedLoomian.name) {
+    case "Bronze Geklow (2020 Anniversary)":
+    case "Silver Geklow (2020 Anniversary)":
+    case "Gold Geklow (2020 Anniversary)":
+    case "Emerald Geklow (2020 Anniversary)":
+    case "Ruby Geklow (2020 Anniversary)":
+    case "Sapphire Geklow (2020 Anniversary)":
+    case "Bronze Copling (2023 Anniversary)":
+    case "Silver Copling (2023 Anniversary)":
+    case "Gold Copling (2023 Anniversary)":
+    case "Emerald Copling (2023 Anniversary)":
+    case "Ruby Copling (2023 Anniversary)":
+    case "Sapphire Copling (2023 Anniversary)":
+      gBoostMultiplier = 0.15625;
+      break;
+    default:
+      gBoostMultiplier = 0.0625;
+      break;
+  }
 
-    // attach results to HTML element
-    alphaResult.innerHTML = "Alpha: " + "<br> 1 in " + alphaTotal.toFixed(2);
-    gammaResult.innerHTML = "Gamma: " + "<br> 1 in " + gammaTotal.toFixed(2);
-    rwResult.innerHTML = "Rainbow Wisp: " + "<br> 1 in " + rwTotal.toFixed(2);
+  // check if the charm box is enabled, uses the object's own multiplier if so
+  if (gCharm.checked){
+    subtotal *= gCharmMultiplier; 
+  } else if (!gCharm.checked) {
+    console.log("Gleaming Charm not checked");
+  } else {
+    console.log("Gleaming Charm Error");
+  }
+
+  // check if the boost box is enabled, uses the object's own multiplier if so
+  if (gBoost.checked){
+    subtotal *= gBoostMultiplier;
+  } else if (!gBoost.checked){
+    console.log("Gleaming Boost not checked");
+  } else {
+    console.loi("Gleaming Boost Error");
+  } 
+
+  let alphaTotal = subtotal * (gleamingOdds * (5/4));
+  let gammaTotal = subtotal * (gleamingOdds * (5));
+  let rwTotal = gammaTotal * (125);
+
+  // attach results to HTML element
+  alphaResult.innerHTML = "Alpha: " + "<br> 1 in " + alphaTotal.toFixed(2);
+  gammaResult.innerHTML = "Gamma: " + "<br> 1 in " + gammaTotal.toFixed(2);
+  rwResult.innerHTML = "Rainbow Wisp: " + "<br> 1 in " + rwTotal.toFixed(2);
 }
