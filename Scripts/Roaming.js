@@ -16,27 +16,27 @@ class Roaming {
     }
     
     getOdds(selectedName) {
-			// Convert the selectedName to lowercase to make the lookup case-insensitive
-			const lowercaseSelectedName = selectedName.toLowerCase();
-			// Check if the selectedName matches the Loomian's name
-			if (this.name.toLowerCase() === lowercaseSelectedName) {
-				return this.odds;
-			} else {
-				// Return null or any other value to indicate Loomian not found
-				console.log("getOdds Error");
-			}
+		// Convert the selectedName to lowercase to make the lookup case-insensitive
+		const lowercaseSelectedName = selectedName.toLowerCase();
+		// Check if the selectedName matches the Loomian's name
+		if (this.name.toLowerCase() === lowercaseSelectedName) {
+			return this.odds;
+		} else {
+			// Return null or any other value to indicate Loomian not found
+			console.log("getOdds Error");
+		}
     }
 
     gammaAvailable(element1, element2) {
-			if (!this.isGamma) {
-				element1.style.display = "none";
-				element2.style.display = "none";
-			} else if (this.isGamma) {
-				element1.style.display = "block";
-				element2.style.display = "block";
-			} else {
-				console.log("gammaAvailable Error");
-			}
+		if (!this.isGamma) {
+			element1.style.display = "none";
+			element2.style.display = "none";
+		} else if (this.isGamma) {
+			element1.style.display = "block";
+			element2.style.display = "block";
+		} else {
+			console.log("gammaAvailable Error");
+		}
     }
 }
 
