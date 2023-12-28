@@ -1,71 +1,40 @@
 class Roaming {
-    constructor(name, odds, isAlpha, isGamma, rW, SetEncounter, alphaOdds, gammaOdds, gcharm, gboost, rcharm, rboost, roamingtable){
+    constructor(name, odds, isAlpha, isGamma, setEncounter, roamingtable){
         this.name = name; //string
         this.odds = odds; //float
         this.isAlpha = isAlpha; //boolean
         this.isGamma = isGamma; //boolean
-        this.rW = rW; //boolean
-        this.SetEncounter = SetEncounter; //boolean
-        this.alphaOdds = alphaOdds; //float
-        this.gammaOdds = gammaOdds; //float
-        this.gcharm = gcharm; //float
-        this.gboost = gboost; //float
-        this.rcharm = rcharm; //float
-        this.rboost = rboost; //float
+        this.setEncounter = setEncounter; //boolean
         this.roamingtable = roamingtable; //boolean
-    }
-    
-    getOdds(selectedName) {
-		// Convert the selectedName to lowercase to make the lookup case-insensitive
-		const lowercaseSelectedName = selectedName.toLowerCase();
-		// Check if the selectedName matches the Loomian's name
-		if (this.name.toLowerCase() === lowercaseSelectedName) {
-			return this.odds;
-		} else {
-			// Return null or any other value to indicate Loomian not found
-			console.log("getOdds Error");
-		}
-    }
-
-    gammaAvailable(element1, element2) {
-		if (!this.isGamma) {
-			element1.style.display = "none";
-			element2.style.display = "none";
-		} else if (this.isGamma) {
-			element1.style.display = "block";
-			element2.style.display = "block";
-		} else {
-			console.log("gammaAvailable Error");
-		}
     }
 }
 
-// name, odds, is alpha, is gamma, rainbow wisp, soft reset, alpha odds, gamma odds, gcharm, gboost, rcharm, rboost, roaming table
-const duskit = new Roaming("Duskit", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const ikazune = new Roaming("Ikazune", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const protogon = new Roaming("Protogon", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const mutagon = new Roaming("Mutagon", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const cephalops = new Roaming("Cephalops", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const elephage = new Roaming("Elephage/Phagenaut", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const dakuda = new Roaming("Dakuda", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const arceros = new Roaming("Arceros", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const glacadia = new Roaming("Glacadia", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const metronette = new Roaming("Metronette", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const wabalisc = new Roaming("Wabalisc", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const nevermare = new Roaming("Nevermare", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const akhalos = new Roaming("Akhalos", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const gargolem = new Roaming("Gargolem", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const celesting = new Roaming("Celesting", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, true);
-const hwDuskit = new Roaming("Skeleton Duskit (2020 Halloween", 2048, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false);
-const xmasIkazune = new Roaming("Reindeer Ikazune (2020 Christmas", 2048, true, true, true, false, 2048, 10240, 0.5, 0.0625, 0.5, 0.25, false);
-const hwIkazune = new Roaming("Skeleton Ikazune (2021 Halloween)", 3072, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false);
-const hwProtogon = new Roaming("Withered Protogon (2021 Halloween)", 6144, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
-const xmasMutagon = new Roaming("Gem Mutagon (2021 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
-const hwCephalops = new Roaming("Skeleton Cephalops (2022 Halloween)", 1024, true, false, false, false, 2048, 0, 0.5, 0.0625, 0.5, 0.25, false);
-const xmasMetronette = new Roaming("Nutcracker Metronette (2022 Christmas)", 1024, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false);
-const odoyaga = new Roaming("Odoyaga (2023 Haunted Village)", 1024, true, true, true, true, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false)
-const hwAkhalos = new Roaming("Skeleton Akhalos (2023 Haunted Village)", 1024, true, false, false, false, 4096, 0, 0.5, 0.0625, 0.5, 0.25, false)
-const hwWabalisc = new Roaming("Zombie Wabalisc (2023 Haunted Village", 4096, true, true, true, false, 4096, 20480, 0.5, 0.0625, 0.5, 0.25, false)
+// name, odds, is alpha, is gamma, soft reset, roaming table
+const duskit = new Roaming("Duskit", 1024, true, true, false, true);
+const ikazune = new Roaming("Ikazune", 1024, true, true, false, true);
+const protogon = new Roaming("Protogon", 1024, true, true, false, true);
+const mutagon = new Roaming("Mutagon", 1024, true, true, true, true);
+const cephalops = new Roaming("Cephalops", 1024, true, true, true, true);
+const elephage = new Roaming("Elephage/Phagenaut", 1024, true, true, true, true);
+const dakuda = new Roaming("Dakuda", 1024, true, true, false, true);
+const arceros = new Roaming("Arceros", 1024, true, true, true, true);
+const glacadia = new Roaming("Glacadia", 1024, true, true, true, true);
+const metronette = new Roaming("Metronette", 1024, true, true, true, false);
+const wabalisc = new Roaming("Wabalisc", 1024, true, true, true, true);
+const nevermare = new Roaming("Nevermare", 1024, true, true, true, false);
+const akhalos = new Roaming("Akhalos", 1024, true, true, true, true);
+const gargolem = new Roaming("Gargolem", 1024, true, true, true, false);
+const celesting = new Roaming("Celesting", 1024, true, true, true, true);
+const hwDuskit = new Roaming("Skeleton Duskit (2020 Halloween)", 2048, true, false, false, false);
+const xmasIkazune = new Roaming("Reindeer Ikazune (2020 Christmas)", 2048, true, true, false, false);
+const hwIkazune = new Roaming("Skeleton Ikazune (2021 Halloween)", 3072, true, false, false, false);
+const hwProtogon = new Roaming("Withered Protogon (2021 Halloween)", 6144, true, true, false, false);
+const xmasMutagon = new Roaming("Gem Mutagon (2021 Christmas)", 1024, true, true, false, false);
+const hwCephalops = new Roaming("Skeleton Cephalops (2022 Halloween)", 1024, true, false, false, false);
+const xmasMetronette = new Roaming("Nutcracker Metronette (2022 Christmas)", 1024, true, true, false, false);
+const odoyaga = new Roaming("Odoyaga (2023 Haunted Village)", 1024, true, true, true, false);
+const hwAkhalos = new Roaming("Skeleton Akhalos (2023 Haunted Village)", 1024, true, false, false, false);
+const hwWabalisc = new Roaming("Zombie Wabalisc (2023 Haunted Village", 4096, true, true, false, false);
 
 const optionData = [
     duskit,
@@ -95,26 +64,31 @@ const optionData = [
 	hwWabalisc
 ]
 
-// Declaring Variables
+// Declaring Elements
 const selectBox = document.getElementById("mySelect");
 const setEncounterCB = document.getElementById("SetEncounterBox");
 const roamingAmount = document.getElementById("RoamingAmount");
 
 const gCharmBox = document.getElementById("GleamingCharmBox");
 const gBoostBox = document.getElementById("GleamingBoostBox");
-const RCharmBox = document.getElementById("RoamingCharmBox");
-const RBoostBox = document.getElementById("RoamingBoostBox");
+const rCharmBox = document.getElementById("RoamingCharmBox");
+const rBoostBox = document.getElementById("RoamingBoostBox");
 
 const displayOddsButton = document.getElementById("displayOdds");
 const calculateButton = document.getElementById("calculate");
 
 const oddsDescription = document.getElementById("odds");
-
 const roamingResult = document.getElementById("RoamingResult");
-
 const alphaResult = document.getElementById("AlphaResult");
 const gammaResult = document.getElementById("GammaResult");
 const rwResult = document.getElementById("RWResult");
+
+// Declaring Values
+let gleamingOdds = 4096;
+let gCharmMultiplier = 0.5;
+let gBoostMultiplier = 0.0625;
+let rCharmMultiplier = 0.5;
+let rBoostMultiplier = 0.25;
 
 // Generate all Select Options
 for (let Loomian of optionData) {
@@ -124,75 +98,65 @@ for (let Loomian of optionData) {
     selectBox.appendChild(option);
 }
 
-// Enable the Calculator and Accomodate for loomian properties
+// Toggle gleaming outputs based on roaming property
 selectBox.addEventListener("change", function() {
-    updateLabels(selectBox)
+    let selectedName = this.value;
+    let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
+
+    // check if Loomian is a set encounter
+    // this should enable the set encounter button to be toggled
+    if (selectedLoomian.setEncounter) {
+        setEncounterCB.disabled = false;
+    } else {
+        setEncounterCB.disabled = true;
+    }
+
+    // set the CB to be unchecked by default
+    setEncounterCB.checked = false;
+
+    // check if loomian has a Gamma Form
+    if (selectedLoomian.isGamma) {
+        gammaResult.style.display = 'block';
+        rwResult.style.display = 'block';
+    } else {
+        gammaResult.style.display = 'none';
+        rwResult.style.display = 'none';
+    }
 });
 
-function updateLabels(arg1) {
-    let selectedName = arg1.value;
-    let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
-
-    setEncounterCB.checked = false;
-    gammaResult.style.display = "block";
-    rwResult.style.display = "block";
-
-    if (selectedLoomian.SetEncounter || selectedLoomian.roamingtable) {
-			setEncounterCB.disabled = !selectedLoomian.SetEncounter;
-    } else {
-			setEncounterCB.disabled = true;
-    }
-    
-    if (selectedLoomian) {
-			selectedLoomian.gammaAvailable(gammaResult, rwResult)
-			calculateButton.disabled = false;
-			displayOddsButton.disabled = false;
-			RCharmBox.disabled = false;
-			RBoostBox.disabled = false;
-    }
-}
 // Display the Odds of the Loomian select when Button is clicked
-
 displayOddsButton.addEventListener('click', function() {
-    displayOdds(oddsDescription, selectBox);
-})
-
-function displayOdds(arg1, arg2) {
-    let selectedName = arg2.value;
+	let selectedName = selectBox.value;
     let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 
+	// Output the raw roaming odds of the Loomian
     if (selectedLoomian) {
-        arg1.innerHTML = "1 in " + selectedLoomian.odds.toFixed(2);
+        oddsDescription.innerHTML = "1 in " + selectedLoomian.odds.toFixed(2);
     }
-}
+})
 
 // Set Encounter enabled = Roaming Charm and Boost disabled
 setEncounterCB.addEventListener('change', function() {
     if (this.checked) {
-        RCharmBox.checked = false;
-        RBoostBox.checked = false;
-        RCharmBox.disabled = true;
-        RBoostBox.disabled = true;
+        rCharmBox.disabled = true;
+        rBoostBox.disabled = true;
         gammaResult.style.display = 'none';
         rwResult.style.display = 'none';
-    } else if (!this.checked){
-        RCharmBox.checked = false;
-        RBoostBox.checked = false;
-        RCharmBox.disabled = false;
-        RBoostBox.disabled = false;
+    } else {
+        rCharmBox.disabled = false;
+        rBoostBox.disabled = false;
         gammaResult.style.display = 'block';
         rwResult.style.display = 'block';
-    } else {
-        return null
     }
+
+	// make sure the roaming boxes are set to unchecked ready to be toggled
+	rCharmBox.checked = false;
+	rBoostBox.checked = false;
 })
 
+// calculate gleaming and roaming odds
 calculateButton.addEventListener('click', function() {
-    calculate(selectBox);
-})
-
-function calculate(arg1) {
-	let selectedName = arg1.value;
+	let selectedName = selectBox.value;
 	let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 	let subtotal = 1;
 
@@ -210,47 +174,44 @@ function calculate(arg1) {
 			console.log("Set Encounter cant be found");
 	}
 
-	if (RCharmBox.checked) {
-			subtotal *= selectedLoomian.rcharm;
-	} else if (!RCharmBox.checked) {
-			subtotal = subtotal;
-	} else {
-			console.log("rcharmbox error");
+	// check if gleaming odds have been modified for selected Roaming
+	switch (selectedName.value) {
+		case "Reindeer Ikazune (2020 Christmas":
+		case "Skeleton Cephalops (2022 Halloween)":
+			gleamingOdds = 2048;
+			break;
+		default:
+			gleamingOdds = 4096;
+			break;
 	}
 
-	if (RBoostBox.checked) {
-			subtotal *= selectedLoomian.rboost;
-	} else if (!RBoostBox.checked) {
-			console.log("Roaming Boost not checked");
-	} else {
-			console.log("rboostbox error");
+	// check if Roaming multipliers have been checked
+	if (rCharmBox.checked) {
+			subtotal *= rCharmMultiplier;
+	}
+
+	if (rBoostBox.checked) {
+			subtotal *= rBoostMultiplier;
 	}
 
 	roamingResult.innerHTML = "Roaming: " + "<br> 1 in " + subtotal.toFixed(2);
 	
-	// second check the gleaming chances
+	// check if Gleaming multipliers have been checked
 	if (gCharmBox.checked) {
-			subtotal *= selectedLoomian.gcharm;
-	} else if (!gCharmBox.checked) {
-			subtotal = subtotal;
-	} else {
-			console.log("gcharmbox error");
+			subtotal *= gCharmMultiplier;
 	}
 
 	if (gBoostBox.checked) {
-			subtotal *= selectedLoomian.gboost;
-	} else if (!gBoostBox.checked) {
-			subtotal = subtotal;
-	} else {
-			console.log("gboostbox error");
+			subtotal *= gBoostMultiplier;
 	}
 
-	subtotal *= selectedLoomian.alphaOdds;
-	alphaResult.innerHTML = "Alpha: " + "<br> 1 in " + subtotal.toFixed(2);
+	// calculate odds with gleamingOdds
+	alphaTotal = subtotal * (gleamingOdds * (5/4));
+	gammaTotal = subtotal * (gleamingOdds * (5));
+	rwTotal = gammaTotal * (125);
 
-	subtotal *= 5;
-	gammaResult.innerHTML = "Gamma: " + "<br> 1 in " + subtotal.toFixed(2);
-
-	subtotal *= 125;
-	rwResult.innerHTML = "Rainbow Wisp: " + "<br> 1 in " + subtotal.toFixed(2);
-}
+	// append all totals onto Elements
+	alphaResult.innerHTML = "Alpha: " + "<br> 1 in " + alphaTotal.toFixed(2);
+	gammaResult.innerHTML = "Gamma: " + "<br> 1 in " + gammaTotal.toFixed(2);
+	rwResult.innerHTML = "Rainbow Wisp: " + "<br> 1 in " + rwTotal.toFixed(2);
+})
