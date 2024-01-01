@@ -14,54 +14,58 @@ const duskit = new Roaming("Duskit", 1024, true, true, false, true);
 const ikazune = new Roaming("Ikazune", 1024, true, true, false, true);
 const protogon = new Roaming("Protogon", 1024, true, true, false, true);
 const mutagon = new Roaming("Mutagon", 1024, true, true, true, true);
+const metronette = new Roaming("Metronette (2020 Uhnne Fair)", 1024, true, true, true, false);
+const hwDuskit = new Roaming("Skeleton Duskit (2020 Halloween)", 2048, true, false, false, false);
 const cephalops = new Roaming("Cephalops", 1024, true, true, true, true);
+const wabalisc = new Roaming("Wabalisc (2020 Jolly Village)", 1024, true, true, true, true);
+const xmasIkazune = new Roaming("Reindeer Ikazune (2020 Christmas)", 2048, true, true, false, false);
+const nevermare = new Roaming("Nevermare (2021 Uhnne Fair)", 1024, true, true, true, false);
+const hwIkazune = new Roaming("Skeleton Ikazune (2021 Halloween)", 3072, true, false, false, false);
+const hwProtogon = new Roaming("Withered Protogon (2021 Halloween)", 6144, true, true, false, false);
+const akhalos = new Roaming("Akhalos (2021 Jolly Village)", 1024, true, true, true, true);
+const xmasMutagon = new Roaming("Gem Mutagon (2021 Christmas)", 1024, true, true, false, false);
 const elephage = new Roaming("Elephage/Phagenaut", 1024, true, true, true, true);
+const gargolem = new Roaming("Gargolem (2022 Uhnne Fair)", 1024, true, true, true, false);
+const hwCephalops = new Roaming("Skeleton Cephalops (2022 Halloween)", 1024, true, false, false, false);
+const celesting = new Roaming("Celesting (2022 Jolly Village)", 1024, true, true, true, true);
+const xmasMetronette = new Roaming("Nutcracker Metronette (2022 Jolly Village)", 1024, true, true, false, false);
 const dakuda = new Roaming("Dakuda", 1024, true, true, false, true);
 const arceros = new Roaming("Arceros", 1024, true, true, true, true);
 const glacadia = new Roaming("Glacadia", 1024, true, true, true, true);
-const metronette = new Roaming("Metronette", 1024, true, true, true, false);
-const wabalisc = new Roaming("Wabalisc", 1024, true, true, true, true);
-const nevermare = new Roaming("Nevermare", 1024, true, true, true, false);
-const akhalos = new Roaming("Akhalos", 1024, true, true, true, true);
-const gargolem = new Roaming("Gargolem", 1024, true, true, true, false);
-const celesting = new Roaming("Celesting", 1024, true, true, true, true);
-const hwDuskit = new Roaming("Skeleton Duskit (2020 Halloween)", 2048, true, false, false, false);
-const xmasIkazune = new Roaming("Reindeer Ikazune (2020 Christmas)", 2048, true, true, false, false);
-const hwIkazune = new Roaming("Skeleton Ikazune (2021 Halloween)", 3072, true, false, false, false);
-const hwProtogon = new Roaming("Withered Protogon (2021 Halloween)", 6144, true, true, false, false);
-const xmasMutagon = new Roaming("Gem Mutagon (2021 Christmas)", 1024, true, true, false, false);
-const hwCephalops = new Roaming("Skeleton Cephalops (2022 Halloween)", 1024, true, false, false, false);
-const xmasMetronette = new Roaming("Nutcracker Metronette (2022 Christmas)", 1024, true, true, false, false);
 const odoyaga = new Roaming("Odoyaga (2023 Haunted Village)", 1024, true, true, true, false);
 const hwAkhalos = new Roaming("Skeleton Akhalos (2023 Haunted Village)", 1024, true, false, false, false);
-const hwWabalisc = new Roaming("Zombie Wabalisc (2023 Haunted Village", 4096, true, true, false, false);
+const hwWabalisc = new Roaming("Zombie Wabalisc (2023 Haunted Village)", 4096, true, true, false, false);
+const mimask = new Roaming("Mimask (2023 Jolly Festival)", 1024, true, true, true, false);
+const xmasNevermare = new Roaming("Reindeer Nevermare (2023 Jolly Festival)", 4096, true, true, false, false);
 
 const optionData = [
     duskit,
     ikazune,
     protogon,
     mutagon,
-    cephalops,
-    elephage,
-	dakuda,
-	arceros,
-	glacadia,
     metronette,
-    wabalisc,
-    nevermare,
-    akhalos,
-    gargolem,
-    celesting,
     hwDuskit,
+    cephalops,
+    wabalisc,
     xmasIkazune,
+    nevermare,
     hwIkazune,
     hwProtogon,
+    akhalos,
     xmasMutagon,
+    elephage,
+    gargolem,
     hwCephalops,
+    celesting,
     xmasMetronette,
+    dakuda,
+	arceros,
+	glacadia,
 	odoyaga,
 	hwAkhalos,
-	hwWabalisc
+	hwWabalisc,
+    mimask,
+    xmasNevermare
 ]
 
 // Declaring Elements
@@ -103,6 +107,11 @@ selectBox.addEventListener("change", function() {
     let selectedName = this.value;
     let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 
+    if (selectedLoomian) {
+        calculateButton.disabled = false;
+        displayOddsButton.disabled = false;
+    }
+
     // check if Loomian is a set encounter
     // this should enable the set encounter button to be toggled
     if (selectedLoomian.setEncounter) {
@@ -130,9 +139,7 @@ displayOddsButton.addEventListener('click', function() {
     let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 
 	// Output the raw roaming odds of the Loomian
-    if (selectedLoomian) {
-        oddsDescription.innerHTML = "1 in " + selectedLoomian.odds.toFixed(2);
-    }
+    oddsDescription.innerHTML = "1 in " + selectedLoomian.odds.toFixed(2);
 })
 
 // Set Encounter enabled = Roaming Charm and Boost disabled
