@@ -78,6 +78,10 @@ const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000
 const mirrami = new Loomian("Mirrami (2023 Haunted Village)", 50, true, true);
 const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Haunted Village)", (100/1.6), true, true);
 const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Haunted Village)", (100/0.3), true, true);
+const kayute = new Loomian("Kayute (2023 Jolly Festival)*", 1, true, true);
+const leopaw = new Loomian("Leopaw (2023 Jolly Festival)*", 1, true, true);
+const christmasImpkin = new Loomian("Elf Impkin (2023 Jolly Festival)", 10, true, true);
+const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)*", 1, true, true,);
 
 // collate all objects into an array
 const optionData = [
@@ -122,7 +126,11 @@ const optionData = [
   sapphireCopling,
   mirrami,
   halloweenMistlebud,
-  halloweenCryocub
+  halloweenCryocub,
+  kayute,
+  leopaw,
+  christmasImpkin,
+  christmasVolpup
 ]
 
 // defining Variables

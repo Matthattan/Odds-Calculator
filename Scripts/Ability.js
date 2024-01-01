@@ -175,6 +175,13 @@ const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000
 const mirrami = new Loomian("Mirrami (2023 Haunted Village)", 50, true, true, false, false, 256, 0.5)
 const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Haunted Village)", (100/0.3), true, false, false, false, 256, 0.5)
 const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Haunted Village)", (100/1.6), true, false, false, false, 256, 0.5)
+const kayute = new Loomian("Kayute (2023 Jolly Festival)*", 1, true, true, false, false, 256, 0.5);
+const leopaw = new Loomian("Leopaw (2023 Jolly Festival)*", 1, true, true, false, false, 256, 0.5);
+const christmasImpkin = new Loomian("Elf Impkin (2023 Jolly Festival)", 10, true, false, false, false, 256, 0.5);
+const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)*", 1, true, false, false, false, 256, 0.5);
+
+// name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?, sa odds, ability charm
+
 // collate all objects into an array
 
 var commonLoomianData = [
@@ -307,7 +314,11 @@ var eventLoomianData = [
   fabergeKyeggo,
   mirrami,
   halloweenCryocub,
-  halloweenMistlebud
+  halloweenMistlebud,
+  kayute,
+  leopaw,
+  christmasImpkin,
+  christmasVolpup
 ]
 
 var selectionList = []
