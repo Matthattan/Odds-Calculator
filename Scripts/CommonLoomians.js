@@ -111,8 +111,8 @@ const whispup = new Loomian("Whispup", 1, true, true);
 const wiledile = new Loomian("Wiledile", 23, true, true);
 const wispur = new Loomian("Wispur", 64, true, true);
 const zaleo = new Loomian("Zaleo", 1, true, true);
-const kayute = new Loomian("Kayute*", 67, true, true);
-const leopaw = new Loomian("Leopaw*", 20, true, true)
+const kayute = new Loomian("Kayute", 67, true, true);
+const leopaw = new Loomian("Leopaw", 20, true, true)
 const mirrami = new Loomian("Mirrami", 50, true, true);
 
 // name, odds, is alpha, is gamma
