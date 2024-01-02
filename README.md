@@ -117,3 +117,11 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Redid gleaming odds to reflect how the game actually calculates alphas and gammas odds (you've been doing it wrong for so long, bozos)
 - Sorted the order of Event and Roaming loomians to be chronological
 
+## Version 6.1
+- Kayute, Leopae and Reskin Volpup odds have been added
+- Moved some Loomians (including the first to listed above) to other sections
+  - From now on, the Event Loomians page is strictly for Loomians within events (non-rallyables and reskins, mainly)
+- Non-event Loomian Lists have been automatically sorted in alphabetical order (yay no more maintaining by me!). 
+  - Event Loomians have been retroactively sorted by chronological order (should make it easier for me to add Loomians to)
+- Redid the backend of Ability odds for more maintainable SA Odds and Ability Charm multiplier
+- Added Rainbow Vari to the Event Section of the Secret Ability Calculator, let me know if the Rainbow/Coloured Goppies were ability locked so I can accurately add those 🙏

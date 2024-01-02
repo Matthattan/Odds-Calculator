@@ -35,7 +35,7 @@ class Loomian {
 }
 
 //name, odds, alphaG, gammaG
-const christmasGlassScorbs = new Loomian("Christmas Scorbs - Common (2022 Christmas)", 12, true, false);
+const christmasGlassScorbs = new Loomian("Christmas Scorbs - Common (2022 Jolly Village)", 12, true, false);
 const jellyGumpod = new Loomian("Jelly Gumpod (2022 Sweet Retreat)", 50, true, true);
 const lunarBunpuff = new Loomian("Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, true);
 const colouredGoppies = new Loomian("Coloured Goppies (2023 Loomunity)", 60, false, false);
@@ -46,14 +46,14 @@ const valentinesAntsee = new Loomian("Valentines Antsee (2023 Valentines)", 80, 
 const bronzeGeklow = new Loomian("Bronze Geklow (2020 Anniversary)", 100, true, false);
 const bronzeCopling = new Loomian("Bronze Copling (2023 Anniversary)", 100, true, false);
 const sweetsPhancub = new Loomian("Sweets Phancub (2022 Sweet Retreat)", 100, true, true);
-const snowmanTotemochi = new Loomian("Snowman Totemochi (2022 Christmas)", 150, true, false);
+const snowmanTotemochi = new Loomian("Snowman Totemochi (2022 Jolly Village)", 150, true, false);
 const cakeSlugling = new Loomian("Cake Slugling (2022 Sweet Retreat)", 200, true, true,);
 const silverGeklow = new Loomian("Silver Geklow (2020 Anniversary)", 250, true, false);
 const silverCopling = new Loomian("Silver Copling (2023 Anniversary)", true, false);
 const halloweenSlugling = new Loomian("Halloween Slugling (2019 Halloween)", 300, true, false);
-const christmasGlassScorb = new Loomian("Glass Scorb - Rare (2022 Christmas)", 372, true, false);
-const halloweenTaoshi = new Loomian("Halloween Taoshi (2022 Halloween)", 450, true, true);
-const halloweenTerriti = new Loomian("Halloween Territi (2022 Halloween)", 450, true, true);
+const christmasGlassScorb = new Loomian("Glass Scorb - Rare (2022 Jolly Village)", 372, true, false);
+const halloweenTaoshi = new Loomian("Halloween Taoshi (2022 Uhnne Fair)", 450, true, true);
+const halloweenTerriti = new Loomian("Halloween Territi (2022 Uhnne Fair)", 450, true, true);
 const goldGeklow = new Loomian("Gold Geklow (2020 Anniversary)", 500, true, false);
 const goldCopling = new Loomian("Gold Copling (2023 Anniversary)", 500, true, false);
 const christmasPropae = new Loomian("Santa Propae (2021 Christmas)", 500, true, true);
@@ -75,13 +75,11 @@ const starKyeggo = new Loomian("Star Kyeggo (2023 Easter)", (6*(100/6)), true, t
 const fabergeKyeggo = new Loomian("Faberge Kyeggo (2023 Easter)", (6*(100/0.33)), true, true);
 const sapphireGeklow = new Loomian("Sapphire Geklow (2020 Anniversary)", 10000, true, false);
 const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000, true, false);
-const mirrami = new Loomian("Mirrami (2023 Haunted Village)", 50, true, true);
 const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Haunted Village)", (100/1.6), true, true);
 const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Haunted Village)", (100/0.3), true, true);
-const kayute = new Loomian("Kayute (2023 Jolly Festival)*", 1, true, true);
-const leopaw = new Loomian("Leopaw (2023 Jolly Festival)*", 1, true, true);
 const christmasImpkin = new Loomian("Elf Impkin (2023 Jolly Festival)", 10, true, true);
-const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)*", 1, true, true,);
+const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)", 133, true, true,);
+const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 1, true, true,)
 
 // collate all objects into an array
 const optionData = [
@@ -94,6 +92,10 @@ const optionData = [
   emeraldGeklow,
   rubyGeklow,
   sapphireGeklow,
+  hwKabunga,
+  Icigool2020,
+  christmasPropae,
+  Icigool2021,
   rainbowShawchi,
   rainbowVari,
   sweetsPhancub,
@@ -101,9 +103,6 @@ const optionData = [
   jellyGumpod,
   halloweenTaoshi,
   halloweenTerriti,
-  Icigool2020,
-  christmasPropae,
-  Icigool2021,
   christmasGlassScorb,
   christmasGlassScorbs,
   snowmanTotemochi,
@@ -124,11 +123,8 @@ const optionData = [
   emeraldCopling,
   rubyCopling,
   sapphireCopling,
-  mirrami,
   halloweenMistlebud,
   halloweenCryocub,
-  kayute,
-  leopaw,
   christmasImpkin,
   christmasVolpup
 ]

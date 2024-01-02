@@ -111,8 +111,13 @@ const whispup = new Loomian("Whispup", 1, true, true);
 const wiledile = new Loomian("Wiledile", 23, true, true);
 const wispur = new Loomian("Wispur", 64, true, true);
 const zaleo = new Loomian("Zaleo", 1, true, true);
+const kayute = new Loomian("Kayute*", 67, true, true);
+const leopaw = new Loomian("Leopaw*", 20, true, true)
+const mirrami = new Loomian("Mirrami", 50, true, true);
 
-const optionData = [
+// name, odds, is alpha, is gamma
+
+const loomianList = [
     ampole,
     antsee,
     babore,
@@ -202,9 +207,26 @@ const optionData = [
     weevolt,
     whimpor,
     whispup,
-    wispur,
     zaleo,
+    wispur,
+    kayute,
+    leopaw,
+    mirrami,
 ]
+
+// sort Loomians alphabetically
+optionData = loomianList.sort((a, b) => {
+    const nameA = a.name.toUpperCase(); // convert names to uppercase for case-insensitive sorting
+    const nameB = b.name.toUpperCase();
+
+    if (nameA < nameB) {
+        return -1;
+    }
+    if (nameA > nameB) {
+        return 1;
+    }
+    return 0; // names are equal
+});
 
 // defining html elements
 let selectElement = document.getElementById("mySelect");
