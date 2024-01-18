@@ -80,6 +80,7 @@ const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Haunted Village)",
 const christmasImpkin = new Loomian("Elf Impkin (2023 Jolly Festival)", 10, true, true);
 const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)", 133, true, true,);
 const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 1, true, true,)
+const xmasVaris = new Loomian("Varilution Varis (2023 Jolly Festival)", 50, true, false)
 
 // collate all objects into an array
 const optionData = [
@@ -126,7 +127,8 @@ const optionData = [
   halloweenMistlebud,
   halloweenCryocub,
   christmasImpkin,
-  christmasVolpup
+  christmasVolpup,
+  xmasVaris
 ]
 
 // defining Variables

@@ -125,3 +125,6 @@ Happy 4th Anniverary Loomian Legacy 🥳
   - Event Loomians have been retroactively sorted by chronological order (should make it easier for me to add Loomians to)
 - Redid the backend of Ability odds for more maintainable SA Odds and Ability Charm multiplier
 - Added Rainbow Vari to the Event Section of the Secret Ability Calculator, let me know if the Rainbow/Coloured Goppies were ability locked so I can accurately add those 🙏
+
+## Version 6.2
+- Event Gargolems and Event Varis have been added to the calculators
