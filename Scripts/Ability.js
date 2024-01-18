@@ -179,6 +179,7 @@ const christmasImpkin = new Loomian("Elf Impkin (2023 Jolly Festival)", 10, true
 const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)*", 133, true, false, false, false);
 const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 1, true, false, false, false);
 const rainbowVari = new Loomian("Rainbow Vari (2022 Loomunity)", 15000, true, false, false, false);
+const xmasVaris = new Loomian("Varilution Varis (2023 Jolly Festival)", 50, true, false, false, false); 
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?, sa odds, ability charm
 

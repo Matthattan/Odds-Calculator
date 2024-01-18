@@ -37,6 +37,7 @@ const hwAkhalos = new Roaming("Skeleton Akhalos (2023 Haunted Village)", 1024, t
 const hwWabalisc = new Roaming("Zombie Wabalisc (2023 Haunted Village)", 4096, true, true, false, false);
 const mimask = new Roaming("Mimask (2023 Jolly Festival)", 1024, true, true, true, false);
 const xmasNevermare = new Roaming("Reindeer Nevermare (2023 Jolly Festival)", 4096, true, true, false, false);
+const xmasGargolems = new Roaming("Christmas Gargolem Forms (2023 Jolly Festival)", 1024, true, true, false, false);
 
 const optionData = [
     duskit,
@@ -65,7 +66,8 @@ const optionData = [
 	hwAkhalos,
 	hwWabalisc,
     mimask,
-    xmasNevermare
+    xmasNevermare,
+    xmasGargolems
 ]
 
 // Declaring Elements
@@ -185,6 +187,7 @@ calculateButton.addEventListener('click', function() {
 	switch (selectedName.value) {
 		case "Reindeer Ikazune (2020 Christmas":
 		case "Skeleton Cephalops (2022 Halloween)":
+        case "Christmas Gargolem Forms (2023 Jolly Festival)":
 			gleamingOdds = 2048;
 			break;
 		default:
