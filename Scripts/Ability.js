@@ -131,8 +131,8 @@ const somata = new Loomian("Somata", 10, true, true, true, false);
 const crabushi = new Loomian("Crabushi", 1, true, true, true, false);
 const skampi = new Loomian("Skampi", 1, true, true, true, false);
 const singeel = new Loomian("Singeel", 1, true, true, true, false);
-const kayute = new Loomian("Kayute*", 1, true, true, false, false);
-const leopaw = new Loomian("Leopaw*", 1, true, true, false, false);
+const kayute = new Loomian("Kayute", 1, true, true, false, false);
+const leopaw = new Loomian("Leopaw", 1, true, true, false, false);
 const mirrami = new Loomian("Mirrami", 50, true, true, false, false);
 
 //Non-Rallyable Event Loomians

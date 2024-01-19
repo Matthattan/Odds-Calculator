@@ -65,6 +65,7 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Atlanthian Part 2 is Finally Here! 🥳
 - Completely redid the website
 - New Loomians of Part 2 have been added
+  - No official odds have been posted for the majority of these Loomians so they're based on my own encounters.
 - Some Loomians (like Rainbow Pyramind) have been removed due to not being applicable to any calculations
 - fixed some bugs (with some new ones maybe appearing?)
 
@@ -128,3 +129,7 @@ Happy 4th Anniverary Loomian Legacy 🥳
 
 ## Version 6.2
 - Event Gargolems and Event Varis have been added to the calculators
+
+## Version 6.2.1
+- Added a note for Atlanthian part 2 Loomians (scroll up!)
+- Removed asterisks for Jolly Festival Loomians as the odds have been long added
