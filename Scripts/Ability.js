@@ -139,6 +139,7 @@ const mirrami = new Loomian("Mirrami", 50, true, true, false, false);
 const christmasGlassScorbs = new Loomian("Christmas Scorbs (Normal)", 12, true, false, false, false);
 const jellyGumpod = new Loomian("Jelly Gumpod (2022 Sweet Retreat)", 50, true, false, false, false);
 const lunarBunpuff = new Loomian("Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, false, false, false);
+const lunarBunpuffRad = new Loomian("Radiant Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, false, false, false);
 const colouredGoppies = new Loomian("Coloured Goppies (2023 Loomunity)", 60, true, false, false, false);
 const valentinesAntsee = new Loomian("Valentines Antsee (2023 Valentines)", 80, true, false, false, false);
 const bronzeGeklow = new Loomian("Bronze Geklow (2020 Anniversary)", 100, true, false, false, false);
@@ -180,6 +181,9 @@ const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)*", 133
 const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 1, true, false, false, false);
 const rainbowVari = new Loomian("Rainbow Vari (2022 Loomunity)", 15000, true, false, false, false);
 const xmasVaris = new Loomian("Varilution Varis (2023 Jolly Festival)", 50, true, false, false, false); 
+const lunarDractus = new Loomian("Lunar New Year Dractus (2024 Chinese New Year)", 60, true, false, false, false);
+const lunarDractusRad = new Loomian("Radiant Lunar New Year Dractus (2024 Chinese New Year)", 600, true, false, false, false);
+
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?, sa odds, ability charm
 
@@ -305,6 +309,7 @@ var eventLoomianData = [
   christmasGlassScorbs,
   snowmanTotemochi, 
   lunarBunpuff,
+  lunarBunpuffRad,
   valentinesAntsee,
   normalKyeggo,
   frillyKyeggo,
@@ -321,7 +326,10 @@ var eventLoomianData = [
   halloweenCryocub,
   halloweenMistlebud,
   christmasImpkin,
-  christmasVolpup
+  christmasVolpup,
+  xmasVaris,
+  lunarDractus,
+  lunarDractusRad
 ]
 
 // sort Common Loomians alphabetically
@@ -340,8 +348,7 @@ commonLoomianData = optionData.sort((a, b) => {
 
 // HTML elements
 const eventSelectBox = document.getElementById("eventSelect");
-const loomianSelectBox = document.getElementById("mySelect");
-
+const selectElement = document.getElementById("mySelect");
 const oddsDisplayButton = document.getElementById("displayOdds");
 const calculateButton = document.getElementById("calculate");
 const abilityCharmID = document.getElementById("AbilityCharm"); 
@@ -352,16 +359,16 @@ const rallyResult = document.getElementById("RallyResult");
 
 // JS Constants and Variables
 var selectionList = []
-var abilityOdds = 256
-var abilityCharmMultiplier = 0.5
+const abilityOdds = 256
+const abilityCharmMultiplier = 0.5
 
 //Load 2nd select box based on 1st box selection
 eventSelectBox.addEventListener("change", function() {
     switch (this.value) {
       case "Common Loomians":
         //for every item in the 2nd select box, remove it
-        for (let i = loomianSelectBox.options.length - 1; i >= 0; i--) {
-          loomianSelectBox.remove(i);
+        for (let i = selectElement.options.length - 1; i >= 0; i--) {
+          selectElement.remove(i);
         }
 
         selectionList = []
@@ -375,9 +382,10 @@ eventSelectBox.addEventListener("change", function() {
         //add selection array into 2nd select box
         for (let Loomian of selectionList) {
           let option = document.createElement('option');
+          let selectElement = document.getElementById("mySelect")
+
           option.value = Loomian.name; // Set the value to the object's name
           option.text = `${Loomian.name}`; // Set the label to a combination of name and option1
-          let selectElement = document.getElementById("mySelect")
           selectElement.appendChild(option);
         }
 
@@ -393,8 +401,8 @@ eventSelectBox.addEventListener("change", function() {
         break;
       case "Event Loomians":
         //for every item in the 2nd select box, remove it
-        for (let i = loomianSelectBox.options.length - 1; i >= 0; i--) {
-          loomianSelectBox.remove(i);
+        for (let i = selectElement.options.length - 1; i >= 0; i--) {
+          selectElement.remove(i);
         }
 
         selectionList = []
@@ -431,7 +439,7 @@ eventSelectBox.addEventListener("change", function() {
 })
 
 // update statistics
-loomianSelectBox.addEventListener("change", function updateLabels() {
+selectElement.addEventListener("change", function updateLabels() {
   let selectedName = document.getElementById("mySelect").value;
   let selectedLoomian = selectionList.find(loomian => loomian.name === selectedName);
 

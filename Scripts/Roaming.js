@@ -71,7 +71,7 @@ const optionData = [
 ]
 
 // Declaring Elements
-const selectBox = document.getElementById("mySelect");
+const selectElement = document.getElementById("mySelect");
 const setEncounterCB = document.getElementById("SetEncounterBox");
 const roamingAmount = document.getElementById("RoamingAmount");
 
@@ -80,7 +80,7 @@ const gBoostBox = document.getElementById("GleamingBoostBox");
 const rCharmBox = document.getElementById("RoamingCharmBox");
 const rBoostBox = document.getElementById("RoamingBoostBox");
 
-const displayOddsButton = document.getElementById("displayOdds");
+const oddsDisplayButton = document.getElementById("displayOdds");
 const calculateButton = document.getElementById("calculate");
 
 const oddsDescription = document.getElementById("odds");
@@ -101,17 +101,17 @@ for (let Loomian of optionData) {
     let option = document.createElement('option');
     option.value = Loomian.name; // Set the value to the object's name
     option.text = `${Loomian.name}`; // Set the label to a combination of name and option1
-    selectBox.appendChild(option);
+    selectElement.appendChild(option);
 }
 
 // Toggle gleaming outputs based on roaming property
-selectBox.addEventListener("change", function() {
+selectElement.addEventListener("change", function() {
     let selectedName = this.value;
     let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 
     if (selectedLoomian) {
         calculateButton.disabled = false;
-        displayOddsButton.disabled = false;
+        oddsDisplayButton.disabled = false;
     }
 
     // check if Loomian is a set encounter
@@ -136,8 +136,8 @@ selectBox.addEventListener("change", function() {
 });
 
 // Display the Odds of the Loomian select when Button is clicked
-displayOddsButton.addEventListener('click', function() {
-	let selectedName = selectBox.value;
+oddsDisplayButton.addEventListener('click', function() {
+	let selectedName = selectElement.value;
     let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 
 	// Output the raw roaming odds of the Loomian
@@ -165,7 +165,7 @@ setEncounterCB.addEventListener('change', function() {
 
 // calculate gleaming and roaming odds
 calculateButton.addEventListener('click', function() {
-	let selectedName = selectBox.value;
+	let selectedName = selectElement.value;
 	let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
 	let subtotal = 1;
 
