@@ -38,6 +38,7 @@ class Loomian {
 const christmasGlassScorbs = new Loomian("Christmas Scorbs - Common (2022 Jolly Village)", 12, true, false);
 const jellyGumpod = new Loomian("Jelly Gumpod (2022 Sweet Retreat)", 50, true, true);
 const lunarBunpuff = new Loomian("Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, true);
+const lunarBunpuffRad = new Loomian("Radiant Lunar New Year Bunpuff (2023 Chinese New Year)", 600, true, true);
 const colouredGoppies = new Loomian("Coloured Goppies (2023 Loomunity)", 60, false, false);
 const rainbowNymaurae = new Loomian("Rainbow Nymaurae (2023 Loomunity)", 15000, false, false);
 const rainbowPyramind = new Loomian("Rainbow Pyramind (2023 Loomunity)", 20000, false, false);
@@ -81,6 +82,9 @@ const christmasImpkin = new Loomian("Elf Impkin (2023 Jolly Festival)", 10, true
 const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)", 133, true, true,);
 const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 1, true, true,)
 const xmasVaris = new Loomian("Varilution Varis (2023 Jolly Festival)", 50, true, false)
+const lunarDractus = new Loomian("Lunar New Year Dractus (2024 Chinese New Year)", 60, true, false);
+const lunarDractusRad = new Loomian("Radiant Lunar New Year Dractus (2024 Chinese New Year)", 600, true, false);
+
 
 // collate all objects into an array
 const optionData = [
@@ -108,6 +112,7 @@ const optionData = [
   christmasGlassScorbs,
   snowmanTotemochi,
   lunarBunpuff,
+  lunarBunpuffRad,
   valentinesAntsee,
   normalKyeggo,
   frillyKyeggo,
@@ -128,18 +133,20 @@ const optionData = [
   halloweenCryocub,
   christmasImpkin,
   christmasVolpup,
-  xmasVaris
+  xmasVaris,
+  lunarDractus,
+  lunarDractusRad
 ]
 
 // defining Variables
-let selectElement = document.getElementById("mySelect");
-let alphaResult = document.getElementById("AlphaResult");
-let gammaResult = document.getElementById("GammaResult");
-let rwResult = document.getElementById("RWResult");
-let gCharm = document.getElementById("GleamingCharm");
-let gBoost = document.getElementById("GleamingBoost");
-let oddsDisplayButton = document.getElementById("displayOdds");
-let calculateButton = document.getElementById("calculate");
+const selectElement = document.getElementById("mySelect");
+const alphaResult = document.getElementById("AlphaResult");
+const gammaResult = document.getElementById("GammaResult");
+const rwResult = document.getElementById("RWResult");
+const gCharm = document.getElementById("GleamingCharm");
+const gBoost = document.getElementById("GleamingBoost");
+const oddsDisplayButton = document.getElementById("displayOdds");
+const calculateButton = document.getElementById("calculate");
 
 // defining all JS data
 

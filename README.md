@@ -136,3 +136,8 @@ Happy 4th Anniverary Loomian Legacy 🥳
 
 ## Version 6.2.2
 - Minor bug fix with Roaming Page not counting halved gleaming odds
+
+## Version 7
+- Added (Radiant) Lunar Dractus
+  - Also added Radiant Lunar Bunnecki
+- Revised some coding conventions

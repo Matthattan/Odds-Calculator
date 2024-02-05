@@ -229,14 +229,14 @@ optionData = loomianList.sort((a, b) => {
 });
 
 // defining html elements
-let selectElement = document.getElementById("mySelect");
-let alphaResult = document.getElementById("AlphaResult");
-let gammaResult = document.getElementById("GammaResult");
-let rwResult = document.getElementById("RWResult");
-let gCharm = document.getElementById("GleamingCharm");
-let gBoost = document.getElementById("GleamingBoost");
-let oddsDisplayButton = document.getElementById("displayOdds");
-let calculateButton = document.getElementById("calculate");
+const selectElement = document.getElementById("mySelect");
+const alphaResult = document.getElementById("AlphaResult");
+const gammaResult = document.getElementById("GammaResult");
+const rwResult = document.getElementById("RWResult");
+const gCharm = document.getElementById("GleamingCharm");
+const gBoost = document.getElementById("GleamingBoost");
+const oddsDisplayButton = document.getElementById("displayOdds");
+const calculateButton = document.getElementById("calculate");
 
 // defining all JS data
 
