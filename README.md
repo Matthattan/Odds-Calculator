@@ -134,6 +134,9 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Added a note for Atlanthian part 2 Loomians (scroll up!)
 - Removed asterisks for Jolly Festival Loomians as the odds have been long added
 
+## Version 6.2.2
+- Minor bug fix with Roaming Page not counting halved gleaming odds
+
 ## Version 7
 - Added (Radiant) Lunar Dractus
   - Also added Radiant Lunar Bunnecki

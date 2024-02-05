@@ -184,7 +184,7 @@ calculateButton.addEventListener('click', function() {
 	}
 
 	// check if gleaming odds have been modified for selected Roaming
-	switch (selectedName.value) {
+	switch (selectedName) {
 		case "Reindeer Ikazune (2020 Christmas":
 		case "Skeleton Cephalops (2022 Halloween)":
         case "Christmas Gargolem Forms (2023 Jolly Festival)":
