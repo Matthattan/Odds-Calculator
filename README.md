@@ -141,3 +141,12 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Added (Radiant) Lunar Dractus
   - Also added Radiant Lunar Bunnecki
 - Revised some coding conventions
+
+## Version 8
+- Added the new Yokai Loomians: 
+  Eyebrella, 
+  Lissen, 
+  Lantot, 
+  Milgoo
+- You can now search for Sweets Phancub, Halloween Kabunga and Christmas Craytal's Ability Odds while rallying 
+- and various tiny bug fixes

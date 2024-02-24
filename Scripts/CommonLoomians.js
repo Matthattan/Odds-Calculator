@@ -114,6 +114,10 @@ const zaleo = new Loomian("Zaleo", 1, true, true);
 const kayute = new Loomian("Kayute", 67, true, true);
 const leopaw = new Loomian("Leopaw", 20, true, true)
 const mirrami = new Loomian("Mirrami", 50, true, true);
+const eyebrella = new Loomian("Eyebrella", 1, true, true);
+const lissen = new Loomian("Lissen", 1, true, true);
+const lantot = new Loomian("Lantot", 1, true, true);
+const milgoo = new Loomian("Milgoo", 1, true, true);
 
 // name, odds, is alpha, is gamma
 
@@ -212,6 +216,10 @@ const loomianList = [
     kayute,
     leopaw,
     mirrami,
+    eyebrella,
+    lissen,
+    lantot,
+    milgoo,
 ]
 
 // sort Loomians alphabetically

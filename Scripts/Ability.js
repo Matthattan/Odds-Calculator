@@ -57,7 +57,7 @@ const cinnaboo = new Loomian("Cinnaboo", 1, true, true, false, false);
 const copling = new Loomian("Copling", 20/17, true, true, false, false);
 const cosmiore = new Loomian("Cosmiore", 128, true, false, false, false);
 const craytal = new Loomian("Craytal", 1, true, true, false, false);
-const eventCraytal = new Loomian("Event Craytal", 1 , true, false, false, false);
+const eventCraytal = new Loomian("Event Craytal", 1 , true, true, false, false);
 const cryocub = new Loomian("Cryocub", 40, true, true, false, false);
 const cupoink = new Loomian("Cupoink", 10, true, true, false, false);
 const dobo = new Loomian("Dobo", 1, false, false, false, true);
@@ -134,9 +134,13 @@ const singeel = new Loomian("Singeel", 1, true, true, true, false);
 const kayute = new Loomian("Kayute", 1, true, true, false, false);
 const leopaw = new Loomian("Leopaw", 1, true, true, false, false);
 const mirrami = new Loomian("Mirrami", 50, true, true, false, false);
+const eyebrella = new Loomian("Eyebrella", 1, true, true, false, false);
+const lissen = new Loomian("Lissen", 1, true, true, false, false);
+const lantot = new Loomian("Lantot", 1, true, true, false, false);
+const milgoo = new Loomian("Milgoo", 1, true, true, false, false);
 
 //Non-Rallyable Event Loomians
-const christmasGlassScorbs = new Loomian("Christmas Scorbs (Normal)", 12, true, false, false, false);
+const christmasGlassScorbs = new Loomian("Common Christmas Scorbs (2022 Christmas)", 12, true, false, false, false);
 const jellyGumpod = new Loomian("Jelly Gumpod (2022 Sweet Retreat)", 50, true, false, false, false);
 const lunarBunpuff = new Loomian("Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, false, false, false);
 const lunarBunpuffRad = new Loomian("Radiant Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, false, false, false);
@@ -144,7 +148,7 @@ const colouredGoppies = new Loomian("Coloured Goppies (2023 Loomunity)", 60, tru
 const valentinesAntsee = new Loomian("Valentines Antsee (2023 Valentines)", 80, true, false, false, false);
 const bronzeGeklow = new Loomian("Bronze Geklow (2020 Anniversary)", 100, true, false, false, false);
 const bronzeCopling = new Loomian("Bronze Copling (2023 Anniversary)", 100, true, false, false, false);
-const sweetsPhancub = new Loomian("Sweets Phancub (2022 Sweet Retreat)", 100, true, false, false, false);
+const sweetsPhancub = new Loomian("Sweets Phancub (2022 Sweet Retreat)", 100, true, true, false, false);
 const snowmanTotemochi = new Loomian("Snowman Totemochi (2022 Christmas)", 150, true, false, false, false);
 const cakeSlugling = new Loomian("Cake Slugling (2022 Sweet Retreat)", 200, true , false, false, false);
 const silverGeklow = new Loomian("Silver Geklow (2020 Anniversary)", 250, true, false, false, false);
@@ -156,7 +160,7 @@ const halloweenTerriti = new Loomian("Halloween Territi (2022 Halloween)", 450, 
 const goldGeklow = new Loomian("Gold Geklow (2020 Anniversary)", 500, true, false, false, false);
 const goldCopling = new Loomian("Gold Copling (2023 Anniversary)", 500, true, false, false, false);
 const christmasPropae = new Loomian("Santa Propae (2021 Christmas)", 500, true, false, false, false);
-const halloweenShawchi = new Loomian("Halloween SHawchi (2019 Halloween)", 500, true, false, false, false);
+const halloweenShawchi = new Loomian("Halloween Shawchi (2019 Halloween)", 500, true, false, false, false);
 const Icigool2019 = new Loomian("Coloured Icigool (2019 Christmas)", 600, true, false, false, false);
 const Icigool2020 = new Loomian("Coloured Icigool (2020 Christmas)", 600, true, false, false, false);
 const Icigool2021 = new Loomian("Coloured Icigool (2021 Christmas and Beyond)", 600, true, false, false, false);
@@ -177,13 +181,12 @@ const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000
 const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Haunted Village)", (100/0.3), true, false, false, false);
 const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Haunted Village)", (100/1.6), true, false, false, false);
 const christmasImpkin = new Loomian("Elf Impkin (2023 Jolly Festival)", 10, true, false, false, false);
-const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)*", 133, true, false, false, false);
-const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 1, true, false, false, false);
+const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)", 133, true, false, false, false);
+const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 1, true, true, false, false);
 const rainbowVari = new Loomian("Rainbow Vari (2022 Loomunity)", 15000, true, false, false, false);
 const xmasVaris = new Loomian("Varilution Varis (2023 Jolly Festival)", 50, true, false, false, false); 
 const lunarDractus = new Loomian("Lunar New Year Dractus (2024 Chinese New Year)", 60, true, false, false, false);
 const lunarDractusRad = new Loomian("Radiant Lunar New Year Dractus (2024 Chinese New Year)", 600, true, false, false, false);
-
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?, sa odds, ability charm
 
@@ -281,6 +284,10 @@ var optionData = [
   kayute,
   leopaw,
   mirrami,
+  eyebrella,
+  lissen,
+  lantot,
+  milgoo,
 ]
 
 var eventLoomianData = [
