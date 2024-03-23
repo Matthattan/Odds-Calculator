@@ -34,7 +34,6 @@ class Loomian {
   }
 }
 
-//name, odds, alphaG, gammaG
 const christmasGlassScorbs = new Loomian("Christmas Scorbs - Common (2022 Jolly Village)", 12, true, false);
 const jellyGumpod = new Loomian("Jelly Gumpod (2022 Sweet Retreat)", 50, true, true);
 const lunarBunpuff = new Loomian("Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, true);
@@ -84,7 +83,14 @@ const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 1, true, tru
 const xmasVaris = new Loomian("Varilution Varis (2023 Jolly Festival)", 50, true, false)
 const lunarDractus = new Loomian("Lunar New Year Dractus (2024 Chinese New Year)", 60, true, false);
 const lunarDractusRad = new Loomian("Radiant Lunar New Year Dractus (2024 Chinese New Year)", 600, true, false);
+const normalKyeggo2024 = new Loomian("Normal Kyeggo (2024 Easter)", 3, true, true);
+const dreggodyneKyeggo = new Loomian("Dreggodyne-Pattern Kyeggo (2024 Easter)", true, true);
+const yellowKyeggo = new Loomian("Yellow-Blue Kyeggo (2024 Easter)", 6, true, true);
+const greenStripesKyeggo = new Loomian("Pink-Green Stripes Kyeggo (2024 Easter", 6, true, true);
+const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, true);
+const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, true);
 
+//name, odds, alphaG, gammaG
 
 // collate all objects into an array
 const optionData = [
@@ -135,7 +141,13 @@ const optionData = [
   christmasVolpup,
   xmasVaris,
   lunarDractus,
-  lunarDractusRad
+  lunarDractusRad,
+  normalKyeggo2024,
+  yellowKyeggo,
+  dreggodyneKyeggo,
+  greenStripesKyeggo,
+  goldKyeggo,
+  fabergeKyeggo2024
 ]
 
 // defining Variables

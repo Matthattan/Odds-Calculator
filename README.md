@@ -150,3 +150,9 @@ Happy 4th Anniverary Loomian Legacy 🥳
   Milgoo
 - You can now search for Sweets Phancub, Halloween Kabunga and Christmas Craytal's Ability Odds while rallying 
 - and various tiny bug fixes
+
+## Version 9 
+- Added the new Kyeggo reskins
+  - all the new Faberge's are shown as one option but the odds are for 1 faberge (300)
+  - Might change the name for the yellow kyeggo that has blue lines, theres no official name for it yet so I have no idea what recognisable name to give it
+- Renamed some Roaming Reskins for continuity to show which event they come from
