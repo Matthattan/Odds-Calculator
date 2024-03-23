@@ -187,8 +187,15 @@ const rainbowVari = new Loomian("Rainbow Vari (2022 Loomunity)", 15000, true, fa
 const xmasVaris = new Loomian("Varilution Varis (2023 Jolly Festival)", 50, true, false, false, false); 
 const lunarDractus = new Loomian("Lunar New Year Dractus (2024 Chinese New Year)", 60, true, false, false, false);
 const lunarDractusRad = new Loomian("Radiant Lunar New Year Dractus (2024 Chinese New Year)", 600, true, false, false, false);
+const normalKyeggo2024 = new Loomian("Normal Kyeggo (2024 Easter)", 3, true, true, false, false);
+const dreggodyneKyeggo = new Loomian("Dreggodyne-Pattern Kyeggo (2024 Easter)", 6, true, false, false, false);
+const yellowKyeggo = new Loomian("Yellow-Blue Kyeggo (2024 Easter)", 6, true, false, false, false);
+const greenStripesKyeggo = new Loomian("Pink-Green Stripes Kyeggo (2024 Easter)", 6, true, false, false, false);
+const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, false, false , false);
+const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, false, false, false);
 
-// name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?, sa odds, ability charm
+
+// name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
 // collate all objects into an array
 
@@ -336,7 +343,13 @@ var eventLoomianData = [
   christmasVolpup,
   xmasVaris,
   lunarDractus,
-  lunarDractusRad
+  lunarDractusRad,
+  normalKyeggo2024,
+  yellowKyeggo,
+  dreggodyneKyeggo,
+  greenStripesKyeggo,
+  goldKyeggo,
+  fabergeKyeggo2024
 ]
 
 // sort Common Loomians alphabetically
