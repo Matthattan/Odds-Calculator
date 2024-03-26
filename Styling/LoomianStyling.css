@@ -188,8 +188,8 @@ footer a {
     font-size: 16px;
   }
 
-  select{
-    font-size: 12px;
+  #mySelect{
+    font-size: 0.6em;
   }
 
   footer{
@@ -232,6 +232,10 @@ footer a {
   .row4 {
     height: 100px;
     font-size: 12px;
+  }
+
+  #mySelect {
+    font-size: 0.4em;
   }
 
   footer {
