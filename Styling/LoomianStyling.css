@@ -1,20 +1,18 @@
 body {
-    font-family: 'Russo One', sans-serif;
-    background-color: rgb(228, 228, 228);
-    margin: 0;
-    padding: 0;
+  font-family: 'Russo One', sans-serif;
+  background-color: rgb(228, 228, 228);
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    border: 3px solid #293858;
-    background-color: #293858;
-    height: 100px;
-    width: auto;
+  border: 3px solid #293858;
+  background-color: #293858;
+  width: auto;
 }
 
 h1 {
-    text-align: center;
-    font-size: 48px;
+  text-align: center;
 }
 
 .calculatorbody {
@@ -73,6 +71,13 @@ label, p, button, select {
   font-size: 24px;
 }
 
+#mySelect {
+  padding:0 30px 0 10px !important;
+  -webkit-padding-end: 30px !important;
+  -webkit-padding-start: 10px !important;
+  font-size: 0.4em;
+}
+
 footer {
   text-align: center;
   margin: auto;
@@ -96,6 +101,10 @@ footer a {
   .calculatorbody {
     width: 780px;
   }
+
+  select{
+    font-size: auto;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -105,7 +114,7 @@ footer a {
     margin-bottom: 50px;
   }
 
-  h1 {
+  header {
     text-align: center;
     font-size: 36px;
   }
@@ -130,6 +139,10 @@ footer a {
 
   .row4 {
     height: 125px;
+  }
+
+  select{
+    font-size: 18px;
   }
   
 }
@@ -176,7 +189,7 @@ footer a {
   }
 
   select{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   footer{
@@ -185,10 +198,6 @@ footer a {
 }
 
 @media screen and (max-width: 420px) {
-  header {
-    height: 50px;
-  }
-
   h1 {
     font-size: 18px;
   }
@@ -245,7 +254,7 @@ footer a {
   }
 
   select {
-    font-size: 10px;
+    font-size: 0.4em;
   }
 }
 

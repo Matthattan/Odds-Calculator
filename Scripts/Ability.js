@@ -188,9 +188,9 @@ const xmasVaris = new Loomian("Varilution Varis (2023 Jolly Festival)", 50, true
 const lunarDractus = new Loomian("Lunar New Year Dractus (2024 Chinese New Year)", 60, true, false, false, false);
 const lunarDractusRad = new Loomian("Radiant Lunar New Year Dractus (2024 Chinese New Year)", 600, true, false, false, false);
 const normalKyeggo2024 = new Loomian("Normal Kyeggo (2024 Easter)", 3, true, true, false, false);
-const dreggodyneKyeggo = new Loomian("Dreggodyne-Pattern Kyeggo (2024 Easter)", 6, true, false, false, false);
-const yellowKyeggo = new Loomian("Yellow-Blue Kyeggo (2024 Easter)", 6, true, false, false, false);
-const greenStripesKyeggo = new Loomian("Pink-Green Stripes Kyeggo (2024 Easter)", 6, true, false, false, false);
+const dreggodyneKyeggo = new Loomian("Runic-Pattern Kyeggo (2024 Easter)", 6, true, false, false, false);
+const yellowKyeggo = new Loomian("Pastel Kyeggo (2024 Easter)", 6, true, false, false, false);
+const greenStripesKyeggo = new Loomian("Triangle-Striped Kyeggo (2024 Easter)", 6, true, false, false, false);
 const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, false, false , false);
 const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, false, false, false);
 
