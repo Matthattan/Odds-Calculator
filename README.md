@@ -130,19 +130,19 @@ Happy 4th Anniverary Loomian Legacy 🥳
 ## Version 6.2
 - Event Gargolems and Event Varis have been added to the calculators
 
-## Version 6.2.1
+### Version 6.2.1
 - Added a note for Atlanthian part 2 Loomians (scroll up!)
 - Removed asterisks for Jolly Festival Loomians as the odds have been long added
 
-## Version 6.2.2
+### Version 6.2.2
 - Minor bug fix with Roaming Page not counting halved gleaming odds
 
-## Version 7
+# Version 7
 - Added (Radiant) Lunar Dractus
   - Also added Radiant Lunar Bunnecki
 - Revised some coding conventions
 
-## Version 8
+# Version 8
 - Added the new Yokai Loomians: 
   Eyebrella, 
   Lissen, 
@@ -151,8 +151,11 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - You can now search for Sweets Phancub, Halloween Kabunga and Christmas Craytal's Ability Odds while rallying 
 - and various tiny bug fixes
 
-## Version 9 
-- Added the new Kyeggo reskins
+# Version 9 
+- Added the new Kyeggo reskins in Event Loomians and Ability Odds
   - all the new Faberge's are shown as one option but the odds are for 1 faberge (300)
   - Might change the name for the yellow kyeggo that has blue lines, theres no official name for it yet so I have no idea what recognisable name to give it
 - Renamed some Roaming Reskins for continuity to show which event they come from
+
+## Version 9.1
+- 
