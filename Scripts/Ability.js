@@ -10,34 +10,25 @@ class Loomian {
 
   isPetrolith() {
     if (this.petrolith) {
-      rallyResult.style.display = "none";
       return true
     } else {
-      rallyResult.style.display = "block";
       return false
     }
   }
 
   isRally() {
     if (this.rallyRanch) {
-      rallyResult.style.display = "block";
-      abilityLeaderID.disabled = false;
-      return true
+        return true
     } else {
-      rallyResult.style.display = "none";
-      abilityLeaderID.checked = false;
-      abilityLeaderID.disabled = true;
-      return false
+        return false
     }
   }
 
   isWeather() {
     if (this.weather) {
-      weatherResult.style.display = "block";
-      return true
+        return true
     } else {
-      weatherResult.style.display = "none";
-      return false
+        return false
     }
   }
 }
@@ -194,176 +185,176 @@ const greenStripesKyeggo = new Loomian("Triangle-Striped Kyeggo (2024 Easter)", 
 const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, false, false , false);
 const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, false, false, false);
 
-
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
 // collate all objects into an array
-
 var optionData = [
-  ampole, 
-  antsee,
-  babore, 
-  bunpuff,
-  burroach,
-  cafnote,
-  cathorn,
-  cavenish,
-  ceratot,
-  chompactor,
-  cinnaboo,
-  copling,
-  cosmiore,
-  crabushi,
-  craytal,
-  eventCraytal,
-  cryocub,
-  cupoink,
-  dobo,
-  dokan,
-  dractus,
-  dripple,
-  eaglit,
-  embit,
-  fevine,
-  fentern,
-  florant,
-  geklow, 
-  gobbidemic,
-  goppie,
-  grubby,
-  gumpod,
-  gwurm,
-  hydrini,
-  igneol,
-  icigool,
-  impkin,
-  kabunga,
-  kanki,
-  kittone,
-  kleptyke,
-  kyogo,
-  llamba,
-  lumica,
-  makame,
-  mochibi,
-  nymaurae,
-  operaptor,
-  phancub,
-  pipsee,
-  poochrol,
-  polypi,
-  pwuff,
-  pyder,
-  pyke,
-  pyramind,
-  rakrawla,
-  scorb,
-  sharpod,
-  shawchi,
-  sherbot,
-  singeel,
-  skampi,
-  skilava,
-  slugling,
-  smoal,
-  snagull,
-  snagullS,
-  snocub,
-  snowl,
-  somata,
-  swimp,
-  swimp,
-  taoshi,
-  teripod,
-  territi,
-  twilat,
-  twittle,
-  vambat,
-  variF,
-  variM,
-  volpup,
-  weevolt,
-  whimpor,
-  whispup,
-  wiledile,
-  wispur,
-  zaleo,
-  kayute,
-  leopaw,
-  mirrami,
-  eyebrella,
-  lissen,
-  lantot,
-  milgoo,
+    ampole, 
+    antsee,
+    babore, 
+    bunpuff,
+    burroach,
+    cafnote,
+    cathorn,
+    cavenish,
+    ceratot,
+    chompactor,
+    cinnaboo,
+    copling,
+    cosmiore,
+    crabushi,
+    craytal,
+    eventCraytal,
+    cryocub,
+    cupoink,
+    dobo,
+    dokan,
+    dractus,
+    dripple,
+    eaglit,
+    embit,
+    fevine,
+    fentern,
+    florant,
+    geklow, 
+    gobbidemic,
+    goppie,
+    grubby,
+    gumpod,
+    gwurm,
+    hydrini,
+    igneol,
+    icigool,
+    impkin,
+    kabunga,
+    kanki,
+    kittone,
+    kleptyke,
+    kyogo,
+    llamba,
+    lumica,
+    makame,
+    mochibi,
+    nymaurae,
+    operaptor,
+    phancub,
+    pipsee,
+    poochrol,
+    polypi,
+    pwuff,
+    pyder,
+    pyke,
+    pyramind,
+    rakrawla,
+    scorb,
+    sharpod,
+    shawchi,
+    sherbot,
+    singeel,
+    skampi,
+    skilava,
+    slugling,
+    smoal,
+    snagull,
+    snagullS,
+    snocub,
+    snowl,
+    somata,
+    swimp,
+    swimp,
+    taoshi,
+    teripod,
+    territi,
+    twilat,
+    twittle,
+    vambat,
+    variF,
+    variM,
+    volpup,
+    weevolt,
+    whimpor,
+    whispup,
+    wiledile,
+    wispur,
+    zaleo,
+    kayute,
+    leopaw,
+    mirrami,
+    eyebrella,
+    lissen,
+    lantot,
+    milgoo,
 ]
 
 var eventLoomianData = [
-  halloweenSlugling,
-  halloweenShawchi,
-  christmasRagoon,
-  Icigool2019,
-  bronzeGeklow,
-  silverGeklow,
-  goldGeklow,
-  emeraldGeklow,
-  rubyGeklow,
-  sapphireGeklow,
-  hwKabunga,
-  Icigool2020,
-  Icigool2021,
-  christmasPropae,
-  rainbowShawchi,
-  rainbowVari,
-  sweetsPhancub,
-  cakeSlugling,
-  jellyGumpod,
-  halloweenTaoshi,
-  halloweenTerriti,
-  christmasGlassScorb,
-  christmasGlassScorbs,
-  snowmanTotemochi, 
-  lunarBunpuff,
-  lunarBunpuffRad,
-  valentinesAntsee,
-  normalKyeggo,
-  frillyKyeggo,
-  zzKyeggo,
-  starKyeggo,
-  fabergeKyeggo,
-  rainbowFlorant,
-  bronzeCopling,
-  silverCopling,
-  goldCopling,
-  emeraldCopling,
-  rubyCopling,
-  sapphireCopling,
-  halloweenCryocub,
-  halloweenMistlebud,
-  christmasImpkin,
-  christmasVolpup,
-  xmasVaris,
-  lunarDractus,
-  lunarDractusRad,
-  normalKyeggo2024,
-  yellowKyeggo,
-  dreggodyneKyeggo,
-  greenStripesKyeggo,
-  goldKyeggo,
-  fabergeKyeggo2024
+    halloweenSlugling,
+    halloweenShawchi,
+    christmasRagoon,
+    Icigool2019,
+    bronzeGeklow,
+    silverGeklow,
+    goldGeklow,
+    emeraldGeklow,
+    rubyGeklow,
+    sapphireGeklow,
+    hwKabunga,
+    Icigool2020,
+    Icigool2021,
+    christmasPropae,
+    rainbowShawchi,
+    rainbowVari,
+    sweetsPhancub,
+    cakeSlugling,
+    jellyGumpod,
+    halloweenTaoshi,
+    halloweenTerriti,
+    christmasGlassScorb,
+    christmasGlassScorbs,
+    snowmanTotemochi, 
+    lunarBunpuff,
+    lunarBunpuffRad,
+    valentinesAntsee,
+    normalKyeggo,
+    frillyKyeggo,
+    zzKyeggo,
+    starKyeggo,
+    fabergeKyeggo,
+    rainbowFlorant,
+    bronzeCopling,
+    silverCopling,
+    goldCopling,
+    emeraldCopling,
+    rubyCopling,
+    sapphireCopling,
+    halloweenCryocub,
+    halloweenMistlebud,
+    christmasImpkin,
+    christmasVolpup,
+    xmasVaris,
+    lunarDractus,
+    lunarDractusRad,
+    normalKyeggo2024,
+    yellowKyeggo,
+    dreggodyneKyeggo,
+    greenStripesKyeggo,
+    goldKyeggo,
+    fabergeKyeggo2024
 ]
 
 // sort Common Loomians alphabetically
 commonLoomianData = optionData.sort((a, b) => {
-  const nameA = a.name.toUpperCase(); // convert names to uppercase for case-insensitive sorting
-  const nameB = b.name.toUpperCase();
+    const nameA = a.name.toUpperCase(); // convert names to uppercase for case-insensitive sorting
+    const nameB = b.name.toUpperCase();
 
-  if (nameA < nameB) {
-      return -1;
-  }
-  if (nameA > nameB) {
-      return 1;
-  }
-  return 0; // names are equal
+    if (nameA < nameB) {
+        return -1;
+    }
+
+    if (nameA > nameB) {
+        return 1;
+    }
+
+    return 0; // names are equal
 });
 
 // HTML elements
@@ -379,10 +370,8 @@ const rallyResult = document.getElementById("RallyResult");
 
 // JS Constants and Variables
 var selectionList = []
-const abilityOdds = 256
-const abilityCharmMultiplier = 0.5
 
-//Load 2nd select box based on 1st box selection
+// Load 2nd select box based on 1st box selection
 eventSelectBox.addEventListener("change", function() {
     switch (this.value) {
       case "Common Loomians":
@@ -460,121 +449,117 @@ eventSelectBox.addEventListener("change", function() {
 
 // update statistics
 selectElement.addEventListener("change", function updateLabels() {
-  let selectedName = document.getElementById("mySelect").value;
-  let selectedLoomian = selectionList.find(loomian => loomian.name === selectedName);
+    let selectedName = document.getElementById("mySelect").value;
+    let selectedLoomian = selectionList.find(loomian => loomian.name === selectedName);
 
-  if (selectedLoomian) {
-  selectedLoomian.isPetrolith()
-  selectedLoomian.isRally()
-  selectedLoomian.isWeather()
-    calculateButton.disabled = false;
-    oddsDisplayButton.disabled = false;
-  }
+    if (selectedLoomian) {
+        if (selectedLoomian.isPetrolith()) { // disable rally since petroliths aren't rallyable
+        rallyResult.style.display = "none";
+        } else {
+        rallyResult.style.display = "block";
+        }
+
+        if (selectedLoomian.isRally()) { // enable all rally related inputs
+        rallyResult.style.display = "block";
+        abilityLeaderID.disabled = false;
+        } else {
+        rallyResult.style.display = "none";
+        abilityLeaderID.checked = false;
+        abilityLeaderID.disabled = true;
+        }
+
+        if (selectedLoomian.isWeather()) { // enable all weather related inputs
+        weatherResult.style.display = "block";
+        } else {
+        weatherResult.style.display = "none";
+        }
+
+        calculateButton.disabled = false;
+        oddsDisplayButton.disabled = false;
+    }
 });
 
 //Show the odds of selected Loomian
 function displayOdds() {
-  let oddsDescription = document.getElementById("odds")
-  let selectedName = document.getElementById("mySelect").value;
-  let selectedLoomian = selectionList.find(loomian => loomian.name === selectedName);
+    let oddsDescription = document.getElementById("odds")
+    let selectedName = document.getElementById("mySelect").value;
+    let selectedLoomian = selectionList.find(loomian => loomian.name === selectedName);
 
-  if (selectedLoomian) {
-    oddsDescription.innerHTML = "1 in " + selectedLoomian.odds.toFixed(2)
-  }
+    if (selectedLoomian) {
+        oddsDescription.innerHTML = "1 in " + selectedLoomian.odds.toFixed(2)
+    }
 }
 
 //calculate odds for the 3 situations
 function calculate() {
-  let selectedName = document.getElementById("mySelect").value;
-  let selectedLoomian = selectionList.find(loomian => loomian.name === selectedName);
-  let wildOdds = abilityOdds * selectedLoomian.odds
-  let rallyOdds = abilityOdds
-  let weatherOdds = abilityOdds * selectedLoomian.odds
+    const abilityOdds = 512 // F2P has wild odds start at 512
+    const abilityCharmMultiplier = 0.5 // charm halves this so wild encounters are 256
 
-  //console.log(wildOdds)
- 
-  //console.log(selectedLoomian.name) 
+    let selectedName = document.getElementById("mySelect").value;
+    let selectedLoomian = selectionList.find(loomian => loomian.name === selectedName);
+    let wildOdds = abilityOdds * selectedLoomian.odds
+    let rallyOdds = abilityOdds * 0.5
+    let weatherOdds = abilityOdds * selectedLoomian.odds * 0.25
 
-  //Check if the Loomian is a Petrolith and if the Charm has been selected
-  switch (true) {
-    case abilityCharmID.checked && selectedLoomian.isPetrolith():
-      wildOdds *= (selectedabilityCharmMultiplier*0.5)
-      break;
-    case abilityCharmID.checked && !selectedLoomian.isPetrolith():
-      //console.log("WildOdds Unchanged");
-      break;
-    case !abilityCharmID.checked && selectedLoomian.isPetrolith():
-      //console.log("WildOdds Unchanged");
-      break;   
-    case !abilityCharmID.checked && !selectedLoomian.isPetrolith():
-      //console.log("WildOdds Unchanged");
-      break;
-    default:
-      //console.log("WildOdds Error");
-  }
+    //Check if the Loomian is a Petrolith and if the Charm has been selected
+    switch (true) {
+        case abilityCharmID.checked && selectedLoomian.isPetrolith():
+            wildOdds *= 0.5 * 0.25
+            break;
+        case abilityCharmID.checked && !selectedLoomian.isPetrolith():
+            wildOdds *= 0.5
+            break;
+        case !abilityCharmID.checked && selectedLoomian.isPetrolith():
+            wildOdds *= 0.5
+            break;   
+        case !abilityCharmID.checked && !selectedLoomian.isPetrolith():
+            break;
+        default:
+    }
 
-  //Assign wild odds to label
-  saResult.innerHTML = "Wild: " + "<br> 1 in " + wildOdds.toFixed(2)
+    //Check if the Loomian is Rallyable anc if the Charm has been selected
+    switch (true) {
+        case abilityCharmID.checked && selectedLoomian.isRally():
+            rallyOdds *= abilityCharmMultiplier;
+            break;
+        case !abilityCharmID.checked && selectedLoomian.isRally():
+        case abilityCharmID.checked && !selectedLoomian.isRally():
+        case !abilityCharmID.checked && !selectedLoomian.isRally():
+            break;
+        default:
+    }
 
-  //Check if the Loomian is Rallyable anc if the Charm has been selected
-  switch (true) {
-    case abilityCharmID.checked && selectedLoomian.isRally():
-      rallyOdds *= abilityCharmMultiplier;
-      break;
-    case !abilityCharmID.checked && selectedLoomian.isRally():
-    case abilityCharmID.checked && !selectedLoomian.isRally():
-    case !abilityCharmID.checked && !selectedLoomian.isRally():
-      //console.log("RallyOdds Unchanged");
-      break;
-    default:
-      //console.log("RallyOdds Error");
-  }
+    //Check if SA Leader has been checked
+    if (abilityLeaderID.checked) {
+        rallyOdds *= 0.25
+    } 
 
-  //Check if SA Leader has been checked
-  if (abilityLeaderID.checked) {
-    rallyOdds *= 0.25
-  } else if (!abilityLeaderID.checked) {
-    //console.log("SA Leader not Checked")
-  } else {
-    //console.log("SA Leader Error")
-  }
+    if (selectedLoomian == variM) {
+        rallyOdds *= 5;
+    } else if (selectedLoomian == variF) {
+        rallyOdds *= 1.25;
+    } else {
+        rallyOdds
+    }
 
-  if (selectedLoomian == variM) {
-    rallyOdds *= 5
-  } else if (selectedLoomian == variF) {
-    rallyOdds *= 1.25
-  } else {
-    rallyOdds
-  }
+    //Check if Loomian can act strangely and if Charm is checked
+    switch (true) {
+        case selectedLoomian.isWeather() && abilityCharmID.checked:
+            weatherOdds *= abilityCharmMultiplier;
+            break;
+        case selectedLoomian.isWeather() && !abilityCharmID.checked:
+            weatherOdds
+            break;
+        case !selectedLoomian.isWeather() && abilityCharmID.checked:
+            weatherOdds = 0;
+            break;
+        case !selectedLoomian.isWeather() && !abilityCharmID.checked:
+            break;
+        default:
+    }
 
-  //Assign Rally Odds to Label
-  rallyResult.innerHTML = "Rally Ranch: " + "<br> 1 in " + rallyOdds.toFixed(2)
-
-  //Check if Loomian can act strangely and if Charm is checked
-  switch (true) {
-    case selectedLoomian.isWeather() && abilityCharmID.checked:
-      weatherOdds *= (abilityCharmMultiplier * 0.5) * 0.5;
-      //console.log("option 1")
-      break;
-    case selectedLoomian.isWeather() && !abilityCharmID.checked:
-      weatherOdds *= 0.5;
-      //console.log("option 2")
-      break;
-    case !selectedLoomian.isWeather() && abilityCharmID.checked:
-      weatherOdds = 0;
-      //console.log("option 3")
-      break;
-    case !selectedLoomian.isWeather() && !abilityCharmID.checked:
-      //console.log("WeatherOdds Unchanged");
-      //console.log("option 4")
-      break;
-    default:
-      //console.log("Weather Error");
-  }
-
-  //console.log(weatherOdds)
-
-  //Assign Weather Odds to Label
-  weatherResult.innerHTML = "Weather: " + "<br> 1 in " + weatherOdds.toFixed(2)
+//Output all calcs
+saResult.innerHTML = "Wild: " + "<br> 1 in " + wildOdds.toFixed(2);
+rallyResult.innerHTML = "Rally Ranch: " + "<br> 1 in " + rallyOdds.toFixed(2);
+weatherResult.innerHTML = "Weather: " + "<br> 1 in " + weatherOdds.toFixed(2);
 }
-

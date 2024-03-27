@@ -158,4 +158,9 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Renamed some Roaming Reskins for continuity to show which event they come from
 
 ## Version 9.1
-- 
+- Renamed the Kyeggo reskins based on Jamiy's video
+- adjusted the selection bar to fit inside the calculator better for different screen sizes
+
+## Verson 9.2
+- With SAs now being more Free-To-Play, the ability odds calculator has changed accordingly
+  - You no longer need the Ability charm to find SAs in the wild and the odds start at 1/512
