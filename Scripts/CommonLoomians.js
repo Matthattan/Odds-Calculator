@@ -118,10 +118,22 @@ const eyebrella = new Loomian("Eyebrella", 1, true, true);
 const lissen = new Loomian("Lissen", 1, true, true);
 const lantot = new Loomian("Lantot", 1, true, true);
 const milgoo = new Loomian("Milgoo", 1, true, true);
+const nautling = new Loomian("Nautling", 1, true, true);
+const yutiny = new Loomian("Yutiny", 1, true, true);
+const yuteen = new Loomian("Yuteen", 1, true, true);
+const morphezu = new Loomian("Morphezu", 1, true, true);
+const behemoroth = new Loomian("Behemoroth", 1, true, true);
+const leviatross = new Loomian("Leviatross", 1, true, true);
 
 // name, odds, is alpha, is gamma
 
 const loomianList = [
+    nautling,
+    yutiny,
+    yuteen,
+    morphezu,
+    behemoroth,
+    leviatross,
     ampole,
     antsee,
     babore,
