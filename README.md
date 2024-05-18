@@ -171,3 +171,8 @@ Happy 4th Anniverary Loomian Legacy 🥳
 # Verson 10
 - New Petrolith Loomians added
   - For the most part its just them being accessible on the calculator and I'm basing their odds based on the previous petrolith Loomians. Let me know if their odds work a bit differently
+
+# Version 11
+- Thunderstorm Update
+  - Nymvolt added to Common Loomians and Ability Odds
+  - Cosmeleon added to Roaming Odds

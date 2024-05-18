@@ -135,6 +135,7 @@ const yuteen = new Loomian("Yuteen", 1, false, false, false, true);
 const morphezu = new Loomian("Morphezu", 1, false, false, false, true);
 const behemoroth = new Loomian("Behemoroth", 1, false, false, false, true);
 const leviatross = new Loomian("Leviatross", 1, false, false, false, true);
+const nymvolt = new Loomian("Nymvolt", 64, true, true, false, false);
 
 //Non-Rallyable Event Loomians
 const christmasGlassScorbs = new Loomian("Common Christmas Scorbs (2022 Christmas)", 12, true, false, false, false);
@@ -195,6 +196,7 @@ const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3)
 
 // collate all objects into an array
 var optionData = [
+    nymvolt,
     nautling,
     yutiny,
     yuteen,

@@ -19,6 +19,7 @@ class Loomian {
     }
 };
 
+const nymvolt = new Loomian("Nymvolt", 64, true, true);
 const skampi = new Loomian("Skampi", 1, true, true);
 const singeel = new Loomian("Singeel", 1, true, true);
 const crabushi = new Loomian("Crabushi", 1, true, true);
@@ -128,6 +129,7 @@ const leviatross = new Loomian("Leviatross", 1, true, true);
 // name, odds, is alpha, is gamma
 
 const loomianList = [
+    nymvolt,
     nautling,
     yutiny,
     yuteen,

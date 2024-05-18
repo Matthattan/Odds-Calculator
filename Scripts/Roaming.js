@@ -38,6 +38,7 @@ const hwWabalisc = new Roaming("Zombie Wabalisc (2023 Haunted Village)", 4096, t
 const mimask = new Roaming("Mimask (2023 Jolly Festival)", 1024, true, true, true, false);
 const xmasNevermare = new Roaming("Reindeer Nevermare (2023 Jolly Festival)", 4096, true, true, false, false);
 const xmasGargolems = new Roaming("Christmas Gargolem Forms (2023 Jolly Festival)", 1024, true, true, false, false);
+const cosmeleon = new Roaming("Cosmeleon", 1024, true, true, false, false); 
 
 const optionData = [
     duskit,
@@ -67,7 +68,8 @@ const optionData = [
 	hwWabalisc,
     mimask,
     xmasNevermare,
-    xmasGargolems
+    xmasGargolems,
+    cosmeleon
 ]
 
 // Declaring Elements
