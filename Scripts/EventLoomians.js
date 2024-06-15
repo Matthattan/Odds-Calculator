@@ -34,6 +34,15 @@ class Loomian {
   }
 }
 
+const rainbowChoochew = new Loomian("Rainbow Choochew (Loomunity 2024)", 5000, false, false);
+const rainbowCosmiore = new Loomian("Rainbow Cosmiore (Loomunity 2024)", 10000, false, false);
+const tennisBarblast = new Loomian("Tennisball Barblast (Loomunity 2024)", 1, true, true);
+const fishingShawchi = new Loomian("Fisherman Shawchi (Loomunity 2024)", 100, true, true);
+const rainbowTeridescent = new Loomian("Rainbow Teridescent (Loomunity 2024)", 1000, true, true);
+const wispColouredChoochew = new Loomian("Coloured Choochew with Wisp (Loomunity 2024)", 1000, false, false);
+const colouredChoochew = new Loomian("Coloured Choochew (Loomunity 2024)", 100, false, false);
+const wispColouredCosmiores = new Loomian("Coloured Cosmiores with Wisp (Loomunity 2024)", 5000, false, false);
+const colouredCosmiores = new Loomian("Coloured Cosmiores (Loomunity 2024)", 500, false, false);
 const christmasGlassScorbs = new Loomian("Christmas Scorbs - Common (2022 Jolly Village)", 12, true, false);
 const jellyGumpod = new Loomian("Jelly Gumpod (2022 Sweet Retreat)", 50, true, true);
 const lunarBunpuff = new Loomian("Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, true);
@@ -86,7 +95,7 @@ const lunarDractusRad = new Loomian("Radiant Lunar New Year Dractus (2024 Chines
 const normalKyeggo2024 = new Loomian("Normal Kyeggo (2024 Easter)", 3, true, true);
 const dreggodyneKyeggo = new Loomian("Runic-Pattern Kyeggo (2024 Easter)", 6, true, true);
 const yellowKyeggo = new Loomian("Pastel Kyeggo (2024 Easter)", 6, true, true);
-const greenStripesKyeggo = new Loomian("Pink-Green Stripes Kyeggo (2024 Easter", 6, true, true);
+const greenStripesKyeggo = new Loomian("Pink-Green Stripes Kyeggo (2024 Easter)", 6, true, true);
 const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, true);
 const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, true);
 
@@ -147,7 +156,15 @@ const optionData = [
   dreggodyneKyeggo,
   greenStripesKyeggo,
   goldKyeggo,
-  fabergeKyeggo2024
+  fabergeKyeggo2024,
+  fishingShawchi,
+  colouredCosmiores,
+  wispColouredCosmiores,
+  colouredChoochew,
+  wispColouredChoochew,
+  rainbowTeridescent,
+  rainbowCosmiore,
+  rainbowChoochew
 ]
 
 // defining Variables
@@ -220,6 +237,7 @@ function calculate() {
       break;
     case "Coloured Icigool (2020 Christmas)":
     case "Rainbow Shawchi (2022 Loomunity)":
+    case "Rainbow Teridescent (Loomunity 2024)":
       gleamingOdds = 2048;
       break;
     default:

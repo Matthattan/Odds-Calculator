@@ -176,3 +176,10 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Thunderstorm Update
   - Nymvolt added to Common Loomians and Ability Odds
   - Cosmeleon added to Roaming Odds
+
+# Version 12
+- Happy 2024 Loomunity 🥳
+  - new Loomians added
+    - Goswing and Cicalute are in the common loomians calculate whilst everything else is in the event section
+    - Rainbow Loomians have been added
+    - Coloured Loomians have been added

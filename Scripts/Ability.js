@@ -34,6 +34,8 @@ class Loomian {
 }
 
 //Rallyable Event-Inclusive Loomians
+const goswing = new Loomian("Goswing", 10, true, true, false, false);
+const cicalute = new Loomian("Cicalute", 8, true, true, false, false);
 const ampole = new Loomian("Ampole", 1, true, true, true, false);
 const antsee = new Loomian("Antsee", 10, true, true, true, false);
 const babore = new Loomian("Babore", 1, true, true, true, false);
@@ -191,6 +193,16 @@ const yellowKyeggo = new Loomian("Pastel Kyeggo (2024 Easter)", 6, true, false, 
 const greenStripesKyeggo = new Loomian("Triangle-Striped Kyeggo (2024 Easter)", 6, true, false, false, false);
 const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, false, false , false);
 const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, false, false, false);
+const rainbowChoochew = new Loomian("Rainbow Choochew (Loomunity 2024)", 5000, true, false, false, false);
+const rainbowCosmiore = new Loomian("Rainbow Cosmiore (Loomunity 2024)", 10000, true, false, false, false);
+const tennisBarblast = new Loomian("Tennisball Barblast (Loomunity 2024)", 1, true, false, false, false);
+const fishingShawchi = new Loomian("Fisherman Shawchi (Loomunity 2024)", 100, true, false, false, false);
+const rainbowTeridescent = new Loomian("Rainbow Teridescent (Loomunity 2024)", 1000, true, false, false, false);
+const wispColouredChoochew = new Loomian("Coloured Choochew with Wisp (Loomunity 2024)", 1000, true, false, false, false);
+const colouredChoochew = new Loomian("Coloured Choochew (Loomunity 2024)", 100,  true, false, false, false);
+const wispColouredCosmiores = new Loomian("Coloured Cosmiores with Wisp (Loomunity 2024)", 5000, true, false, false, false);
+const colouredCosmiores = new Loomian("Coloured Cosmiores (Loomunity 2024)", 500, true, false, false, false);
+
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -298,6 +310,8 @@ var optionData = [
     lissen,
     lantot,
     milgoo,
+    cicalute,
+    goswing,
 ]
 
 var eventLoomianData = [
@@ -352,7 +366,15 @@ var eventLoomianData = [
     dreggodyneKyeggo,
     greenStripesKyeggo,
     goldKyeggo,
-    fabergeKyeggo2024
+    fabergeKyeggo2024,
+    fishingShawchi,
+    colouredCosmiores,
+    wispColouredCosmiores,
+    colouredChoochew,
+    wispColouredChoochew,
+    rainbowTeridescent,
+    rainbowCosmiore,
+    rainbowChoochew
 ]
 
 // sort Common Loomians alphabetically
