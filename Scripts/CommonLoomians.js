@@ -19,6 +19,8 @@ class Loomian {
     }
 };
 
+const goswing = new Loomian("Goswing", 10, true, true);
+const cicalute = new Loomian("Cicalute", 8, true, true);
 const nymvolt = new Loomian("Nymvolt", 64, true, true);
 const skampi = new Loomian("Skampi", 1, true, true);
 const singeel = new Loomian("Singeel", 1, true, true);
@@ -234,6 +236,8 @@ const loomianList = [
     lissen,
     lantot,
     milgoo,
+    goswing,
+    cicalute
 ]
 
 // sort Loomians alphabetically
