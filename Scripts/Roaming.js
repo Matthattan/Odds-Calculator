@@ -39,6 +39,7 @@ const mimask = new Roaming("Mimask (2023 Jolly Festival)", 1024, true, true, tru
 const xmasNevermare = new Roaming("Reindeer Nevermare (2023 Jolly Festival)", 4096, true, true, false, false);
 const xmasGargolems = new Roaming("Christmas Gargolem Forms (2023 Jolly Festival)", 1024, true, true, false, false);
 const cosmeleon = new Roaming("Cosmeleon", 1024, true, true, false, false); 
+const loomunityWabalisc = new Roaming("Surfer Wabalisc (2024 Loomunity)", 1024, true, true, false, false);
 
 const optionData = [
     duskit,
@@ -69,7 +70,8 @@ const optionData = [
     mimask,
     xmasNevermare,
     xmasGargolems,
-    cosmeleon
+    cosmeleon,
+    loomunityWabalisc,
 ]
 
 // Declaring Elements

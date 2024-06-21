@@ -183,3 +183,6 @@ Happy 4th Anniverary Loomian Legacy 🥳
     - Goswing and Cicalute are in the common loomians calculate whilst everything else is in the event section
     - Rainbow Loomians have been added
     - Coloured Loomians have been added
+
+## Version 12.1
+- Surfer Wabalisc added
