@@ -202,6 +202,9 @@ const wispColouredChoochew = new Loomian("Coloured Choochew with Wisp (Loomunity
 const colouredChoochew = new Loomian("Coloured Choochew (Loomunity 2024)", 100,  true, false, false, false);
 const wispColouredCosmiores = new Loomian("Coloured Cosmiores with Wisp (Loomunity 2024)", 5000, true, false, false, false);
 const colouredCosmiores = new Loomian("Coloured Cosmiores (Loomunity 2024)", 500, true, false, false, false);
+const lifeguardSharpod = new Loomian("Lifeguard Sharpod (2024 Anniversary)", 500, true, false, false, false);
+const surferDractus = new Loomian("Surfer Dractus (2024 Anniversary)", 250, true, false, false, false);
+const surfboardMirrami = new Loomian("Surfboard Mirrami (2024 Anniversary)", 100, true, false, false, false);
 
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
@@ -374,7 +377,10 @@ var eventLoomianData = [
     wispColouredChoochew,
     rainbowTeridescent,
     rainbowCosmiore,
-    rainbowChoochew
+    rainbowChoochew,
+    surfboardMirrami,
+    surferDractus,
+    lifeguardSharpod
 ]
 
 // sort Common Loomians alphabetically
