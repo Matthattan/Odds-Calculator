@@ -34,15 +34,18 @@ class Loomian {
   }
 }
 
-const rainbowChoochew = new Loomian("Rainbow Choochew (Loomunity 2024)", 5000, false, false);
-const rainbowCosmiore = new Loomian("Rainbow Cosmiore (Loomunity 2024)", 10000, false, false);
-const tennisBarblast = new Loomian("Tennisball Barblast (Loomunity 2024)", 1, true, true);
-const fishingShawchi = new Loomian("Fisherman Shawchi (Loomunity 2024)", 100, true, true);
-const rainbowTeridescent = new Loomian("Rainbow Teridescent (Loomunity 2024)", 1000, true, true);
-const wispColouredChoochew = new Loomian("Coloured Choochew with Wisp (Loomunity 2024)", 1000, false, false);
-const colouredChoochew = new Loomian("Coloured Choochew (Loomunity 2024)", 100, false, false);
-const wispColouredCosmiores = new Loomian("Coloured Cosmiores with Wisp (Loomunity 2024)", 5000, false, false);
-const colouredCosmiores = new Loomian("Coloured Cosmiores (Loomunity 2024)", 500, false, false);
+const lifeguardSharpod = new Loomian("Lifeguard Sharpod (2024 Anniversary)", 500, true, true);
+const surferDractus = new Loomian("Surfer Dractus (2024 Anniversary)", 250, true, true);
+const surfboardMirrami = new Loomian("Surfboard Mirrami (2024 Anniversary)", 100, true, true);
+const rainbowChoochew = new Loomian("Rainbow Choochew (2024 Loomunity)", 5000, false, false);
+const rainbowCosmiore = new Loomian("Rainbow Cosmiore (2024 Loomunity)", 10000, false, false);
+const tennisBarblast = new Loomian("Tennisball Barblast (2024 Loomunity)", 1, true, true);
+const fishingShawchi = new Loomian("Fisherman Shawchi (2024 Loomunity)", 100, true, true);
+const rainbowTeridescent = new Loomian("Rainbow Teridescent (2024 Loomunity)", 1000, true, true);
+const wispColouredChoochew = new Loomian("Coloured Choochew with Wisp (2024 Loomunity)", 1000, false, false);
+const colouredChoochew = new Loomian("Coloured Choochew (2024 Loomunity)", 100, false, false);
+const wispColouredCosmiores = new Loomian("Coloured Cosmiores with Wisp (2024 Loomunity)", 5000, false, false);
+const colouredCosmiores = new Loomian("Coloured Cosmiores (2024 Loomunity)", 500, false, false);
 const christmasGlassScorbs = new Loomian("Christmas Scorbs - Common (2022 Jolly Village)", 12, true, false);
 const jellyGumpod = new Loomian("Jelly Gumpod (2022 Sweet Retreat)", 50, true, true);
 const lunarBunpuff = new Loomian("Lunar New Year Bunpuff (2023 Chinese New Year)", 60, true, true);
@@ -164,7 +167,10 @@ const optionData = [
   wispColouredChoochew,
   rainbowTeridescent,
   rainbowCosmiore,
-  rainbowChoochew
+  rainbowChoochew,
+  SurfboardMirrami,
+  SurferDractus,
+  LifeguardSharpod
 ]
 
 // defining Variables

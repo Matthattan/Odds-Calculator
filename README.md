@@ -186,3 +186,9 @@ Happy 4th Anniverary Loomian Legacy 🥳
 
 ## Version 12.1
 - Surfer Wabalisc added
+
+# Version 13
+- Happy 5 year anniversary to Loomian Legacy 🎂
+  - Reskins added including plushie duskit
+  - Reworded some loomians from the last event
+- I realise that it may be worth adding the gleaming boost when you fish. May work on adding that later.
