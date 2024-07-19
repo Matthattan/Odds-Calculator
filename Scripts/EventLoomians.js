@@ -168,9 +168,9 @@ const optionData = [
   rainbowTeridescent,
   rainbowCosmiore,
   rainbowChoochew,
-  SurfboardMirrami,
-  SurferDractus,
-  LifeguardSharpod
+  surfboardMirrami,
+  surferDractus,
+  lifeguardSharpod
 ]
 
 // defining Variables
