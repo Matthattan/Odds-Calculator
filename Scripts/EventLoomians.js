@@ -289,7 +289,7 @@ function calculate() {
     case "Emerald Copling (2023 Anniversary)":
     case "Ruby Copling (2023 Anniversary)":
     case "Sapphire Copling (2023 Anniversary)":
-      gBoostMultiplier = 0.15625;
+      gBoostMultiplier = 0.015625;
       break;
     default:
       gBoostMultiplier = 0.0625;
