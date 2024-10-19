@@ -34,6 +34,12 @@ class Loomian {
   }
 }
 
+// halloween 2024 - NO ODDS YET
+const banooh = new Loomian("Banooh (2024 Trick Retreat)", 1, true, true);
+const spirwix = new Loomian("Spirwix (2024 Trick Retreat)", 1, true, true);
+const grievestone = new Loomian("Grievestone", 1, true, true);
+const nymesis = new Loomian("Nymesis", 1, true, true);
+
 const lifeguardSharpod = new Loomian("Lifeguard Sharpod (2024 Anniversary)", 500, true, true);
 const surferDractus = new Loomian("Surfer Dractus (2024 Anniversary)", 250, true, true);
 const surfboardMirrami = new Loomian("Surfboard Mirrami (2024 Anniversary)", 100, true, true);
@@ -170,7 +176,10 @@ const optionData = [
   rainbowChoochew,
   surfboardMirrami,
   surferDractus,
-  lifeguardSharpod
+  lifeguardSharpod,
+  banooh,
+  spirwix,
+  grievestone
 ]
 
 // defining Variables
