@@ -199,3 +199,4 @@ Happy 4th Anniverary Loomian Legacy 🥳
   - moved Nymaurae from common odds to event odds
     - was gonna do the same for the likes of Volpup but it still doesnt have the event so its staying as is :>
   - bug fixes/general optimization 
+  - did a backlog of updating odds such as HW Kabunga being 1/3. Some Loomians like Cupoink have reportedly had their odds changed. For now its staying as the old odds but I will add a workaround soon.

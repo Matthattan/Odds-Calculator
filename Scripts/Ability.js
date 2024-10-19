@@ -205,12 +205,12 @@ const lifeguardSharpod = new Loomian("Lifeguard Sharpod (2024 Anniversary)", 500
 const surferDractus = new Loomian("Surfer Dractus (2024 Anniversary)", 250, true, false, false, false);
 const surfboardMirrami = new Loomian("Surfboard Mirrami (2024 Anniversary)", 100, true, false, false, false);
 
-const banooh = new Loomian("Banooh (2024 Trick Retreat)", 1, true, true, false, false);
-const spirwix = new Loomian("Spirwix (2024 Trick Retreat)", 1, true, true, false, false);
-const grievestone = new Loomian("Grievestone (2024 Trick Retreat)", 1, true, true, false, false);
+const banooh = new Loomian("Banooh (2024 Trick Retreat)", 10, true, true, false, false);
+const spirwix = new Loomian("Spirwix (2024 Trick Retreat)", 10, true, true, false, false);
+const grievestone = new Loomian("Grievestone (2024 Trick Retreat)", 3, true, true, false, false);
 const nymesis = new Loomian("Nymesis (2024 Trick Retreat)", 1, true, false, false, false);
-const eyeballMochibi = new Loomian("Eyeball Mochibi (2024 Trick Retreat)", 1, true, false, false, false); // check if rallyable
-const hwSwirelle = new Loomian("Halloween Swirelle (2024 Trick Retreat)", 1, true, false, false, false); // check if rallyable
+const eyeballMochibi = new Loomian("Eyeball Mochibi (2024 Trick Retreat)", 20, true, false, false, false); // check if rallyable
+const hwSwirelle = new Loomian("Halloween Swirelle (2024 Trick Retreat)", 100, true, false, false, false); // check if rallyable
 const nymaurae = new Loomian("Nymaurae (2020 Valentines Event)", 1, true, false, false, false);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
