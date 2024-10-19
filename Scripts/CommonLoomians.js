@@ -60,7 +60,7 @@ const gobbidemic = new Loomian("Gobbidemic", 100/3, true, true);
 const goppie = new Loomian("Goppie", 1, true, true);
 const grubby = new Loomian("Grubby", 1, true, true);
 const gumpod = new Loomian("Gumpod", 10, true, true);
-const gwurm = new Loomian("Gwurm", 1, true, true);
+const gwurm = new Loomian("Gwurm", 3, true, true);
 const hydrini = new Loomian("Hydrini", 64, true, true);
 const igneol = new Loomian("Igneol", 50, true, true);
 const impkin = new Loomian("Impkin", 2, true, true);
@@ -73,8 +73,7 @@ const llamba = new Loomian("Llamba", 60, true, true);
 const lumica = new Loomian("Lumica", 1, true, true);
 const makame = new Loomian("Makame", 31, true, true);
 const mistlebud = new Loomian("Mistlebud", 15, true, true);
-const mochibi = new Loomian("Mochibi", 1, true, true);
-const nymaurae = new Loomian("Nymaurae", 1, true, true);
+const mochibi = new Loomian("Mochibi", 3, true, true);
 const operaptor = new Loomian("Operaptor", 50, true, true);
 const phancub = new Loomian("Phancub", 10, true, true);
 const pipsee = new Loomian("Pipsee", 64, true, true);
@@ -185,7 +184,6 @@ const loomianList = [
     makame,
     mistlebud,
     mochibi,
-    nymaurae,
     operaptor,
     phancub,
     pipsee,

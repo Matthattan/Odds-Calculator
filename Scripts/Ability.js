@@ -79,7 +79,6 @@ const llamba = new Loomian("Llamba", 60, true, true, true, false);
 const lumica = new Loomian("Lumica", 1, true, true, true, false);
 const makame = new Loomian("Makame", 31, true, true, true, false);
 const mochibi = new Loomian("Mochibi", 1, true, true, false, false);
-const nymaurae = new Loomian("Nymaurae", 1, true, false, false, false);
 const operaptor = new Loomian("Operaptor", 50, true, true, true, false);
 const phancub = new Loomian("Phancub", 10, true, true, true, false);
 const pipsee = new Loomian("Pipsee", 64, true, true, false, false);
@@ -206,6 +205,13 @@ const lifeguardSharpod = new Loomian("Lifeguard Sharpod (2024 Anniversary)", 500
 const surferDractus = new Loomian("Surfer Dractus (2024 Anniversary)", 250, true, false, false, false);
 const surfboardMirrami = new Loomian("Surfboard Mirrami (2024 Anniversary)", 100, true, false, false, false);
 
+const banooh = new Loomian("Banooh (2024 Trick Retreat)", 10, true, true, false, false);
+const spirwix = new Loomian("Spirwix (2024 Trick Retreat)", 10, true, true, false, false);
+const grievestone = new Loomian("Grievestone (2024 Trick Retreat)", 3, true, true, false, false);
+const nymesis = new Loomian("Nymesis (2024 Trick Retreat)", 1, true, false, false, false);
+const eyeballMochibi = new Loomian("Eyeball Mochibi (2024 Trick Retreat)", 20, true, false, false, false); // check if rallyable
+const hwSwirelle = new Loomian("Halloween Swirelle (2024 Trick Retreat)", 100, true, false, false, false); // check if rallyable
+const nymaurae = new Loomian("Nymaurae (2020 Valentines Event)", 1, true, false, false, false);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -264,7 +270,6 @@ var optionData = [
     lumica,
     makame,
     mochibi,
-    nymaurae,
     operaptor,
     phancub,
     pipsee,
@@ -329,6 +334,7 @@ var eventLoomianData = [
     rubyGeklow,
     sapphireGeklow,
     hwKabunga,
+    nymaurae,
     Icigool2020,
     Icigool2021,
     christmasPropae,
@@ -380,7 +386,13 @@ var eventLoomianData = [
     rainbowChoochew,
     surfboardMirrami,
     surferDractus,
-    lifeguardSharpod
+    lifeguardSharpod,
+    banooh,
+    spirwix,
+    grievestone,
+    nymesis,
+    eyeballMochibi,
+    hwSwirelle
 ]
 
 // sort Common Loomians alphabetically

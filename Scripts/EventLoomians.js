@@ -1,11 +1,9 @@
 class Loomian {
-  constructor(name, odds, alphaG, gammaG, rW, increasedMultipliers, increasedOdds){
+  constructor(name, odds, alphaG, gammaG){
     this.name = name; //string
     this.odds = odds; //float
     this.alphaG = alphaG; //boolean
     this.gammaG = gammaG; //boolean
-    this.increasedMultipliers = increasedMultipliers; //boolean
-    this.increasedOdds = increasedOdds; //boolean
   }
 
   isAlpha() {
@@ -33,6 +31,14 @@ class Loomian {
     }
   }
 }
+
+// halloween 2024 - NO ODDS YET
+const banooh = new Loomian("Banooh (2024 Trick Retreat)", 10, true, true);
+const spirwix = new Loomian("Spirwix (2024 Trick Retreat)", 10, true, true);
+const grievestone = new Loomian("Grievestone (2024 Trick Retreat)", 3, true, true);
+const nymesis = new Loomian("Nymesis (2024 Trick Retreat)", 1, true, true);
+const eyeballMochibi = new Loomian("Eyeball Mochibi (2024 Trick Retreat)", 20, true, true);
+const hwSwirelle = new Loomian("Halloween Swirelle (2024 Trick Retreat)", 100, true, true);
 
 const lifeguardSharpod = new Loomian("Lifeguard Sharpod (2024 Anniversary)", 500, true, true);
 const surferDractus = new Loomian("Surfer Dractus (2024 Anniversary)", 250, true, true);
@@ -91,7 +97,7 @@ const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Haunted Villag
 const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Haunted Village)", (100/0.3), true, true);
 const christmasImpkin = new Loomian("Elf Impkin (2023 Jolly Festival)", 10, true, true);
 const christmasVolpup = new Loomian("Holiday Volpup (2023 Jolly Festival)", 133, true, true,);
-const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 1, true, true,)
+const hwKabunga = new Loomian("Scarecrow Kabunga (2020 Halloween)", 3, true, true,)
 const xmasVaris = new Loomian("Varilution Varis (2023 Jolly Festival)", 50, true, false)
 const lunarDractus = new Loomian("Lunar New Year Dractus (2024 Chinese New Year)", 60, true, true);
 const lunarDractusRad = new Loomian("Radiant Lunar New Year Dractus (2024 Chinese New Year)", 600, true, true);
@@ -101,6 +107,7 @@ const yellowKyeggo = new Loomian("Pastel Kyeggo (2024 Easter)", 6, true, true);
 const greenStripesKyeggo = new Loomian("Pink-Green Stripes Kyeggo (2024 Easter)", 6, true, true);
 const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, true);
 const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, true);
+const nymaurae = new Loomian("Nymaurae (2020 Valentines Event)", 1, true, true);
 
 //name, odds, alphaG, gammaG
 
@@ -116,6 +123,7 @@ const optionData = [
   rubyGeklow,
   sapphireGeklow,
   hwKabunga,
+  nymaurae,
   Icigool2020,
   christmasPropae,
   Icigool2021,
@@ -170,7 +178,13 @@ const optionData = [
   rainbowChoochew,
   surfboardMirrami,
   surferDractus,
-  lifeguardSharpod
+  lifeguardSharpod,
+  banooh,
+  spirwix,
+  grievestone,
+  eyeballMochibi,
+  nymesis,
+  hwSwirelle
 ]
 
 // defining Variables
@@ -289,7 +303,7 @@ function calculate() {
     case "Emerald Copling (2023 Anniversary)":
     case "Ruby Copling (2023 Anniversary)":
     case "Sapphire Copling (2023 Anniversary)":
-      gBoostMultiplier = 0.15625;
+      gBoostMultiplier = 0.015625;
       break;
     default:
       gBoostMultiplier = 0.0625;
