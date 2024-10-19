@@ -1,11 +1,9 @@
 class Loomian {
-  constructor(name, odds, alphaG, gammaG, rW, increasedMultipliers, increasedOdds){
+  constructor(name, odds, alphaG, gammaG){
     this.name = name; //string
     this.odds = odds; //float
     this.alphaG = alphaG; //boolean
     this.gammaG = gammaG; //boolean
-    this.increasedMultipliers = increasedMultipliers; //boolean
-    this.increasedOdds = increasedOdds; //boolean
   }
 
   isAlpha() {
@@ -37,8 +35,10 @@ class Loomian {
 // halloween 2024 - NO ODDS YET
 const banooh = new Loomian("Banooh (2024 Trick Retreat)", 1, true, true);
 const spirwix = new Loomian("Spirwix (2024 Trick Retreat)", 1, true, true);
-const grievestone = new Loomian("Grievestone", 1, true, true);
-const nymesis = new Loomian("Nymesis", 1, true, true);
+const grievestone = new Loomian("Grievestone (2024 Trick Retreat)", 1, true, true);
+const nymesis = new Loomian("Nymesis (2024 Trick Retreat)", 1, true, true);
+const eyeballMochibi = new Loomian("Eyeball Mochibi (2024 Trick Retreat)", 1, true, true);
+const hwSwirelle = new Loomian("Halloween Swirelle (2024 Trick Retreat)", 1, true, true);
 
 const lifeguardSharpod = new Loomian("Lifeguard Sharpod (2024 Anniversary)", 500, true, true);
 const surferDractus = new Loomian("Surfer Dractus (2024 Anniversary)", 250, true, true);
@@ -107,6 +107,7 @@ const yellowKyeggo = new Loomian("Pastel Kyeggo (2024 Easter)", 6, true, true);
 const greenStripesKyeggo = new Loomian("Pink-Green Stripes Kyeggo (2024 Easter)", 6, true, true);
 const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, true);
 const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, true);
+const nymaurae = new Loomian("Nymaurae (2020 Valentines Event)", 1, true, true);
 
 //name, odds, alphaG, gammaG
 
@@ -115,6 +116,7 @@ const optionData = [
   halloweenSlugling,
   halloweenShawchi,
   christmasRagoon,
+  nymaurae,
   bronzeGeklow,
   silverGeklow,
   goldGeklow,
@@ -179,7 +181,10 @@ const optionData = [
   lifeguardSharpod,
   banooh,
   spirwix,
-  grievestone
+  grievestone,
+  eyeballMochibi,
+  nymesis,
+  hwSwirelle
 ]
 
 // defining Variables

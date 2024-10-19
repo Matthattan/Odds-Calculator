@@ -74,7 +74,6 @@ const lumica = new Loomian("Lumica", 1, true, true);
 const makame = new Loomian("Makame", 31, true, true);
 const mistlebud = new Loomian("Mistlebud", 15, true, true);
 const mochibi = new Loomian("Mochibi", 1, true, true);
-const nymaurae = new Loomian("Nymaurae", 1, true, true);
 const operaptor = new Loomian("Operaptor", 50, true, true);
 const phancub = new Loomian("Phancub", 10, true, true);
 const pipsee = new Loomian("Pipsee", 64, true, true);
@@ -185,7 +184,6 @@ const loomianList = [
     makame,
     mistlebud,
     mochibi,
-    nymaurae,
     operaptor,
     phancub,
     pipsee,
