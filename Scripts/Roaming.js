@@ -41,6 +41,8 @@ const xmasGargolems = new Roaming("Christmas Gargolem Forms (2023 Jolly Festival
 const cosmeleon = new Roaming("Cosmeleon", 1024, true, true, false, false); 
 const loomunityWabalisc = new Roaming("Surfer Wabalisc (2024 Loomunity)", 1024, true, true, false, false);
 const plushieDuskit = new Roaming("Plushie Duskit (2024 Anniversary)", 1024, true, true, false, false);
+const hwDakuda = new Roaming("Skeleton Dakuda (2024 Trick Retreat)", 1, true, false, false, false);
+const hwElephage = new Roaming("Pumpkin Elepehage (2024 Trick Retreat)", 1, true, true, false, false);
 
 const optionData = [
     duskit,
@@ -73,7 +75,9 @@ const optionData = [
     xmasGargolems,
     cosmeleon,
     loomunityWabalisc,
-    plushieDuskit
+    plushieDuskit,
+    hwDakuda,
+    hwElephage
 ]
 
 // Declaring Elements
