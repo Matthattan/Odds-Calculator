@@ -200,3 +200,11 @@ Happy 4th Anniverary Loomian Legacy 🥳
     - was gonna do the same for the likes of Volpup but it still doesnt have the event so its staying as is :>
   - bug fixes/general optimization 
   - did a backlog of updating odds such as HW Kabunga being 1/3. Some Loomians like Cupoink have reportedly had their odds changed. For now its staying as the old odds but I will add a workaround soon.
+
+# Version 15
+- 2024 Christmas Event - Jolly Village. Happy Holidays ❄️🎅
+- added new Loomians
+  - the reskins don't have an official, or a consensus hasnt been developed, name yet so they're just "Holiday" for now
+- moved loomians from last event to common loomians section
+- updated Kayute with 2 different odds depending on the event
+  - remember the cupoink thing? probably not coming lol

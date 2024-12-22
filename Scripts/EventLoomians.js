@@ -32,14 +32,6 @@ class Loomian {
   }
 }
 
-// halloween 2024 - NO ODDS YET
-const banooh = new Loomian("Banooh (2024 Trick Retreat)", 10, true, true);
-const spirwix = new Loomian("Spirwix (2024 Trick Retreat)", 10, true, true);
-const grievestone = new Loomian("Grievestone (2024 Trick Retreat)", 3, true, true);
-const nymesis = new Loomian("Nymesis (2024 Trick Retreat)", 1, true, true);
-const eyeballMochibi = new Loomian("Eyeball Mochibi (2024 Trick Retreat)", 20, true, true);
-const hwSwirelle = new Loomian("Halloween Swirelle (2024 Trick Retreat)", 100, true, true);
-
 const lifeguardSharpod = new Loomian("Lifeguard Sharpod (2024 Anniversary)", 500, true, true);
 const surferDractus = new Loomian("Surfer Dractus (2024 Anniversary)", 250, true, true);
 const surfboardMirrami = new Loomian("Surfboard Mirrami (2024 Anniversary)", 100, true, true);
@@ -108,6 +100,13 @@ const greenStripesKyeggo = new Loomian("Pink-Green Stripes Kyeggo (2024 Easter)"
 const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, true);
 const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, true);
 const nymaurae = new Loomian("Nymaurae (2020 Valentines Event)", 1, true, true);
+const nymesis = new Loomian("Nymesis (2024 Trick Retreat)", 1, true, true);
+const eyeballMochibi = new Loomian("Eyeball Mochibi (2024 Trick Retreat)", 20, true, true);
+const hwSwirelle = new Loomian("Halloween Swirelle (2024 Trick Retreat)", 100, true, true);
+const xmasSkilava = new Loomian("Holiday Skilava (2024 Jolly Village)", 15, true, true);
+const xmasKittone = new Loomian("Holiday Kittone (2024 Jolly Village)", 45, true, true);
+const xmasGrievestone = new Loomian("Holiday Grievestone (2024 Jolly Village)", 240, true, true);
+const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, true);
 
 //name, odds, alphaG, gammaG
 
@@ -179,12 +178,13 @@ const optionData = [
   surfboardMirrami,
   surferDractus,
   lifeguardSharpod,
-  banooh,
-  spirwix,
-  grievestone,
   eyeballMochibi,
   nymesis,
-  hwSwirelle
+  hwSwirelle,
+  xmasSkilava,
+  xmasKittone,
+  xmasGrievestone,
+  xmasUrsoul
 ]
 
 // defining Variables

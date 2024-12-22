@@ -137,6 +137,11 @@ const morphezu = new Loomian("Morphezu", 1, false, false, false, true);
 const behemoroth = new Loomian("Behemoroth", 1, false, false, false, true);
 const leviatross = new Loomian("Leviatross", 1, false, false, false, true);
 const nymvolt = new Loomian("Nymvolt", 64, true, true, false, false);
+const banooh = new Loomian("Banooh", 10, true, true, false, false);
+const spirwix = new Loomian("Spirwix", 10, true, true, false, false);
+const grievestone = new Loomian("Grievestone", 3, true, true, false, false);
+const jimby = new Loomian("Jimby", 3, true, true, false, false);
+const wassel = new Loomian("Wassel", 25, true, true, false, false);
 
 //Non-Rallyable Event Loomians
 const christmasGlassScorbs = new Loomian("Common Christmas Scorbs (2022 Christmas)", 12, true, false, false, false);
@@ -204,14 +209,14 @@ const colouredCosmiores = new Loomian("Coloured Cosmiores (Loomunity 2024)", 500
 const lifeguardSharpod = new Loomian("Lifeguard Sharpod (2024 Anniversary)", 500, true, false, false, false);
 const surferDractus = new Loomian("Surfer Dractus (2024 Anniversary)", 250, true, false, false, false);
 const surfboardMirrami = new Loomian("Surfboard Mirrami (2024 Anniversary)", 100, true, false, false, false);
-
-const banooh = new Loomian("Banooh (2024 Trick Retreat)", 10, true, true, false, false);
-const spirwix = new Loomian("Spirwix (2024 Trick Retreat)", 10, true, true, false, false);
-const grievestone = new Loomian("Grievestone (2024 Trick Retreat)", 3, true, true, false, false);
 const nymesis = new Loomian("Nymesis (2024 Trick Retreat)", 1, true, false, false, false);
 const eyeballMochibi = new Loomian("Eyeball Mochibi (2024 Trick Retreat)", 20, true, false, false, false); // check if rallyable
 const hwSwirelle = new Loomian("Halloween Swirelle (2024 Trick Retreat)", 100, true, false, false, false); // check if rallyable
 const nymaurae = new Loomian("Nymaurae (2020 Valentines Event)", 1, true, false, false, false);
+const xmasSkilava = new Loomian("Holiday Skilava (2024 Jolly Village)", 15, true, false, false, false);
+const xmasKittone = new Loomian("Holiday Kittone (2024 Jolly Village)", 45, true, false, false, false);
+const xmasGrievestone = new Loomian("Holiday Grievestone (2024 Jolly Village)", 240, true, false, false, false);
+const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, false, false, false);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -320,6 +325,11 @@ var optionData = [
     milgoo,
     cicalute,
     goswing,
+    banooh,
+    spirwix,
+    grievestone,
+    jimby,
+    wassel,
 ]
 
 var eventLoomianData = [
@@ -387,12 +397,13 @@ var eventLoomianData = [
     surfboardMirrami,
     surferDractus,
     lifeguardSharpod,
-    banooh,
-    spirwix,
-    grievestone,
     nymesis,
     eyeballMochibi,
-    hwSwirelle
+    hwSwirelle,
+    xmasSkilava,
+    xmasKittone,
+    xmasGrievestone,
+    xmasUrsoul
 ]
 
 // sort Common Loomians alphabetically
