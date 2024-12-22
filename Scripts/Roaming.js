@@ -43,6 +43,9 @@ const loomunityWabalisc = new Roaming("Surfer Wabalisc (2024 Loomunity)", 1024, 
 const plushieDuskit = new Roaming("Plushie Duskit (2024 Anniversary)", 1024, true, true, false, false);
 const hwDakuda = new Roaming("Skeleton Dakuda (2024 Trick Retreat)", 1024, true, false, false, false);
 const hwElephage = new Roaming("Pumpkin Elepehage (2024 Trick Retreat)", 2048, true, true, false, false);
+const grimyuline = new Roaming("Grimyuline (2024 Jolly Village)", 1024, true, true);
+const toyProtogn = new Roaming("Toy Protogon (2024 Jolly Village)", 1024, true, false, false, false); // don't know if its actually part of the main table. Gonna set it to false anyways
+const santaDuskit = new Roaming("Santa Duskit (2024 Jolly Village)", 1024, true, false, false, false);
 
 const optionData = [
     duskit,
@@ -77,7 +80,10 @@ const optionData = [
     loomunityWabalisc,
     plushieDuskit,
     hwDakuda,
-    hwElephage
+    hwElephage,
+    grimyuline,
+    toyProtogn,
+    santaDuskit
 ]
 
 // Declaring Elements
@@ -194,11 +200,12 @@ calculateButton.addEventListener('click', function() {
 	}
 
 	// check if gleaming odds have been modified for selected Roaming
-	switch (selectedName) {
+	switch (selectedName) { // I really should change this to a method smh
 		case "Reindeer Ikazune (2020 Christmas":
 		case "Skeleton Cephalops (2022 Halloween)":
         case "Christmas Gargolem Forms (2023 Jolly Festival)":
         case "Skeleton Dakuda (2024 Trick Retreat)":
+        case "Toy Protogon (2024 Jolly Village)":
 			gleamingOdds = 2048;
 			break;
 		default:
