@@ -100,9 +100,6 @@ const greenStripesKyeggo = new Loomian("Pink-Green Stripes Kyeggo (2024 Easter)"
 const goldKyeggo = new Loomian("Gold Kyeggo (2024 Easter)", 17, true, true);
 const fabergeKyeggo2024 = new Loomian("Faberge Kyeggos (2024 Easter)", ((100)*3), true, true);
 const nymaurae = new Loomian("Nymaurae (2020 Valentines Event)", 1, true, true);
-const banooh = new Loomian("Banooh (2024 Trick Retreat)", 10, true, true);
-const spirwix = new Loomian("Spirwix (2024 Trick Retreat)", 10, true, true);
-const grievestone = new Loomian("Grievestone (2024 Trick Retreat)", 3, true, true);
 const nymesis = new Loomian("Nymesis (2024 Trick Retreat)", 1, true, true);
 const eyeballMochibi = new Loomian("Eyeball Mochibi (2024 Trick Retreat)", 20, true, true);
 const hwSwirelle = new Loomian("Halloween Swirelle (2024 Trick Retreat)", 100, true, true);
@@ -181,9 +178,6 @@ const optionData = [
   surfboardMirrami,
   surferDractus,
   lifeguardSharpod,
-  banooh,
-  spirwix,
-  grievestone,
   eyeballMochibi,
   nymesis,
   hwSwirelle,

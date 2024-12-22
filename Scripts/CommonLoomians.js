@@ -45,7 +45,7 @@ const cinnaboo = new Loomian("Cinnaboo", 1, true, true);
 const copling = new Loomian("Copling", 20/17, true, true);
 const cosmiore = new Loomian("Cosmiore", 128, true, true);
 const craytal = new Loomian("Craytal", 1, true, true);
-const eventCraytal = new Loomian("Event Craytal", 1, true, true);
+const eventCraytal = new Loomian("Event Craytal", 3, true, true);
 const cryocub = new Loomian("Cryocub", 40, true, true);
 const cupoink = new Loomian("Cupoink", 10, true, true);
 const dobo = new Loomian("Dobo", 1, true, true);
@@ -113,7 +113,8 @@ const whispup = new Loomian("Whispup", 1, true, true);
 const wiledile = new Loomian("Wiledile", 23, true, true);
 const wispur = new Loomian("Wispur", 64, true, true);
 const zaleo = new Loomian("Zaleo", 1, true, true);
-const kayute = new Loomian("Kayute", 67, true, true);
+const kayute2023 = new Loomian("Kayute (2023 Jolly Festival)", 67, true, true);
+const kayute2024 = new Loomian("Kayute (2024 Jolly Village)", 70, true, true);
 const leopaw = new Loomian("Leopaw", 20, true, true)
 const mirrami = new Loomian("Mirrami", 50, true, true);
 const eyebrella = new Loomian("Eyebrella", 1, true, true);
@@ -126,6 +127,11 @@ const yuteen = new Loomian("Yuteen", 1, true, true);
 const morphezu = new Loomian("Morphezu", 1, true, true);
 const behemoroth = new Loomian("Behemoroth", 1, true, true);
 const leviatross = new Loomian("Leviatross", 1, true, true);
+const jimby = new Loomian("Jimby", 3, true, true);
+const wassel = new Loomian("Wassel", 25, true, true);
+const banooh = new Loomian("Banooh", 10, true, true);
+const spirwix = new Loomian("Spirwix", 10, true, true);
+const grievestone = new Loomian("Grievestone", 3, true, true);
 
 // name, odds, is alpha, is gamma
 
@@ -227,7 +233,8 @@ const loomianList = [
     whispup,
     zaleo,
     wispur,
-    kayute,
+    kayute2023,
+    kayute2024,
     leopaw,
     mirrami,
     eyebrella,
@@ -235,7 +242,12 @@ const loomianList = [
     lantot,
     milgoo,
     goswing,
-    cicalute
+    cicalute,
+    jimby,
+    wassel,
+    banooh,
+    spirwix,
+    grievestone,
 ]
 
 // sort Loomians alphabetically
