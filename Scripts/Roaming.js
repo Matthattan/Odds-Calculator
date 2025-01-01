@@ -8,6 +8,10 @@ class Roaming {
         this.roamingtable = roamingtable; //boolean
         this.doubledGleaming = doubledGleaming; // boolean
     }
+
+    isDoubledGleam(){
+        return this.doubledGleaming;
+    }
 }
 
 // name, odds, is alpha, is gamma, soft reset, roaming table, doubled gleaming
@@ -19,7 +23,7 @@ const metronette = new Roaming("Metronette (2020 Uhnne Fair)", 1024, true, true,
 const hwDuskit = new Roaming("Skeleton Duskit (2020 Haloine's Nightmare)", 2048, true, false, false, false, false);
 const cephalops = new Roaming("Cephalops", 1024, true, true, true, true, false);
 const wabalisc = new Roaming("Wabalisc (2020 Jolly Village)", 1024, true, true, true, true, false);
-const xmasIkazune = new Roaming("Reindeer Ikazune (2020 Jolly Village)", 2048, true, true, false, false, false);
+const xmasIkazune = new Roaming("Reindeer Ikazune (2020 Jolly Village)", 2048, true, true, false, false, true);
 const nevermare = new Roaming("Nevermare (2021 Uhnne Fair)", 1024, true, true, true, false, false);
 const hwIkazune = new Roaming("Skeleton Ikazune (2021 Uhnne Fair)", 3072, true, false, false, false, false);
 const hwProtogon = new Roaming("Withered Protogon (2021 Uhnne Fair)", 6144, true, true, false, false, false);
@@ -27,7 +31,7 @@ const akhalos = new Roaming("Akhalos (2021 Jolly Village)", 1024, true, true, tr
 const xmasMutagon = new Roaming("Gem Mutagon (2021 Jolly Village)", 1024, true, true, false, false, false);
 const elephage = new Roaming("Elephage/Phagenaut", 1024, true, true, true, true, false);
 const gargolem = new Roaming("Gargolem (2022 Uhnne Fair)", 1024, true, true, true, false);
-const hwCephalops = new Roaming("Skeleton Cephalops (2022 Uhnne Fair)", 1024, true, false, false, false, false, false);
+const hwCephalops = new Roaming("Skeleton Cephalops (2022 Uhnne Fair)", 1024, true, false, false, false, false, true);
 const celesting = new Roaming("Celesting (2022 Jolly Village)", 1024, true, true, true, true, false, false);
 const xmasMetronette = new Roaming("Nutcracker Metronette (2022 Jolly Village)", 1024, true, true, false, false, false);
 const dakuda = new Roaming("Dakuda", 1024, true, true, false, true, false);
@@ -38,14 +42,14 @@ const hwAkhalos = new Roaming("Skeleton Akhalos (2023 Haunted Village)", 1024, t
 const hwWabalisc = new Roaming("Zombie Wabalisc (2023 Haunted Village)", 4096, true, true, false, false, false);
 const mimask = new Roaming("Mimask (2023 Jolly Festival)", 1024, true, true, true, false, false);
 const xmasNevermare = new Roaming("Reindeer Nevermare (2023 Jolly Festival)", 4096, true, true, false, false, false);
-const xmasGargolems = new Roaming("Christmas Gargolem Forms (2023 Jolly Festival)", 1024, true, true, false, false, false);
+const xmasGargolems = new Roaming("Christmas Gargolem Forms (2023 Jolly Festival)", 1024, true, true, false, false, true);
 const cosmeleon = new Roaming("Cosmeleon", 1024, true, true, false, false, false); 
 const loomunityWabalisc = new Roaming("Surfer Wabalisc (2024 Loomunity)", 1024, true, true, false, false, false);
 const plushieDuskit = new Roaming("Plushie Duskit (2024 Anniversary)", 1024, true, true, false, false, false);
-const hwDakuda = new Roaming("Skeleton Dakuda (2024 Trick Retreat)", 1024, true, false, false, false, false);
+const hwDakuda = new Roaming("Skeleton Dakuda (2024 Trick Retreat)", 1024, true, false, false, false, true);
 const hwElephage = new Roaming("Pumpkin Elepehage (2024 Trick Retreat)", 2048, true, true, false, false, false);
 const grimyuline = new Roaming("Grimyuline (2024 Jolly Village)", 1024, true, true, false);
-const toyProtogn = new Roaming("Toy Protogon (2024 Jolly Village)", 1024, true, false, false, false, false); // don't know if its actually part of the main table. Gonna set it to false anyways
+const toyProtogn = new Roaming("Toy Protogon (2024 Jolly Village)", 1024, true, false, false, false, true); // don't know if its actually part of the main table. Gonna set it to false anyways
 const santaDuskit = new Roaming("Santa Duskit (2024 Jolly Village)", 1024, true, false, false, false, false);
 
 const optionData = [
@@ -200,19 +204,11 @@ calculateButton.addEventListener('click', function() {
 			console.log("Set Encounter cant be found");
 	}
 
-	// check if gleaming odds have been modified for selected Roaming
-	/*switch (selectedName) { // I really should change this to a method smh
-		case "Reindeer Ikazune (2020 Christmas":
-		case "Skeleton Cephalops (2022 Halloween)":
-        case "Christmas Gargolem Forms (2023 Jolly Festival)":
-        case "Skeleton Dakuda (2024 Trick Retreat)":
-        case "Toy Protogon (2024 Jolly Village)":
-			gleamingOdds = 2048;
-			break;
-		default:
-			gleamingOdds = 4096;
-			break;
-	}*/
+    if (selectedLoomian.isDoubledGleam()){
+        gleamingOdds = 2048;
+    } else {
+        gleamingOdds = 4096;
+    }
 
 	// check if Roaming multipliers have been checked
 	if (rCharmBox.checked) {
