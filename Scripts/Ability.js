@@ -9,27 +9,15 @@ class Loomian {
     }  
 
   isPetrolith() {
-    if (this.petrolith) {
-      return true
-    } else {
-      return false
-    }
+    return this.petrolith ?? false;
   }
 
   isRally() {
-    if (this.rallyRanch) {
-        return true
-    } else {
-        return false
-    }
+    return this.rallyRanch ?? false;
   }
 
   isWeather() {
-    if (this.weather) {
-        return true
-    } else {
-        return false
-    }
+    return this.weather ?? false;
   }
 }
 
