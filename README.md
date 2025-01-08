@@ -208,3 +208,7 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - moved loomians from last event to common loomians section
 - updated Kayute with 2 different odds depending on the event
   - remember the cupoink thing? probably not coming lol
+
+## Version 15.1
+- Optimisation to fix bugs
+  - Doubled Gleaming odds are no longer explicitly checked, meaning less work for me in future \m/

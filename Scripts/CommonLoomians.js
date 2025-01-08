@@ -6,16 +6,8 @@ class Loomian {
         this.gammaG = gammaG; //boolean
     }
     
-    getOdds(selectedName) {
-        // Convert the selectedName to lowercase to make the lookup case-insensitive
-        const lowercaseSelectedName = selectedName.toLowerCase();
-        // Check if the selectedName matches the Loomian's name
-        if (this.name.toLowerCase() === lowercaseSelectedName) {
-            return this.odds;
-        } else {
-          // Return null or any other value to indicate Loomian not found
-          return null;
-        }
+    getOdds() {
+        return this.odds;
     }
 };
 
@@ -134,7 +126,6 @@ const spirwix = new Loomian("Spirwix", 10, true, true);
 const grievestone = new Loomian("Grievestone", 3, true, true);
 
 // name, odds, is alpha, is gamma
-
 const loomianList = [
     nymvolt,
     nautling,
@@ -275,7 +266,6 @@ const oddsDisplayButton = document.getElementById("displayOdds");
 const calculateButton = document.getElementById("calculate");
 
 // defining all JS data
-
 const gleamingOdds = 4096
     // alpha is 4/5 of this so 1/5120
     // gamma is 1/5 of this so 1/20480
@@ -322,7 +312,7 @@ selectElement.addEventListener("change", function updateLabels() {
 function calculate() {
     let selectedName = document.getElementById("mySelect").value;
     let selectedLoomian = optionData.find(loomian => loomian.name === selectedName);
-	let subtotal = selectedLoomian.odds;
+	let subtotal = selectedLoomian.getOdds();
 
     // check if the charm box is enabled, uses the object's own multiplier if so
     if (gCharm.checked){
