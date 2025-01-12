@@ -50,7 +50,8 @@ const hwDakuda = new Roaming("Skeleton Dakuda (2024 Trick Retreat)", 1024, true,
 const hwElephage = new Roaming("Pumpkin Elepehage (2024 Trick Retreat)", 2048, true, true, false, false, false);
 const grimyuline = new Roaming("Grimyuline (2024 Jolly Village)", 1024, true, true, false);
 const toyProtogn = new Roaming("Toy Protogon (2024 Jolly Village)", 1024, true, false, false, false, true); // don't know if its actually part of the main table. Gonna set it to false anyways
-const santaDuskit = new Roaming("Santa Duskit (2024 Jolly Village)", 1024, true, false, false, false, false);
+const santaDuskit = new Roaming("Santa Duskit (2024 Jolly Village)", 2048, true, false, false, false, false);
+const holidayOdoyaga = new Roaming("Holiday Odoyaga (2024 Jolly Village)", 2048, true, true, false, false, false);
 
 const optionData = [
     duskit,
@@ -88,7 +89,8 @@ const optionData = [
     hwElephage,
     grimyuline,
     toyProtogn,
-    santaDuskit
+    santaDuskit,
+    holidayOdoyaga
 ]
 
 // Declaring Elements

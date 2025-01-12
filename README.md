@@ -212,3 +212,7 @@ Happy 4th Anniverary Loomian Legacy 🥳
 ## Version 15.1
 - Optimisation to fix bugs
   - Doubled Gleaming odds are no longer explicitly checked, meaning less work for me in future \m/
+
+## Version 15.2
+- Added Holiday Odoyaga
+- Started work on redoing the Gamma/RW odds table styling
