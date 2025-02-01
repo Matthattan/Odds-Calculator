@@ -1,9 +1,12 @@
 class Loomian {
-  constructor(name, odds, alphaG, gammaG){
+  constructor(name, odds, alphaG, gammaG, halvedGOdds = false, halvedGCharm = false, halvedGBoost = false){
     this.name = name; //string
     this.odds = odds; //float
     this.alphaG = alphaG; //boolean
     this.gammaG = gammaG; //boolean
+    this.halvedGOdds = halvedGOdds;
+    this.halvedGCharm = halvedGCharm;
+    this.halvedGBoost = halvedGBoost;
   }
 
   isAlpha() {
@@ -39,7 +42,7 @@ const rainbowChoochew = new Loomian("Rainbow Choochew (2024 Loomunity)", 5000, f
 const rainbowCosmiore = new Loomian("Rainbow Cosmiore (2024 Loomunity)", 10000, false, false);
 const tennisBarblast = new Loomian("Tennisball Barblast (2024 Loomunity)", 1, true, true);
 const fishingShawchi = new Loomian("Fisherman Shawchi (2024 Loomunity)", 100, true, true);
-const rainbowTeridescent = new Loomian("Rainbow Teridescent (2024 Loomunity)", 1000, true, true);
+const rainbowTeridescent = new Loomian("Rainbow Teridescent (2024 Loomunity)", 1000, true, true, true);
 const wispColouredChoochew = new Loomian("Coloured Choochew with Wisp (2024 Loomunity)", 1000, false, false);
 const colouredChoochew = new Loomian("Coloured Choochew (2024 Loomunity)", 100, false, false);
 const wispColouredCosmiores = new Loomian("Coloured Cosmiores with Wisp (2024 Loomunity)", 5000, false, false);
@@ -53,38 +56,38 @@ const rainbowNymaurae = new Loomian("Rainbow Nymaurae (2023 Loomunity)", 15000, 
 const rainbowPyramind = new Loomian("Rainbow Pyramind (2023 Loomunity)", 20000, false, false);
 const rainbowGoppie = new Loomian("Rainbow Goppie (2023 Loomunity)", 10000, false, false);
 const valentinesAntsee = new Loomian("Valentines Antsee (2023 Valentines)", 80, true, true);
-const bronzeGeklow = new Loomian("Bronze Geklow (2020 Anniversary)", 100, true, false);
-const bronzeCopling = new Loomian("Bronze Copling (2023 Anniversary)", 100, true, false);
+const bronzeGeklow = new Loomian("Bronze Geklow (2020 Anniversary)", 100, true, false, false, true, true);
+const bronzeCopling = new Loomian("Bronze Copling (2023 Anniversary)", 100, true, false, false, true, true);
+const silverGeklow = new Loomian("Silver Geklow (2020 Anniversary)", 250, true, false, false, true, true);
+const silverCopling = new Loomian("Silver Copling (2023 Anniversary)", true, false, false, true, true);
+const goldGeklow = new Loomian("Gold Geklow (2020 Anniversary)", 500, true, false, false, true, true);
+const goldCopling = new Loomian("Gold Copling (2023 Anniversary)", 500, true, false, false, true, true);
+const sapphireGeklow = new Loomian("Sapphire Geklow (2020 Anniversary)", 10000, true, false, false, true, true);
+const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000, true, false, false, true, true);
+const emeraldGeklow = new Loomian("Emerald Geklow (2020 Anniversary)", 2000, true, false, false, true, true);
+const emeraldCopling = new Loomian("Emerald Copling (2023 Anniversary)", 2000, true, false, false, true, true);
+const rubyGeklow = new Loomian("Ruby Geklow (2020 Anniversary)", 5000, true, false, false, true, true);
+const rubyCopling = new Loomian("Ruby Copling (2023 Anniversary)", 5000, true, false, false, true, true);
 const sweetsPhancub = new Loomian("Sweets Phancub (2022 Sweet Retreat)", 100, true, true);
 const snowmanTotemochi = new Loomian("Snowman Totemochi (2022 Jolly Village)", 150, true, false);
 const cakeSlugling = new Loomian("Cake Slugling (2022 Sweet Retreat)", 200, true, true,);
-const silverGeklow = new Loomian("Silver Geklow (2020 Anniversary)", 250, true, false);
-const silverCopling = new Loomian("Silver Copling (2023 Anniversary)", true, false);
 const halloweenSlugling = new Loomian("Halloween Slugling (2019 Halloween)", 300, true, false);
 const christmasGlassScorb = new Loomian("Glass Scorb - Rare (2022 Jolly Village)", 372, true, false);
 const halloweenTaoshi = new Loomian("Halloween Taoshi (2022 Uhnne Fair)", 450, true, true);
 const halloweenTerriti = new Loomian("Halloween Territi (2022 Uhnne Fair)", 450, true, true);
-const goldGeklow = new Loomian("Gold Geklow (2020 Anniversary)", 500, true, false);
-const goldCopling = new Loomian("Gold Copling (2023 Anniversary)", 500, true, false);
 const christmasPropae = new Loomian("Santa Propae (2021 Christmas)", 500, true, true);
 const halloweenShawchi = new Loomian("Halloween Shawchi (2019 Halloween)", 500, true, false);
-const Icigool2020 = new Loomian("Coloured Icigool (2020 Christmas)", 600, true, true);
+const Icigool2020 = new Loomian("Coloured Icigool (2020 Christmas)", 600, true, true, true);
 const Icigool2021 = new Loomian("Coloured Icigool (2021 Christmas and Beyond)", 600, true, true);
 const christmasRagoon = new Loomian("Santa Ragoon (2019 Christmas)", 1000, true, false);
-const rainbowShawchi = new Loomian("Rainbow Shawchi (2022 Loomunity)", 1000, true, true);
+const rainbowShawchi = new Loomian("Rainbow Shawchi (2022 Loomunity)", 1000, true, true, true);
 const rainbowVari = new Loomian("Rainbow Vari (2022 Loomunity)", 15000, false, false);
 const rainbowFlorant = new Loomian("Rainbow Florant (2023 Loomunity)", 1000, true, true);
-const emeraldGeklow = new Loomian("Emerald Geklow (2020 Anniversary)", 2000, true, false);
-const emeraldCopling = new Loomian("Emerald Copling (2023 Anniversary)", 2000, true, false);
-const rubyGeklow = new Loomian("Ruby Geklow (2020 Anniversary)", 5000, true, false);
-const rubyCopling = new Loomian("Ruby Copling (2023 Anniversary)", 5000, true, false);
 const normalKyeggo = new Loomian("Normal Kyeggo (2023 Easter)", (6*(100/37)), true, true);
 const frillyKyeggo = new Loomian("Frilly Kyeggo (2023 Easter)", (6*(100/18.7)), true, true);
 const zzKyeggo = new Loomian("Zig-Zag Kyeggo (2023 Easter)", (6*(100/8.7)), true, true);
 const starKyeggo = new Loomian("Star Kyeggo (2023 Easter)", (6*(100/6)), true, true);
 const fabergeKyeggo = new Loomian("Faberge Kyeggo (2023 Easter)", (6*(100/0.33)), true, true);
-const sapphireGeklow = new Loomian("Sapphire Geklow (2020 Anniversary)", 10000, true, false);
-const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000, true, false);
 const halloweenMistlebud = new Loomian("Halloween Mistlebud (2023 Haunted Village)", (100/1.6), true, true);
 const halloweenCryocub = new Loomian("Halloween Cryocub (2023 Haunted Village)", (100/0.3), true, true);
 const christmasImpkin = new Loomian("Elf Impkin (2023 Jolly Festival)", 10, true, true);
@@ -107,6 +110,8 @@ const xmasSkilava = new Loomian("Holiday Skilava (2024 Jolly Village)", 15, true
 const xmasKittone = new Loomian("Holiday Kittone (2024 Jolly Village)", 45, true, true);
 const xmasGrievestone = new Loomian("Holiday Grievestone (2024 Jolly Village)", 240, true, true);
 const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, true);
+const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, true);
+const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, true);
 
 //name, odds, alphaG, gammaG
 
@@ -184,7 +189,9 @@ const optionData = [
   xmasSkilava,
   xmasKittone,
   xmasGrievestone,
-  xmasUrsoul
+  xmasUrsoul,
+  lunarSnicle,
+  lunarRadiantSnicle
 ]
 
 // defining Variables
@@ -251,13 +258,8 @@ function calculate() {
 
   // some event Loomians have the things like the charm/boost or gleaming odds modified
   // change gleaming odds
-  switch (selectedLoomian.name) {
-    case "Coloured Goppies (2023 Loomunity)":
-      gleamingOdds = 0;
-      break;
-    case "Coloured Icigool (2020 Christmas)":
-    case "Rainbow Shawchi (2022 Loomunity)":
-    case "Rainbow Teridescent (Loomunity 2024)":
+  switch (selectedLoomian.halvedGOdds) {
+    case true:
       gleamingOdds = 2048;
       break;
     default:
@@ -266,22 +268,8 @@ function calculate() {
   }
 
   // change gCharmMultiplier
-  switch (selectedLoomian.name) {
-    case "Coloured Goppies (2023 Loomunity)":
-      gCharmMultiplier = 0;
-      break;
-    case "Bronze Geklow (2020 Anniversary)":
-    case "Silver Geklow (2020 Anniversary)":
-    case "Gold Geklow (2020 Anniversary)":
-    case "Emerald Geklow (2020 Anniversary)":
-    case "Ruby Geklow (2020 Anniversary)":
-    case "Sapphire Geklow (2020 Anniversary)":
-    case "Bronze Copling (2023 Anniversary)":
-    case "Silver Copling (2023 Anniversary)":
-    case "Gold Copling (2023 Anniversary)":
-    case "Emerald Copling (2023 Anniversary)":
-    case "Ruby Copling (2023 Anniversary)":
-    case "Sapphire Copling (2023 Anniversary)":
+  switch (selectedLoomian.halvedGCharm) {
+    case true:
       gCharmMultiplier = 0.25;
       break;
     default:
@@ -290,19 +278,8 @@ function calculate() {
   }
 
   // change gBoostMultiplier
-  switch (selectedLoomian.name) {
-    case "Bronze Geklow (2020 Anniversary)":
-    case "Silver Geklow (2020 Anniversary)":
-    case "Gold Geklow (2020 Anniversary)":
-    case "Emerald Geklow (2020 Anniversary)":
-    case "Ruby Geklow (2020 Anniversary)":
-    case "Sapphire Geklow (2020 Anniversary)":
-    case "Bronze Copling (2023 Anniversary)":
-    case "Silver Copling (2023 Anniversary)":
-    case "Gold Copling (2023 Anniversary)":
-    case "Emerald Copling (2023 Anniversary)":
-    case "Ruby Copling (2023 Anniversary)":
-    case "Sapphire Copling (2023 Anniversary)":
+  switch (selectedLoomian.halvedGBoost) {
+    case true:
       gBoostMultiplier = 0.015625;
       break;
     default:

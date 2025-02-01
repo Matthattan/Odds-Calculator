@@ -124,6 +124,7 @@ const wassel = new Loomian("Wassel", 25, true, true);
 const banooh = new Loomian("Banooh", 10, true, true);
 const spirwix = new Loomian("Spirwix", 10, true, true);
 const grievestone = new Loomian("Grievestone", 3, true, true);
+const snicle = new Loomian("Snicle", 20, true, true);
 
 // name, odds, is alpha, is gamma
 const loomianList = [
@@ -239,6 +240,7 @@ const loomianList = [
     banooh,
     spirwix,
     grievestone,
+    snicle
 ]
 
 // sort Loomians alphabetically
