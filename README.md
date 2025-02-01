@@ -216,3 +216,10 @@ Happy 4th Anniverary Loomian Legacy 🥳
 ## Version 15.2
 - Added Holiday Odoyaga
 - Started work on redoing the Gamma/RW odds table styling
+
+# Version 16
+- Lunar New Year
+  - Added Snicle and its Event counterpart
+    - as with the other lunar new year loomians, its radiant form is a separate entry
+  - slightly reworked halved gleaming odds checking
+  - considering moving Loomians to a JSON file for better maintainability  

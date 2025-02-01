@@ -130,6 +130,7 @@ const spirwix = new Loomian("Spirwix", 10, true, true, false, false);
 const grievestone = new Loomian("Grievestone", 3, true, true, false, false);
 const jimby = new Loomian("Jimby", 3, true, true, false, false);
 const wassel = new Loomian("Wassel", 25, true, true, false, false);
+const snicle = new Loomian("Snicle", 20, true, true, false, flase);
 
 //Non-Rallyable Event Loomians
 const christmasGlassScorbs = new Loomian("Common Christmas Scorbs (2022 Christmas)", 12, true, false, false, false);
@@ -205,6 +206,8 @@ const xmasSkilava = new Loomian("Holiday Skilava (2024 Jolly Village)", 15, true
 const xmasKittone = new Loomian("Holiday Kittone (2024 Jolly Village)", 45, true, false, false, false);
 const xmasGrievestone = new Loomian("Holiday Grievestone (2024 Jolly Village)", 240, true, false, false, false);
 const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, false, false, false);
+const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, false, false, false);
+const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, false, false, false);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -318,6 +321,7 @@ var optionData = [
     grievestone,
     jimby,
     wassel,
+    snicle
 ]
 
 var eventLoomianData = [
@@ -391,7 +395,9 @@ var eventLoomianData = [
     xmasSkilava,
     xmasKittone,
     xmasGrievestone,
-    xmasUrsoul
+    xmasUrsoul,
+    lunarSnicle,
+    lunarRadiantSnicle
 ]
 
 // sort Common Loomians alphabetically
