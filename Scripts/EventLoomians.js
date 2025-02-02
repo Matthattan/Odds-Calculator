@@ -110,8 +110,8 @@ const xmasSkilava = new Loomian("Holiday Skilava (2024 Jolly Village)", 15, true
 const xmasKittone = new Loomian("Holiday Kittone (2024 Jolly Village)", 45, true, true);
 const xmasGrievestone = new Loomian("Holiday Grievestone (2024 Jolly Village)", 240, true, true);
 const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, true);
-const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, true);
-const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, true);
+const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, true, true);
+const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, true, true);
 
 //name, odds, alphaG, gammaG
 
