@@ -208,6 +208,8 @@ const xmasGrievestone = new Loomian("Holiday Grievestone (2024 Jolly Village)", 
 const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, false, false, false);
 const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, false, false, false);
 const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, false, false, false);
+const valentinesTwittle = new Loomian("Valentines Twittle (2025 Valentines)", 40, true, false, false, false);
+
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -397,7 +399,8 @@ var eventLoomianData = [
     xmasGrievestone,
     xmasUrsoul,
     lunarSnicle,
-    lunarRadiantSnicle
+    lunarRadiantSnicle,
+    valentinesTwittle
 ]
 
 // sort Common Loomians alphabetically

@@ -112,6 +112,8 @@ const xmasGrievestone = new Loomian("Holiday Grievestone (2024 Jolly Village)", 
 const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, true);
 const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, true, true);
 const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, true, true);
+const valentinesTwittle = new Loomian("Valentines Twittle (2025 Valentines)", 40, true, true);
+
 
 //name, odds, alphaG, gammaG
 
@@ -191,7 +193,8 @@ const optionData = [
   xmasGrievestone,
   xmasUrsoul,
   lunarSnicle,
-  lunarRadiantSnicle
+  lunarRadiantSnicle,
+  valentinesTwittle
 ]
 
 // defining Variables

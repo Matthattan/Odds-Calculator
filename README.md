@@ -223,3 +223,8 @@ Happy 4th Anniverary Loomian Legacy 🥳
     - as with the other lunar new year loomians, its radiant form is a separate entry
   - slightly reworked halved gleaming odds checking
   - considering moving Loomians to a JSON file for better maintainability  
+
+## Version 16.1
+- Happy valentines
+  - Kind of a tie in with the LNY event so might aswell make it the within the same version, yeah?
+  - Added Valentines Twittle at 1/40
