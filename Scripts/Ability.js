@@ -130,7 +130,7 @@ const spirwix = new Loomian("Spirwix", 10, true, true, false, false);
 const grievestone = new Loomian("Grievestone", 3, true, true, false, false);
 const jimby = new Loomian("Jimby", 3, true, true, false, false);
 const wassel = new Loomian("Wassel", 25, true, true, false, false);
-const snicle = new Loomian("Snicle", 20, true, true, false, flase);
+const snicle = new Loomian("Snicle", 20, true, true, false, false);
 
 //Non-Rallyable Event Loomians
 const christmasGlassScorbs = new Loomian("Common Christmas Scorbs (2022 Christmas)", 12, true, false, false, false);
@@ -209,7 +209,7 @@ const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, f
 const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, false, false, false);
 const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, false, false, false);
 const valentinesTwittle = new Loomian("Valentines Twittle (2025 Valentines)", 40, true, false, false, false);
-const KyeggoNormal2025 = new loomian("Normal Kyeggo (2025 Easter)", 3, true, true, false, false);
+const KyeggoNormal2025 = new Loomian("Normal Kyeggo (2025 Easter)", 3, true, true, false, false);
 const KyeggoTurqoise = new Loomian("Turqoise Kyeggo (2025 Easter)", 6, true, false, false, false);
 const KyeggoGreen = new Loomian("Green Kyeggo (2025 Easter)", 6, true, false, false, false);
 const KyeggoPink = new Loomian("Pink Kyeggo (2025 Easter)", 6, true, false, false, false);
