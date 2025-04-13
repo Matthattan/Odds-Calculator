@@ -228,3 +228,7 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Happy valentines
   - Kind of a tie in with the LNY event so might aswell make it the within the same version, yeah?
   - Added Valentines Twittle at 1/40
+
+## Version 17
+- Happy Easter 🥚
+ - Added new Kyeggos to Ability and Easter odds
