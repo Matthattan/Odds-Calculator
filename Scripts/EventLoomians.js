@@ -113,7 +113,14 @@ const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, t
 const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, true, true);
 const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, true, true);
 const valentinesTwittle = new Loomian("Valentines Twittle (2025 Valentines)", 40, true, true);
-
+const KyeggoNormal2025 = new loomian("Normal Kyeggo (2025 Easter)", 3, true, true);
+const KyeggoTurqoise = new Loomian("Turqoise Kyeggo (2025 Easter)", 6, true, true);
+const KyeggoGreen = new Loomian("Green Kyeggo (2025 Easter)", 6, true, true);
+const KyeggoPink = new Loomian("Pink Kyeggo (2025 Easter)", 6, true, true);
+const KyeggoPyramind = new Loomian("Pyramind Kyeggo (2025 Easter)", 17, true, true);
+const KyeggoFabergeYellow = new Loomian("Yellow Faberge Kyeggo (2025 Easter)", 300, true, true);
+const KyeggoFabergePink = new Loomian("Pink Faberge Kyeggo (2025 Easter)", 300, true, true);
+const KyeggoFabergeCyan = new Loomian("Cyan Faberge Kyeggo (2025 Easter)", 300, true, true);
 
 //name, odds, alphaG, gammaG
 
@@ -194,7 +201,14 @@ const optionData = [
   xmasUrsoul,
   lunarSnicle,
   lunarRadiantSnicle,
-  valentinesTwittle
+  valentinesTwittle,
+  KyeggoNormal2025,
+  KyeggoTurqoise,
+  KyeggoPink,
+  KyeggoGreen,
+  KyeggoFabergeCyan,
+  KyeggoFabergePink,
+  KyeggoFabergeYellow
 ]
 
 // defining Variables

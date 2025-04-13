@@ -209,7 +209,14 @@ const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, f
 const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, false, false, false);
 const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, false, false, false);
 const valentinesTwittle = new Loomian("Valentines Twittle (2025 Valentines)", 40, true, false, false, false);
-
+const KyeggoNormal2025 = new loomian("Normal Kyeggo (2025 Easter)", 3, true, true, false, false);
+const KyeggoTurqoise = new Loomian("Turqoise Kyeggo (2025 Easter)", 6, true, false, false, false);
+const KyeggoGreen = new Loomian("Green Kyeggo (2025 Easter)", 6, true, false, false, false);
+const KyeggoPink = new Loomian("Pink Kyeggo (2025 Easter)", 6, true, false, false, false);
+const KyeggoPyramind = new Loomian("Pyramind Kyeggo (2025 Easter)", 17, true, false, false, false);
+const KyeggoFabergeYellow = new Loomian("Yellow Faberge Kyeggo (2025 Easter)", 300, true, false, false, false);
+const KyeggoFabergePink = new Loomian("Pink Faberge Kyeggo (2025 Easter)", 300, true, false, false, false);
+const KyeggoFabergeCyan = new Loomian("Cyan Faberge Kyeggo (2025 Easter)", 300, true, false, false, false);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -400,7 +407,14 @@ var eventLoomianData = [
     xmasUrsoul,
     lunarSnicle,
     lunarRadiantSnicle,
-    valentinesTwittle
+    valentinesTwittle,
+    KyeggoNormal2025,
+    KyeggoTurqoise,
+    KyeggoPink,
+    KyeggoGreen,
+    KyeggoFabergeCyan,
+    KyeggoFabergePink,
+    KyeggoFabergeYellow
 ]
 
 // sort Common Loomians alphabetically
