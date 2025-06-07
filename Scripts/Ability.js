@@ -231,6 +231,7 @@ const rainbowEleguana = new Loomian("Rainbow Eleguana (2025 Loomunity)", 1000, t
 const rainbowCynamoth = new Loomian("Rainbow Cynamoth (2025 Loomunity)", 2000, true, false, false, false);
 const rainbowObsidrugon = new Loomian("Rainbow Obsidrugon (2025 Loomunity)", 5000, true, false, false, false);
 const rainbowGlacadia = new Loomian("Rainbow Glacadia (2025 Loomunity)", 10000, true, false, false, false);
+const rainbowArceros = new Loomian("Rainbow Glacadia (2025 Loomunity)", 10000, true, false, false, false);
 const solnecta = new Loomian("Solnecta (2025 Loomunity)", 1, true, false, false, false);
 
 
