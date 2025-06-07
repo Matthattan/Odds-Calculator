@@ -121,6 +121,7 @@ const KyeggoPyramind = new Loomian("Pyramind Kyeggo (2025 Easter)", 17, true, tr
 const KyeggoFabergeYellow = new Loomian("Yellow Faberge Kyeggo (2025 Easter)", 300, true, true);
 const KyeggoFabergePink = new Loomian("Pink Faberge Kyeggo (2025 Easter)", 300, true, true);
 const KyeggoFabergeCyan = new Loomian("Cyan Faberge Kyeggo (2025 Easter)", 300, true, true);
+const easterDorogo = new Loomian("Easter Dorogo (2025 Easter)", 1, true, true);
 const tennisGeksplode = new Loomian("Tennisball Geksplode (2025 Loomunity)", 1, true, true);
 const drinkSingeel = new Loomian("Drink Singeel (2025 Loomunity)", 50, true, true);
 const flowerPipsee = new Loomian("Flower Pipsee (2025 Loomunity)", 100, true, true);
@@ -222,6 +223,7 @@ const optionData = [
   KyeggoFabergeCyan,
   KyeggoFabergePink,
   KyeggoFabergeYellow,
+  easterDorogo,
   tennisGeksplode,
   drinkSingeel,
   flowerPipsee,
