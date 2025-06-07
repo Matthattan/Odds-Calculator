@@ -11,6 +11,7 @@ class Loomian {
     }
 };
 
+const nukichi = new Loomian("Nukichi", 10, true, true);
 const goswing = new Loomian("Goswing", 10, true, true);
 const cicalute = new Loomian("Cicalute", 8, true, true);
 const nymvolt = new Loomian("Nymvolt", 64, true, true);
@@ -128,6 +129,7 @@ const snicle = new Loomian("Snicle", 20, true, true);
 
 // name, odds, is alpha, is gamma
 const loomianList = [
+    nukichi,
     nymvolt,
     nautling,
     yutiny,
