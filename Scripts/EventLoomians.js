@@ -121,8 +121,21 @@ const KyeggoPyramind = new Loomian("Pyramind Kyeggo (2025 Easter)", 17, true, tr
 const KyeggoFabergeYellow = new Loomian("Yellow Faberge Kyeggo (2025 Easter)", 300, true, true);
 const KyeggoFabergePink = new Loomian("Pink Faberge Kyeggo (2025 Easter)", 300, true, true);
 const KyeggoFabergeCyan = new Loomian("Cyan Faberge Kyeggo (2025 Easter)", 300, true, true);
+const tennisGeksplode = new Loomian("Tennisball Geksplode (2025 Loomunity)", 1, true, true);
+const drinkSingeel = new Loomian("Drink Singeel (2025 Loomunity)", 50, true, true);
+const flowerPipsee = new Loomian("Flower Pipsee (2025 Loomunity)", 100, true, true);
+const sandcastlePyramind = new Loomian("Sandcastle Pyramind (2025 Loomunity)", 800, true, true);  
+const colouredCynamoth = new Loomian("Coloured Cynamoth (2025 Loomunity)", 100, false, false);
+const wispColouredCynamoth = new Loomian("Coloured Cynamoth with Wisp (2025 Loomunity)", 1000, false, false);
+const colouredObsidrugon = new Loomian("Coloured Obsidrugon (2025 Loomunity)", 500, false, false);
+const wispColouredObsidrugon = new Loomian("Coloured Obsidrugon with Wisp (2025 Loomunity)", 5000, false, false);
+const rainbowEleguana = new Loomian("Rainbow Eleguana (2025 Loomunity)", 1000, true, true, true, false, false);
+const rainbowCynamoth = new Loomian("Rainbow Cynamoth (2025 Loomunity)", 2000, true, true);
+const rainbowObsidrugon = new Loomian("Rainbow Obsidrugon (2025 Loomunity)", 5000, true, true);
+const rainbowGlacadia = new Loomian("Rainbow Glacadia (2025 Loomunity)", 10000, true, true, false, true, true);
+const rainbowArceros = new Loomian("Rainbow Arceros (2025 Loomunity)", 10000, true, true, false, true, true);
 
-//name, odds, alphaG, gammaG
+//name, odds, alphaG, gammaG, halved odds, halved charm, quad boost
 
 // collate all objects into an array
 const optionData = [
@@ -208,7 +221,20 @@ const optionData = [
   KyeggoGreen,
   KyeggoFabergeCyan,
   KyeggoFabergePink,
-  KyeggoFabergeYellow
+  KyeggoFabergeYellow,
+  tennisGeksplode,
+  drinkSingeel,
+  flowerPipsee,
+  sandcastlePyramind,
+  wispColouredCynamoth,
+  colouredCynamoth,
+  wispColouredObsidrugon,
+  colouredObsidrugon,
+  rainbowEleguana,
+  rainbowCynamoth,
+  rainbowObsidrugon,
+  rainbowGlacadia,
+  rainbowArceros
 ]
 
 // defining Variables
