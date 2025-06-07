@@ -22,6 +22,7 @@ class Loomian {
 }
 
 //Rallyable Event-Inclusive Loomians
+const nukichi = new Loomian("Nukichi", 10, true, true, false, false);
 const goswing = new Loomian("Goswing", 10, true, true, false, false);
 const cicalute = new Loomian("Cicalute", 8, true, true, false, false);
 const ampole = new Loomian("Ampole", 1, true, true, true, false);
@@ -222,6 +223,7 @@ const KyeggoFabergeCyan = new Loomian("Cyan Faberge Kyeggo (2025 Easter)", 300, 
 
 // collate all objects into an array
 var optionData = [
+    nukichi,
     nymvolt,
     nautling,
     yutiny,
