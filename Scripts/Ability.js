@@ -22,6 +22,7 @@ class Loomian {
 }
 
 //Rallyable Event-Inclusive Loomians
+const nukichi = new Loomian("Nukichi", 10, true, true, false, false);
 const goswing = new Loomian("Goswing", 10, true, true, false, false);
 const cicalute = new Loomian("Cicalute", 8, true, true, false, false);
 const ampole = new Loomian("Ampole", 1, true, true, true, false);
@@ -217,11 +218,28 @@ const KyeggoPyramind = new Loomian("Pyramind Kyeggo (2025 Easter)", 17, true, fa
 const KyeggoFabergeYellow = new Loomian("Yellow Faberge Kyeggo (2025 Easter)", 300, true, false, false, false);
 const KyeggoFabergePink = new Loomian("Pink Faberge Kyeggo (2025 Easter)", 300, true, false, false, false);
 const KyeggoFabergeCyan = new Loomian("Cyan Faberge Kyeggo (2025 Easter)", 300, true, false, false, false);
+const easterDorogo = new Loomian("Easter Dorogo (2025 Easter)", 1, true, false, false, false);
+const tennisGeksplode = new Loomian("Tennisball Geksplode (2025 Loomunity)", 1, true, false, false, false);
+const drinkSingeel = new Loomian("Drink Singeel (2025 Loomunity)", 50, true, false, false, false);
+const flowerPipsee = new Loomian("Flower Pipsee (2025 Loomunity)", 100, true, false, false, false);
+const sandcastlePyramind = new Loomian("Sandcastle Pyramind (2025 Loomunity)", 800, true, false, false, false);  
+const colouredCynamoth = new Loomian("Coloured Cynamoth (2025 Loomunity)", 100, true, false, false, false);
+const wispColouredCynamoth = new Loomian("Coloured Cynamoth with Wisp (2025 Loomunity)", 1000, true, false, false, false);
+const colouredObsidrugon = new Loomian("Coloured Obsidrugon (2025 Loomunity)", 500, true, false, false, false);
+const wispColouredObsidrugon = new Loomian("Coloured Obsidrugon with Wisp (2025 Loomunity)", 5000, true, false, false, false);
+const rainbowEleguana = new Loomian("Rainbow Eleguana (2025 Loomunity)", 1000, true, false, false, false);
+const rainbowCynamoth = new Loomian("Rainbow Cynamoth (2025 Loomunity)", 2000, true, false, false, false);
+const rainbowObsidrugon = new Loomian("Rainbow Obsidrugon (2025 Loomunity)", 5000, true, false, false, false);
+const rainbowGlacadia = new Loomian("Rainbow Glacadia (2025 Loomunity)", 10000, true, false, false, false);
+const rainbowArceros = new Loomian("Rainbow Arceros (2025 Loomunity)", 10000, true, false, false, false);
+const solnecta = new Loomian("Solnecta (2025 Loomunity)", 1, true, false, false, false);
+
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
 // collate all objects into an array
 var optionData = [
+    nukichi,
     nymvolt,
     nautling,
     yutiny,
@@ -414,7 +432,22 @@ var eventLoomianData = [
     KyeggoGreen,
     KyeggoFabergeCyan,
     KyeggoFabergePink,
-    KyeggoFabergeYellow
+    KyeggoFabergeYellow,
+    easterDorogo,
+    solnecta,
+    tennisGeksplode,
+    drinkSingeel,
+    flowerPipsee,
+    sandcastlePyramind,
+    wispColouredCynamoth,
+    colouredCynamoth,
+    wispColouredObsidrugon,
+    colouredObsidrugon,
+    rainbowEleguana,
+    rainbowCynamoth,
+    rainbowObsidrugon,
+    rainbowGlacadia,
+    rainbowArceros
 ]
 
 // sort Common Loomians alphabetically

@@ -232,3 +232,10 @@ Happy 4th Anniverary Loomian Legacy 🥳
 ## Version 17
 - Happy Easter 🥚
  - Added new Kyeggos to Ability and Easter odds
+
+## Version 18
+- 2025 Loomunity Event 🌈
+  - Added new event loomians from part 1 of event (no this isn't a leak)
+    - Rainbow Glacadia & Arceros are in the Event section due to not only being event loomians but also halved gleam/quad boosts being implemented with that page
+    - Solnecta has also been added to the Event section, like Nymaurae and Nymesis
+- Easter Dorogo added from previous event
