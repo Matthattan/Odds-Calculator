@@ -239,3 +239,6 @@ Happy 4th Anniverary Loomian Legacy 🥳
     - Rainbow Glacadia & Arceros are in the Event section due to not only being event loomians but also halved gleam/quad boosts being implemented with that page
     - Solnecta has also been added to the Event section, like Nymaurae and Nymesis
 - Easter Dorogo added from previous event
+
+### Version 18.1
+- changed it so, out of the new RB Loomians, only rb eleguana displays alpha and gamma odds
