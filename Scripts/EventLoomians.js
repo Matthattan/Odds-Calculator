@@ -132,10 +132,10 @@ const wispColouredCynamoth = new Loomian("Coloured Cynamoth with Wisp (2025 Loom
 const colouredObsidrugon = new Loomian("Coloured Obsidrugon (2025 Loomunity)", 500, false, false);
 const wispColouredObsidrugon = new Loomian("Coloured Obsidrugon with Wisp (2025 Loomunity)", 5000, false, false);
 const rainbowEleguana = new Loomian("Rainbow Eleguana (2025 Loomunity)", 1000, true, true, true, false, false);
-const rainbowCynamoth = new Loomian("Rainbow Cynamoth (2025 Loomunity)", 2000, true, true);
-const rainbowObsidrugon = new Loomian("Rainbow Obsidrugon (2025 Loomunity)", 5000, true, true);
-const rainbowGlacadia = new Loomian("Rainbow Glacadia (2025 Loomunity)", 10000, true, true, false, true, true);
-const rainbowArceros = new Loomian("Rainbow Arceros (2025 Loomunity)", 10000, true, true, false, true, true);
+const rainbowCynamoth = new Loomian("Rainbow Cynamoth (2025 Loomunity)", 2000, false, false);
+const rainbowObsidrugon = new Loomian("Rainbow Obsidrugon (2025 Loomunity)", 5000, false, false);
+const rainbowGlacadia = new Loomian("Rainbow Glacadia (2025 Loomunity)", 10000, false, false, false, true, true);
+const rainbowArceros = new Loomian("Rainbow Arceros (2025 Loomunity)", 10000, false, false, false, true, true);
 
 //name, odds, alphaG, gammaG, halved odds, halved charm, quad boost
 
