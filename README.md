@@ -242,3 +242,8 @@ Happy 4th Anniverary Loomian Legacy 🥳
 
 ### Version 18.1
 - changed it so, out of the new RB Loomians, only rb eleguana displays alpha and gamma odds
+
+### Version 18.2
+- Added Summer Mimask
+- Moved RB Glacadia and Arceros to the Roaming calculator
+- Fixed Roaming page so it hides alpha odds if the loomian doesn't have a gleaming form
