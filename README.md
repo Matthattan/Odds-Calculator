@@ -243,7 +243,14 @@ Happy 4th Anniverary Loomian Legacy 🥳
 ### Version 18.1
 - changed it so, out of the new RB Loomians, only rb eleguana displays alpha and gamma odds
 
+## Version 19
+- 2025 Anniversary - Happy 6 years Loomian Legacy 🎂 :)
+  - Added Event Scorbs
+  - Added Mecha Ikazune
+    - Encounter rate has been set to 1 since its technically based on winning the raids which I'll count as 100% ;)
+    
 ### Version 18.2
 - Added Summer Mimask
 - Moved RB Glacadia and Arceros to the Roaming calculator
 - Fixed Roaming page so it hides alpha odds if the loomian doesn't have a gleaming form
+

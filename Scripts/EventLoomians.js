@@ -134,6 +134,14 @@ const wispColouredObsidrugon = new Loomian("Coloured Obsidrugon with Wisp (2025 
 const rainbowEleguana = new Loomian("Rainbow Eleguana (2025 Loomunity)", 1000, true, true, true, false, false);
 const rainbowCynamoth = new Loomian("Rainbow Cynamoth (2025 Loomunity)", 2000, false, false);
 const rainbowObsidrugon = new Loomian("Rainbow Obsidrugon (2025 Loomunity)", 5000, false, false);
+const rainbowGlacadia = new Loomian("Rainbow Glacadia (2025 Loomunity)", 10000, false, false, false, true, true);
+const rainbowArceros = new Loomian("Rainbow Arceros (2025 Loomunity)", 10000, false, false, false, true, true);
+const bronzeScorb = new Loomian("Bronze Scorb (2025 Anniversary)", 50, true, false, true, false, false);
+const silverScorb = new Loomian("Silver Scorb (2025 Anniversary)", 100, true, false, true, false, false);
+const goldScorb = new Loomian("Gold Scorb (2025 Anniversary)", 250, true, false, true, false, false);
+const emeraladScorb = new Loomian("Emerald Scorb (2025 Anniversary)", 500, true, false, true, false, false);
+const rubyScorb = new Loomian("Ruby Scorb (2025 Anniversary)", 1000, true, false, true, false, false);
+const sapphireScorb = new Loomian("Sapphire Scorb (2025 Anniversary)", 2500, true, false, true, false, false);
 
 //name, odds, alphaG, gammaG, halved odds, halved charm, quad boost
 
@@ -235,6 +243,14 @@ const optionData = [
   rainbowEleguana,
   rainbowCynamoth,
   rainbowObsidrugon,
+  rainbowGlacadia,
+  rainbowArceros,
+  bronzeScorb,
+  silverScorb,
+  goldScorb,
+  emeraladScorb,
+  rubyScorb,
+  sapphireScorb
 ]
 
 // defining Variables

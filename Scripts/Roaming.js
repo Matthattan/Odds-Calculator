@@ -52,6 +52,7 @@ const grimyuline = new Roaming("Grimyuline (2024 Jolly Village)", 1024, true, tr
 const toyProtogn = new Roaming("Toy Protogon (2024 Jolly Village)", 1024, true, false, false, false, true); // don't know if its actually part of the main table. Gonna set it to false anyways
 const santaDuskit = new Roaming("Santa Duskit (2024 Jolly Village)", 2048, true, false, false, false, false);
 const holidayOdoyaga = new Roaming("Holiday Odoyaga (2024 Jolly Village)", 2048, true, true, false, false, false);
+const mechaIkzune = new Roaming("Mecha Ikazune (2025 Anniversary)", 1, true, true, false, false, true)
 const rainbowGlacadia = new Roaming("Rainbow Glacadia (2025 Loomunity)", 10000, false, false, false, false, false);
 const rainbowArceros = new Roaming("Rainbow Arceros (2025 Loomunity)", 10000, false, false, false, false, false);
 const summerMimask = new Roaming("Summer Mimask (2025 Loomunity)", 4096, true, true, false, false, false, false);
@@ -94,6 +95,7 @@ const optionData = [
     toyProtogn,
     santaDuskit,
     holidayOdoyaga,
+    mechaIkzune
     rainbowArceros,
     rainbowGlacadia,
     summerMimask
