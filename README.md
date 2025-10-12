@@ -249,7 +249,7 @@ Happy 4th Anniverary Loomian Legacy 🥳
   - Added Mecha Ikazune
     - Encounter rate has been set to 1 since its technically based on winning the raids which I'll count as 100% ;)
     
-### Version 18.2
+### Version 19.2
 - Added Summer Mimask
 - Moved RB Glacadia and Arceros to the Roaming calculator
 - Fixed Roaming page so it hides alpha odds if the loomian doesn't have a gleaming form
