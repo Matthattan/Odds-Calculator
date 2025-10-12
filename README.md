@@ -254,3 +254,8 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Moved RB Glacadia and Arceros to the Roaming calculator
 - Fixed Roaming page so it hides alpha odds if the loomian doesn't have a gleaming form
 
+## Version 20
+- 2025 Trick Retreat - Happy Halloween! 🎃
+  - Added new reskins
+    - The returning reskins (like skeleton duskit) have been marked explicitly as the 2025 counterparts
+  
