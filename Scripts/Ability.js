@@ -233,7 +233,12 @@ const rainbowObsidrugon = new Loomian("Rainbow Obsidrugon (2025 Loomunity)", 500
 const rainbowGlacadia = new Loomian("Rainbow Glacadia (2025 Loomunity)", 10000, true, false, false, false);
 const rainbowArceros = new Loomian("Rainbow Arceros (2025 Loomunity)", 10000, true, false, false, false);
 const solnecta = new Loomian("Solnecta (2025 Loomunity)", 1, true, false, false, false);
-
+const halloweenCinnaboo = new Loomian("Halloween Cinnaboo (2025 Trick Retreat)", 5, true, false, false, false);
+const halloweenCupoink = new Loomian("Halloween Cupoink (2025 Trick Retreat)", 10, true, false, false, false);
+const halloweenWiledile = new Loomian("Halloween Wiledile (2025 Trick Retreat)", 40, true, false, false, false);
+const halloweenBunpuff = new Loomian("Halloween Bunpuff (2025 Trick Retreat)", 80, true, false, false, false);
+const halloweenDractus = new Loomian("Halloween Dractus (2025 Trick Retreat)", 250, true, false, false, false);
+const halloweenShawchi2025 = new Loomian("Halloween Shawchi (2025 Trick Retreat)", 500, true, false, false, false);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -447,7 +452,13 @@ var eventLoomianData = [
     rainbowCynamoth,
     rainbowObsidrugon,
     rainbowGlacadia,
-    rainbowArceros
+    rainbowArceros,
+    halloweenCupoink,
+    halloweenCinnaboo,
+    halloweenWiledile,
+    halloweenBunpuff,
+    halloweenDractus,
+    halloweenShawchi2025
 ]
 
 // sort Common Loomians alphabetically
