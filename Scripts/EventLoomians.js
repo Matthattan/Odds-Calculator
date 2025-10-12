@@ -142,6 +142,13 @@ const goldScorb = new Loomian("Gold Scorb (2025 Anniversary)", 250, true, false,
 const emeraladScorb = new Loomian("Emerald Scorb (2025 Anniversary)", 500, true, false, true, false, false);
 const rubyScorb = new Loomian("Ruby Scorb (2025 Anniversary)", 1000, true, false, true, false, false);
 const sapphireScorb = new Loomian("Sapphire Scorb (2025 Anniversary)", 2500, true, false, true, false, false);
+const halloweenCinnaboo = new Loomian("Halloween Cinnaboo (2025 Trick Retreat)", 5, true, true, false, false, false);
+const halloweenCupoink = new Loomian("Halloween Cupoink (2025 Trick Retreat)", 10, true, true, false, false, false);
+const halloweenWiledile = new Loomian("Halloween Wiledile (2025 Trick Retreat)", 40, true, true, false, false, false);
+const halloweenBunpuff = new Loomian("Halloween Bunpuff (2025 Trick Retreat)", 80, true, true, false, false, false);
+const halloweenDractus = new Loomian("Halloween Dractus (2025 Trick Retreat)", 250, true, true, false, false, false);
+const halloweenShawchi2025 = new Loomian("Halloween Shawchi (2025 Trick Retreat)", 500, true, true, false, false, false);
+
 
 //name, odds, alphaG, gammaG, halved odds, halved charm, quad boost
 
@@ -250,7 +257,13 @@ const optionData = [
   goldScorb,
   emeraladScorb,
   rubyScorb,
-  sapphireScorb
+  sapphireScorb,
+  halloweenCupoink,
+  halloweenCinnaboo,
+  halloweenWiledile,
+  halloweenBunpuff,
+  halloweenDractus,
+  halloweenShawchi
 ]
 
 // defining Variables
