@@ -258,4 +258,8 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - 2025 Trick Retreat - Happy Halloween! 🎃
   - Added new reskins
     - The returning reskins (like skeleton duskit) have been marked explicitly as the 2025 counterparts
-  
+
+### Version 20.1
+- Part 2 of the 2025 Trick Retreat Event
+  - Added Halloween Celesting
+  - Renamed Forsaken Metronette to Noli Metronette
