@@ -57,6 +57,7 @@ const rainbowArceros = new Roaming("Rainbow Arceros (2025 Loomunity)", 10000, fa
 const summerMimask = new Roaming("Summer Mimask (2025 Loomunity)", 4096, true, true, false, false, false, false);
 const forsakenMetronette = new Roaming("Forsaken Metronette (2025 Trick Retreat)", 1024, true, true, false, false, false);
 const halloweenDuskit2025 = new Roaming("Skeleton Duskit (2025 Trick Retreat)", 2048, true, false, false, false, false);
+const halloweenCelesting = new Roaming("Halloween Celesting (2025 Trick Retreat)", 1024, true, true, false, false, false);
 const christmasGrimyuline = new Roaming("Burning Grimyuline (2025 Jolly Village)", 1024, true, true, true, false, false);
 const christmasAkhalos = new Roaming("Toy Akhalos (2025 Jolly Village)", 1024, true, true, true, false, true);
 const xmasIkazune2025 = new Roaming("Reindeer Ikazune (2025 Jolly Village)", 2048, true, true, false, false, false);
@@ -107,6 +108,7 @@ const optionData = [
     mechaIkzune,
     forsakenMetronette,
     halloweenDuskit2025,
+    halloweenCelesting,
     christmasGrimyuline,
     christmasAkhalos,
     xmasIkazune2025
