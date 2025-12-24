@@ -258,4 +258,12 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - 2025 Trick Retreat - Happy Halloween! 🎃
   - Added new reskins
     - The returning reskins (like skeleton duskit) have been marked explicitly as the 2025 counterparts
-  
+
+# Version 21
+- Jolly Village returns!
+  - Added new reskins
+    - Icigool's 2025 counterparts are listed explicitly, with the previous interation now ranging from 2021 to 2024
+  - Icigool has been enabled for Rally Odds in the Ability section 
+- Santa Ragoon's odds have been retroactively changed to 1/1024 
+- Bug Fixes: Wiledile is now back
+- Merry Christmas, Happy Holidays and a Happy New Year! 🎅🎁🎄

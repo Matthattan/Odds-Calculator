@@ -225,6 +225,7 @@ const loomianList = [
     weevolt,
     whimpor,
     whispup,
+    wiledile,
     zaleo,
     wispur,
     kayute2023,
