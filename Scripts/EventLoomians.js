@@ -78,8 +78,8 @@ const halloweenTerriti = new Loomian("Halloween Territi (2022 Uhnne Fair)", 450,
 const christmasPropae = new Loomian("Santa Propae (2021 Christmas)", 500, true, true);
 const halloweenShawchi = new Loomian("Halloween Shawchi (2019 Halloween)", 500, true, false);
 const Icigool2020 = new Loomian("Coloured Icigool (2020 Christmas)", 600, true, true, true);
-const Icigool2021 = new Loomian("Coloured Icigool (2021 Christmas and Beyond)", 600, true, true);
-const christmasRagoon = new Loomian("Santa Ragoon (2019 Christmas)", 1000, true, false);
+const Icigool2021 = new Loomian("Coloured Icigool (2021 - 2024 Christmas)", 600, true, true);
+const christmasRagoon = new Loomian("Santa Ragoon (2019 Christmas and 2025 Jolly Village)", 1024, true, false);
 const rainbowShawchi = new Loomian("Rainbow Shawchi (2022 Loomunity)", 1000, true, true, true);
 const rainbowVari = new Loomian("Rainbow Vari (2022 Loomunity)", 15000, false, false);
 const rainbowFlorant = new Loomian("Rainbow Florant (2023 Loomunity)", 1000, true, true);
@@ -148,6 +148,12 @@ const halloweenWiledile = new Loomian("Halloween Wiledile (2025 Trick Retreat)",
 const halloweenBunpuff = new Loomian("Halloween Bunpuff (2025 Trick Retreat)", 80, true, true, false, false, false);
 const halloweenDractus = new Loomian("Halloween Dractus (2025 Trick Retreat)", 250, true, true, false, false, false);
 const halloweenShawchi2025 = new Loomian("Halloween Shawchi (2025 Trick Retreat)", 500, true, true, false, false, false);
+const hotChocolateCraytal = new Loomian("Hot Chocolate Craytal (2025 Jolly Village)", 30, true, true, false, false, false);
+const xmasVaris2025 = new Loomian("Christmas Vari (2025 Jolly Village)", 50, true, true, false, false, false);
+const festiveWhispup = new Loomian("Festive Whispup (2025 Jolly Village", 70, true, true, false, false, false);
+const WildColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Grass Encounter)", 630, true, true, false, false, false);
+const GiftNormalIcigool2025 = new Loomian("Light Blue Icigool (2025 Jolly Village - Present Encounter)", 90, true, true, false, false, false);
+const GiftColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Present Encounter)", 250, true, true, false, false, false);
 
 
 //name, odds, alphaG, gammaG, halved odds, halved charm, quad boost
@@ -263,7 +269,13 @@ const optionData = [
   halloweenWiledile,
   halloweenBunpuff,
   halloweenDractus,
-  halloweenShawchi2025
+  halloweenShawchi2025,
+  hotChocolateCraytal,
+  xmasVaris2025,
+  festiveWhispup,
+  WildColouredIcigool2025,
+  GiftNormalIcigool2025,
+  GiftColouredIcigool2025
 ]
 
 // defining Variables

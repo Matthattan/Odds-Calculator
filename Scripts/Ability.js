@@ -56,7 +56,7 @@ const grubby = new Loomian("Grubby", 1, true, true, true, false);
 const gumpod = new Loomian("Gumpod", 10, true, true, true, false);
 const gwurm = new Loomian("Gwurm", 1, true, true, false, false);
 const hydrini = new Loomian("Hydrini", 64, true, true, false, false);
-const icigool = new Loomian("Icigool", 90, true, false, false, false);
+const icigool = new Loomian("Icigool", 90, true, true, false, false);
 const igneol = new Loomian("Igneol", 50, true, true, false, false);
 const impkin = new Loomian("Impkin", 2, true, true, false, false);
 const kabunga = new Loomian("Kabunga", 1, true, true, true, false);
@@ -239,6 +239,12 @@ const halloweenWiledile = new Loomian("Halloween Wiledile (2025 Trick Retreat)",
 const halloweenBunpuff = new Loomian("Halloween Bunpuff (2025 Trick Retreat)", 80, true, false, false, false);
 const halloweenDractus = new Loomian("Halloween Dractus (2025 Trick Retreat)", 250, true, false, false, false);
 const halloweenShawchi2025 = new Loomian("Halloween Shawchi (2025 Trick Retreat)", 500, true, false, false, false);
+const hotChocolateCraytal = new Loomian("Hot Chocolate Craytal (2025 Jolly Village)", 30, true, false, false, false);
+const xmasVaris2025 = new Loomian("Christmas Vari (2025 Jolly Village)", 50, true, false, false, false);
+const festiveWhispup = new Loomian("Festive Whispup (2025 Jolly Village", 70, true, false, false, false);
+const WildColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Grass Encounter)", 630, true, false, false, false);
+const GiftNormalIcigool2025 = new Loomian("Light Blue Icigool (2025 Jolly Village - Present Encounter)", 90, true, false, false, false);
+const GiftColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Present Encounter)", 250, true, false, false, false);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -458,7 +464,13 @@ var eventLoomianData = [
     halloweenWiledile,
     halloweenBunpuff,
     halloweenDractus,
-    halloweenShawchi2025
+    halloweenShawchi2025,
+    hotChocolateCraytal,
+    xmasVaris2025,
+    festiveWhispup,
+    WildColouredIcigool2025,
+    GiftNormalIcigool2025,
+    GiftColouredIcigool2025
 ]
 
 // sort Common Loomians alphabetically
