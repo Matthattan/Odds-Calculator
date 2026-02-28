@@ -156,6 +156,8 @@ const GiftNormalIcigool2025 = new Loomian("Light Blue Icigool (2025 Jolly Villag
 const GiftColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Present Encounter)", 250, true, true, false, false, false);
 const christmanSnagull = new Loomian("Christmas Snagull (2025 Jolly Village)", 25, true, true, false, false, false);
 const christmanSnagullSandwich = new Loomian("Christmas Snagull (Fruitcake) (2025 Jolly Village)", 250, true, true, false, false, false);
+const lunarTerracolt = new Loomian("Lunar New Year Terracolt (2026 Lunar New Year)", 100, true, true, true, false, false);
+const lunarRadiantTerracolt = new Loomian("Radiant Lunar New Year Terracolt (2026 Lunar New Year)", 100, true, true, true, false, false);
 
 //name, odds, alphaG, gammaG, halved odds, halved charm, quad boost
 
@@ -278,7 +280,9 @@ const optionData = [
   GiftNormalIcigool2025,
   GiftColouredIcigool2025,
   christmanSnagull,
-  christmanSnagullSandwich
+  christmanSnagullSandwich,
+  lunarTerracolt,
+  lunarRadiantTerracolt
 ]
 
 // defining Variables

@@ -132,6 +132,7 @@ const grievestone = new Loomian("Grievestone", 3, true, true, false, false);
 const jimby = new Loomian("Jimby", 3, true, true, false, false);
 const wassel = new Loomian("Wassel", 25, true, true, false, false);
 const snicle = new Loomian("Snicle", 20, true, true, false, false);
+const terracolt = new Loomian("Terracoly", 10, true, true, true, false);
 
 //Non-Rallyable Event Loomians
 const christmasGlassScorbs = new Loomian("Common Christmas Scorbs (2022 Christmas)", 12, true, false, false, false);
@@ -247,6 +248,8 @@ const GiftNormalIcigool2025 = new Loomian("Light Blue Icigool (2025 Jolly Villag
 const GiftColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Present Encounter)", 250, true, false, false, false);
 const christmanSnagull = new Loomian("Christmas Snagull (2025 Jolly Village)", 25, true, false, false, false);
 const christmanSnagullSandwich = new Loomian("Christmas Snagull (Fruitcake) (2025 Jolly Village)", 250, true, false, false, false);
+const lunarTerracolt = new Loomian("Lunar New Year Terracolt (2026 Lunar New Year)", 100, true, true, true, false, false);
+const lunarRadiantTerracolt = new Loomian("Radiant Lunar New Year Terracolt (2026 Lunar New Year)", 100, true, true, true, false, false);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -361,7 +364,8 @@ var optionData = [
     grievestone,
     jimby,
     wassel,
-    snicle
+    snicle,
+    terracolt
 ]
 
 var eventLoomianData = [
@@ -474,7 +478,9 @@ var eventLoomianData = [
     GiftNormalIcigool2025,
     GiftColouredIcigool2025,
     christmanSnagull,
-    christmanSnagullSandwich
+    christmanSnagullSandwich,
+    lunarTerracolt,
+    lunarRadiantTerracolt,
 ]
 
 // sort Common Loomians alphabetically
