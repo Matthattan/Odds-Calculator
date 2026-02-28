@@ -272,3 +272,8 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Santa Ragoon's odds have been retroactively changed to 1/1024 
 - Bug Fixes: Wiledile is now back
 - Merry Christmas, Happy Holidays and a Happy New Year! 🎅🎁🎄
+
+# Version 22
+- Lunar New Year 2026
+  - Added Terracolt including its normal, event and radiant form
+- Added missing loomians from previous event
