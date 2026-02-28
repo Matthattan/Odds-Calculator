@@ -245,6 +245,8 @@ const festiveWhispup = new Loomian("Festive Whispup (2025 Jolly Village", 70, tr
 const WildColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Grass Encounter)", 630, true, false, false, false);
 const GiftNormalIcigool2025 = new Loomian("Light Blue Icigool (2025 Jolly Village - Present Encounter)", 90, true, false, false, false);
 const GiftColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Present Encounter)", 250, true, false, false, false);
+const christmanSnagull = new Loomian("Christmas Snagull (2025 Jolly Village)", 25, true, false, false, false);
+const christmanSnagullSandwich = new Loomian("Christmas Snagull (Fruitcake) (2025 Jolly Village)", 250, true, false, false, false);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -470,7 +472,9 @@ var eventLoomianData = [
     festiveWhispup,
     WildColouredIcigool2025,
     GiftNormalIcigool2025,
-    GiftColouredIcigool2025
+    GiftColouredIcigool2025,
+    christmanSnagull,
+    christmanSnagullSandwich
 ]
 
 // sort Common Loomians alphabetically
