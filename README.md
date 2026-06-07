@@ -229,21 +229,21 @@ Happy 4th Anniverary Loomian Legacy 🥳
   - Kind of a tie in with the LNY event so might aswell make it the within the same version, yeah?
   - Added Valentines Twittle at 1/40
 
-## Version 17
+# Version 17
 - Happy Easter 🥚
  - Added new Kyeggos to Ability and Easter odds
 
-## Version 18
+# Version 18
 - 2025 Loomunity Event 🌈
   - Added new event loomians from part 1 of event (no this isn't a leak)
     - Rainbow Glacadia & Arceros are in the Event section due to not only being event loomians but also halved gleam/quad boosts being implemented with that page
     - Solnecta has also been added to the Event section, like Nymaurae and Nymesis
 - Easter Dorogo added from previous event
 
-### Version 18.1
+## Version 18.1
 - changed it so, out of the new RB Loomians, only rb eleguana displays alpha and gamma odds
 
-## Version 19
+# Version 19
 - 2025 Anniversary - Happy 6 years Loomian Legacy 🎂 :)
   - Added Event Scorbs
   - Added Mecha Ikazune
@@ -254,8 +254,34 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Moved RB Glacadia and Arceros to the Roaming calculator
 - Fixed Roaming page so it hides alpha odds if the loomian doesn't have a gleaming form
 
-## Version 20
+# Version 20
 - 2025 Trick Retreat - Happy Halloween! 🎃
   - Added new reskins
     - The returning reskins (like skeleton duskit) have been marked explicitly as the 2025 counterparts
+
+## Version 20.1
+- Part 2 of the 2025 Trick Retreat Event
+  - Added Halloween Celesting
+  - Renamed Forsaken Metronette to Noli Metronette
   
+# Version 21
+- Jolly Village returns!
+  - Added new reskins
+    - Icigool's 2025 counterparts are listed explicitly, with the previous interation now ranging from 2021 to 2024
+  - Icigool has been enabled for Rally Odds in the Ability section 
+- Santa Ragoon's odds have been retroactively changed to 1/1024 
+- Bug Fixes: Wiledile is now back
+- Merry Christmas, Happy Holidays and a Happy New Year! 🎅🎁🎄
+
+# Version 22
+- Lunar New Year 2026
+  - Added Terracolt including its normal, event and radiant form
+- Added missing loomians from previous event
+
+# Version 23
+- Rainbow Dreggodyne Event 🌈 🥚
+  - Added new Kyeggo odds
+    - 2025 normal Kyeggo has been updated to include 2026 odds since they are the same
+    - Despite the faberges being the same from the first dreggodyne event, the 2026 has been added because of new odds
+  - Rainbow Luminami odds added
+- fixed ReadMe format

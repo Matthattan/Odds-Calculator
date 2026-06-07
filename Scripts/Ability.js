@@ -1,5 +1,5 @@
 class Loomian {
-    constructor(name, odds, wild, rallyRanch, weather, petrolith){
+    constructor(name, odds, wild = true, rallyRanch = false, weather = false, petrolith = false){
         this.name = name; //str
         this.odds = odds; //float
         this.wild = wild; //bool
@@ -210,7 +210,7 @@ const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, f
 const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, false, false, false);
 const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, false, false, false);
 const valentinesTwittle = new Loomian("Valentines Twittle (2025 Valentines)", 40, true, false, false, false);
-const KyeggoNormal2025 = new Loomian("Normal Kyeggo (2025 Easter)", 3, true, true, false, false);
+const KyeggoNormal2025 = new Loomian("Normal Kyeggo (2025 Easter and 2026 Rainbow)", 3, true, true, false, false);
 const KyeggoTurqoise = new Loomian("Turqoise Kyeggo (2025 Easter)", 6, true, false, false, false);
 const KyeggoGreen = new Loomian("Green Kyeggo (2025 Easter)", 6, true, false, false, false);
 const KyeggoPink = new Loomian("Pink Kyeggo (2025 Easter)", 6, true, false, false, false);
@@ -239,6 +239,24 @@ const halloweenWiledile = new Loomian("Halloween Wiledile (2025 Trick Retreat)",
 const halloweenBunpuff = new Loomian("Halloween Bunpuff (2025 Trick Retreat)", 80, true, false, false, false);
 const halloweenDractus = new Loomian("Halloween Dractus (2025 Trick Retreat)", 250, true, false, false, false);
 const halloweenShawchi2025 = new Loomian("Halloween Shawchi (2025 Trick Retreat)", 500, true, false, false, false);
+const hotChocolateCraytal = new Loomian("Hot Chocolate Craytal (2025 Jolly Village)", 30, true, false, false, false);
+const xmasVaris2025 = new Loomian("Christmas Vari (2025 Jolly Village)", 50, true, false, false, false);
+const festiveWhispup = new Loomian("Festive Whispup (2025 Jolly Village", 70, true, false, false, false);
+const WildColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Grass Encounter)", 630, true, false, false, false);
+const GiftNormalIcigool2025 = new Loomian("Light Blue Icigool (2025 Jolly Village - Present Encounter)", 90, true, false, false, false);
+const GiftColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Present Encounter)", 250, true, false, false, false);
+const christmanSnagull = new Loomian("Christmas Snagull (2025 Jolly Village)", 25, true, false, false, false);
+const christmanSnagullSandwich = new Loomian("Christmas Snagull (Fruitcake) (2025 Jolly Village)", 250, true, false, false, false);
+const lunarTerracolt = new Loomian("Lunar New Year Terracolt (2026 Lunar New Year)", 100);
+const lunarRadiantTerracolt = new Loomian("Radiant Lunar New Year Terracolt (2026 Lunar New Year)", 100);
+const KyeggoPatterns2026 = new Loomian("Pattern Kyeggo (2026 Rainbow)", 5);
+const KyeggoStar2026 = new Loomian("Star Kyeggo (2026 Rainbow)", 17);
+const KyeggoFaberge2026 = new Loomian("Faberge Kyeggo (2026 Rainbow)", 300);
+const RainbowLuminami2026 = new Loomian("Rainbow Luminami (2026 Rainbow)", 1);
+const RainbowKyeggo2026 = new Loomian("Rainbow Kyeggo (2026 Rainbow)", 500);
+const RainbowFabergeKyeggo2026 = new Loomian("Rainbow Faberge Kyeggo (2026 Rainbow)", 1000);
+const RbGradientKyeggo2026 = new Loomian("Gradient Kyeggo (2026 Rainbow)", 100);
+const RbGradientWispKyeggo2026 = new Loomian("Gradient Kyeggo with Wisp (2026 Rainbow)", 1000);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -458,7 +476,25 @@ var eventLoomianData = [
     halloweenWiledile,
     halloweenBunpuff,
     halloweenDractus,
-    halloweenShawchi2025
+    halloweenShawchi2025,
+    hotChocolateCraytal,
+    xmasVaris2025,
+    festiveWhispup,
+    WildColouredIcigool2025,
+    GiftNormalIcigool2025,
+    GiftColouredIcigool2025,
+    christmanSnagull,
+    christmanSnagullSandwich,
+    lunarTerracolt,
+    lunarRadiantTerracolt,
+    KyeggoPatterns2026,
+    KyeggoStar2026,
+    KyeggoFaberge2026,
+    RainbowLuminami2026,
+    RainbowKyeggo2026,
+    RainbowFabergeKyeggo2026,
+    RbGradientKyeggo2026,
+    RbGradientWispKyeggo2026,
 ]
 
 // sort Common Loomians alphabetically

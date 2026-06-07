@@ -148,6 +148,16 @@ const halloweenWiledile = new Loomian("Halloween Wiledile (2025 Trick Retreat)",
 const halloweenBunpuff = new Loomian("Halloween Bunpuff (2025 Trick Retreat)", 80, true, true, false, false, false);
 const halloweenDractus = new Loomian("Halloween Dractus (2025 Trick Retreat)", 250, true, true, false, false, false);
 const halloweenShawchi2025 = new Loomian("Halloween Shawchi (2025 Trick Retreat)", 500, true, true, false, false, false);
+const hotChocolateCraytal = new Loomian("Hot Chocolate Craytal (2025 Jolly Village)", 30, true, true, false, false, false);
+const xmasVaris2025 = new Loomian("Christmas Vari (2025 Jolly Village)", 50, true, true, false, false, false);
+const festiveWhispup = new Loomian("Festive Whispup (2025 Jolly Village", 70, true, true, false, false, false);
+const WildColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Grass Encounter)", 630, true, true, false, false, false);
+const GiftNormalIcigool2025 = new Loomian("Light Blue Icigool (2025 Jolly Village - Present Encounter)", 90, true, true, false, false, false);
+const GiftColouredIcigool2025 = new Loomian("Coloured Icigool (2025 Jolly Village - Present Encounter)", 250, true, true, false, false, false);
+const christmanSnagull = new Loomian("Christmas Snagull (2025 Jolly Village)", 25, true, true, false, false, false);
+const christmanSnagullSandwich = new Loomian("Christmas Snagull (Fruitcake) (2025 Jolly Village)", 250, true, true, false, false, false);
+const lunarTerracolt = new Loomian("Lunar New Year Terracolt (2026 Lunar New Year)", 100, true, true, true, false, false);
+const lunarRadiantTerracolt = new Loomian("Radiant Lunar New Year Terracolt (2026 Lunar New Year)", 100, true, true, true, false, false);
 const KyeggoPatterns2026 = new Loomian("Pattern Kyeggo (2026 Rainbow)", 5, true, true, false, false, false);
 const KyeggoStar2026 = new Loomian("Star Kyeggo (2026 Rainbow)", 17, true, true, false, false, false);
 const KyeggoFaberge2026 = new Loomian("Faberge Kyeggo (2026 Rainbow)", 300, true, true, false, false, false);
@@ -271,6 +281,16 @@ const optionData = [
   halloweenBunpuff,
   halloweenDractus,
   halloweenShawchi2025,
+  hotChocolateCraytal,
+  xmasVaris2025,
+  festiveWhispup,
+  WildColouredIcigool2025,
+  GiftNormalIcigool2025,
+  GiftColouredIcigool2025,
+  christmanSnagull,
+  christmanSnagullSandwich,
+  lunarTerracolt,
+  lunarRadiantTerracolt,
   KyeggoPatterns2026,
   KyeggoStar2026,
   KyeggoFaberge2026,
