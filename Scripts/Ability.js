@@ -56,7 +56,7 @@ const grubby = new Loomian("Grubby", 1, true, true, true, false);
 const gumpod = new Loomian("Gumpod", 10, true, true, true, false);
 const gwurm = new Loomian("Gwurm", 1, true, true, false, false);
 const hydrini = new Loomian("Hydrini", 64, true, true, false, false);
-const icigool = new Loomian("Icigool", 90, true, false, false, false);
+const icigool = new Loomian("Icigool", 90, true, true, false, false);
 const igneol = new Loomian("Igneol", 50, true, true, false, false);
 const impkin = new Loomian("Impkin", 2, true, true, false, false);
 const kabunga = new Loomian("Kabunga", 1, true, true, true, false);
@@ -132,6 +132,7 @@ const grievestone = new Loomian("Grievestone", 3, true, true, false, false);
 const jimby = new Loomian("Jimby", 3, true, true, false, false);
 const wassel = new Loomian("Wassel", 25, true, true, false, false);
 const snicle = new Loomian("Snicle", 20, true, true, false, false);
+const terracolt = new Loomian("Terracoly", 10, true, true, true, false);
 
 //Non-Rallyable Event Loomians
 const christmasGlassScorbs = new Loomian("Common Christmas Scorbs (2022 Christmas)", 12, true, false, false, false);
@@ -371,7 +372,8 @@ var optionData = [
     grievestone,
     jimby,
     wassel,
-    snicle
+    snicle,
+    terracolt
 ]
 
 var eventLoomianData = [
