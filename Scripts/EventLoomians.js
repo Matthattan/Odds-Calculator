@@ -113,7 +113,7 @@ const xmasUrsoul = new Loomian("Holiday Ursoul (2024 Jolly Village)", 1, true, t
 const lunarSnicle = new Loomian("Lunar New Year Snicle (2025 Chinese New Year)", 100, true, true, true);
 const lunarRadiantSnicle = new Loomian("Radiant Lunar New Year Snicle (2025 Chinese New Year)", 1000, true, true, true);
 const valentinesTwittle = new Loomian("Valentines Twittle (2025 Valentines)", 40, true, true);
-const KyeggoNormal2025 = new Loomian("Normal Kyeggo (2025 Easter)", 3, true, true);
+const KyeggoNormal2025 = new Loomian("Normal Kyeggo (2025 Easter and 2026 Rainbow)", 3, true, true);
 const KyeggoTurqoise = new Loomian("Turqoise Kyeggo (2025 Easter)", 6, true, true);
 const KyeggoGreen = new Loomian("Green Kyeggo (2025 Easter)", 6, true, true);
 const KyeggoPink = new Loomian("Pink Kyeggo (2025 Easter)", 6, true, true);
@@ -148,7 +148,14 @@ const halloweenWiledile = new Loomian("Halloween Wiledile (2025 Trick Retreat)",
 const halloweenBunpuff = new Loomian("Halloween Bunpuff (2025 Trick Retreat)", 80, true, true, false, false, false);
 const halloweenDractus = new Loomian("Halloween Dractus (2025 Trick Retreat)", 250, true, true, false, false, false);
 const halloweenShawchi2025 = new Loomian("Halloween Shawchi (2025 Trick Retreat)", 500, true, true, false, false, false);
-
+const KyeggoPatterns2026 = new Loomian("Pattern Kyeggo (2026 Rainbow)", 5, true, true, false, false, false);
+const KyeggoStar2026 = new Loomian("Star Kyeggo (2026 Rainbow)", 17, true, true, false, false, false);
+const KyeggoFaberge2026 = new Loomian("Faberge Kyeggo (2026 Rainbow)", 300, true, true, false, false, false);
+const RainbowLuminami2026 = new Loomian("Rainbow Luminami (2026 Rainbow)", 1, true, true, false, false, false);
+const RainbowKyeggo2026 = new Loomian("Rainbow Kyeggo (2026 Rainbow)", 500, false, false, false, false, false);
+const RainbowFabergeKyeggo2026 = new Loomian("Rainbow Faberge Kyeggo (2026 Rainbow)", 1000, true, true, false, false, false);
+const RbGradientKyeggo2026 = new Loomian("Gradient Kyeggo (2026 Rainbow)", 100, false, false, false, false, false);
+const RbGradientWispKyeggo2026 = new Loomian("Gradient Kyeggo with Wisp (2026 Rainbow)", 1000, false, false, false, false, false);
 
 //name, odds, alphaG, gammaG, halved odds, halved charm, quad boost
 
@@ -263,7 +270,15 @@ const optionData = [
   halloweenWiledile,
   halloweenBunpuff,
   halloweenDractus,
-  halloweenShawchi2025
+  halloweenShawchi2025,
+  KyeggoPatterns2026,
+  KyeggoStar2026,
+  KyeggoFaberge2026,
+  RainbowLuminami2026,
+  RainbowKyeggo2026,
+  RainbowFabergeKyeggo2026,
+  RbGradientKyeggo2026,
+  RbGradientWispKyeggo2026,
 ]
 
 // defining Variables
