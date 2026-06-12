@@ -163,7 +163,7 @@ const KyeggoStar2026 = new Loomian("Star Kyeggo (2026 Rainbow)", 17, true, true,
 const KyeggoFaberge2026 = new Loomian("Faberge Kyeggo (2026 Rainbow)", 300, true, true, false, false, false);
 const RainbowLuminami2026 = new Loomian("Rainbow Luminami (2026 Rainbow)", 1, true, true, false, false, false);
 const RainbowKyeggo2026 = new Loomian("Rainbow Kyeggo (2026 Rainbow)", 500, false, false, false, false, false);
-const RainbowFabergeKyeggo2026 = new Loomian("Rainbow Faberge Kyeggo (2026 Rainbow)", 1000, true, true, false, false, false);
+const RainbowFabergeKyeggo2026 = new Loomian("Rainbow Faberge Kyeggo (2026 Rainbow)", 1000, true, true, true, false, false);
 const RbGradientKyeggo2026 = new Loomian("Gradient Kyeggo (2026 Rainbow)", 100, false, false, false, false, false);
 const RbGradientWispKyeggo2026 = new Loomian("Gradient Kyeggo with Wisp (2026 Rainbow)", 1000, false, false, false, false, false);
 
