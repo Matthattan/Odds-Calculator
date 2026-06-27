@@ -289,3 +289,6 @@ Happy 4th Anniverary Loomian Legacy 🥳
 ## Version 23.1
 - Rainbow Faberge Kyeggo gleaming odds have been halved
 - fixed branches
+
+## Version 23.2
+- Added Rainbow Tahtab
