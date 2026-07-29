@@ -258,6 +258,12 @@ const RainbowKyeggo2026 = new Loomian("Rainbow Kyeggo (2026 Rainbow)", 500);
 const RainbowFabergeKyeggo2026 = new Loomian("Rainbow Faberge Kyeggo (2026 Rainbow)", 1000);
 const RbGradientKyeggo2026 = new Loomian("Gradient Kyeggo (2026 Rainbow)", 100);
 const RbGradientWispKyeggo2026 = new Loomian("Gradient Kyeggo with Wisp (2026 Rainbow)", 1000);
+const bronzeGumpod = new Loomian("Bronze Gumpod (2026 Anniversary)", 50);
+const silverGumpod = new Loomian("Silver Gumpod (2026 Anniversary)", 125);
+const goldGumpod = new Loomian("Gold Gumpod (2026 Anniversary)", 250);
+const emeraldGumpod = new Loomian("Emerald Gumpod (2026  Anniversary)", 1000);
+const rubyGumpod = new Loomian("Ruby Gumpod (2026 Anniversary)", 2500);
+const sapphireGumpod = new Loomian("Sapphire Gumpod (2026 Anniversary)", 5000);
 
 // name, odds, is wild?, is rallyable?, is weather affected?, is petrolith?
 
@@ -497,6 +503,12 @@ var eventLoomianData = [
     RainbowFabergeKyeggo2026,
     RbGradientKyeggo2026,
     RbGradientWispKyeggo2026,
+    bronzeGumpod,
+    silverGumpod,
+    goldGumpod,
+    rubyGumpod,
+    emeraldGumpod,
+    sapphireGumpod,
 ]
 
 // sort Common Loomians alphabetically
