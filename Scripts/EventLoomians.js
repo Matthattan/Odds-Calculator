@@ -56,17 +56,17 @@ const rainbowNymaurae = new Loomian("Rainbow Nymaurae (2023 Loomunity)", 15000, 
 const rainbowPyramind = new Loomian("Rainbow Pyramind (2023 Loomunity)", 20000, false, false);
 const rainbowGoppie = new Loomian("Rainbow Goppie (2023 Loomunity)", 10000, false, false);
 const valentinesAntsee = new Loomian("Valentines Antsee (2023 Valentines)", 80, true, true);
-const bronzeGeklow = new Loomian("Bronze Geklow (2020 Anniversary)", 100, true, false, false, true, true);
+const bronzeGeklow = new Loomian("Bronze Geklow (2020 & 2026  Anniversary)", 100, true, false, false, true, true);
 const bronzeCopling = new Loomian("Bronze Copling (2023 Anniversary)", 100, true, false, false, true, true);
-const silverGeklow = new Loomian("Silver Geklow (2020 Anniversary)", 250, true, false, false, true, true);
+const silverGeklow = new Loomian("Silver Geklow (2020 & 2026 Anniversary)", 250, true, false, false, true, true);
 const silverCopling = new Loomian("Silver Copling (2023 Anniversary)", true, false, false, true, true);
-const goldGeklow = new Loomian("Gold Geklow (2020 Anniversary)", 500, true, false, false, true, true);
+const goldGeklow = new Loomian("Gold Geklow (2020 & 2026 Anniversary)", 500, true, false, false, true, true);
 const goldCopling = new Loomian("Gold Copling (2023 Anniversary)", 500, true, false, false, true, true);
-const sapphireGeklow = new Loomian("Sapphire Geklow (2020 Anniversary)", 10000, true, false, false, true, true);
+const sapphireGeklow = new Loomian("Sapphire Geklow (2020 & 2026 Anniversary)", 10000, true, false, false, true, true);
 const sapphireCopling = new Loomian("Sapphire Copling (2023 Anniversary)", 10000, true, false, false, true, true);
-const emeraldGeklow = new Loomian("Emerald Geklow (2020 Anniversary)", 2000, true, false, false, true, true);
+const emeraldGeklow = new Loomian("Emerald Geklow (2020 & 2026 Anniversary)", 2000, true, false, false, true, true);
 const emeraldCopling = new Loomian("Emerald Copling (2023 Anniversary)", 2000, true, false, false, true, true);
-const rubyGeklow = new Loomian("Ruby Geklow (2020 Anniversary)", 5000, true, false, false, true, true);
+const rubyGeklow = new Loomian("Ruby Geklow (2020 & 2026 Anniversary)", 5000, true, false, false, true, true);
 const rubyCopling = new Loomian("Ruby Copling (2023 Anniversary)", 5000, true, false, false, true, true);
 const sweetsPhancub = new Loomian("Sweets Phancub (2022 Sweet Retreat)", 100, true, true);
 const snowmanTotemochi = new Loomian("Snowman Totemochi (2022 Jolly Village)", 150, true, false);
@@ -167,6 +167,13 @@ const RainbowKyeggo2026 = new Loomian("Rainbow Kyeggo (2026 Rainbow)", 500, fals
 const RainbowFabergeKyeggo2026 = new Loomian("Rainbow Faberge Kyeggo (2026 Rainbow)", 1000, true, true, true, false, false);
 const RbGradientKyeggo2026 = new Loomian("Gradient Kyeggo (2026 Rainbow)", 100, false, false, false, false, false);
 const RbGradientWispKyeggo2026 = new Loomian("Gradient Kyeggo with Wisp (2026 Rainbow)", 1000, false, false, false, false, false);
+const bronzeGumpod = new Loomian("Bronze Gumpod (2026 Anniversary)", 50, true, false, false, true, true);
+const silverGumpod = new Loomian("Silver Gumpod (2026 Anniversary)", 125, true, false, false, true, true);
+const goldGumpod = new Loomian("Gold Gumpod (2026 Anniversary)", 250, true, false, false, true, true);
+const emeraldGumpod = new Loomian("Emerald Gumpod (2026  Anniversary)", 1000, true, false, false, true, true);
+const rubyGumpod = new Loomian("Ruby Gumpod (2026 Anniversary)", 2500, true, false, false, true, true);
+const sapphireGumpod = new Loomian("Sapphire Gumpod (2026 Anniversary)", 5000, true, false, false, true, true);
+const cosmicJoltooth = new Loomian("Cosmic Joltooth (2026 Anniversary)", 1, true, true, true, false, false);
 
 //name, odds, alphaG, gammaG, halved odds, halved charm, quad boost
 
@@ -300,6 +307,13 @@ const optionData = [
   RainbowFabergeKyeggo2026,
   RbGradientKyeggo2026,
   RbGradientWispKyeggo2026,
+  bronzeGumpod,
+  silverGumpod,
+  goldGumpod,
+  rubyGumpod,
+  emeraldGumpod,
+  sapphireGumpod,
+  cosmicJoltooth,
   RainbowTahtab2026
 ]
 
