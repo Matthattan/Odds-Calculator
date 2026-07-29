@@ -172,6 +172,7 @@ const goldGumpod = new Loomian("Gold Gumpod (2026 Anniversary)", 250, true, fals
 const emeraldGumpod = new Loomian("Emerald Gumpod (2026  Anniversary)", 1000, true, false, false, true, true);
 const rubyGumpod = new Loomian("Ruby Gumpod (2026 Anniversary)", 2500, true, false, false, true, true);
 const sapphireGumpod = new Loomian("Sapphire Gumpod (2026 Anniversary)", 5000, true, false, false, true, true);
+const cosmicJoltooth = new Loomian("Cosmic Joltooth (2026 Anniversary)", 1, true, true, true, false, false);
 
 //name, odds, alphaG, gammaG, halved odds, halved charm, quad boost
 
@@ -311,6 +312,7 @@ const optionData = [
   rubyGumpod,
   emeraldGumpod,
   sapphireGumpod,
+  cosmicJoltooth,
 ]
 
 // defining Variables
