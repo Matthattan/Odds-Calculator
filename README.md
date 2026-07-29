@@ -277,3 +277,18 @@ Happy 4th Anniverary Loomian Legacy 🥳
 - Lunar New Year 2026
   - Added Terracolt including its normal, event and radiant form
 - Added missing loomians from previous event
+
+# Version 23
+- Rainbow Dreggodyne Event 🌈 🥚
+  - Added new Kyeggo odds
+    - 2025 normal Kyeggo has been updated to include 2026 odds since they are the same
+    - Despite the faberges being the same from the first dreggodyne event, the 2026 has been added because of new odds
+  - Rainbow Luminami odds added
+- fixed ReadMe format
+
+## Version 23.1
+- Rainbow Faberge Kyeggo gleaming odds have been halved
+- fixed branches
+
+## Version 23.2
+- Added Rainbow Tahtab

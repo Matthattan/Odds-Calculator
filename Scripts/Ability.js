@@ -254,6 +254,7 @@ const KyeggoPatterns2026 = new Loomian("Pattern Kyeggo (2026 Rainbow)", 5);
 const KyeggoStar2026 = new Loomian("Star Kyeggo (2026 Rainbow)", 17);
 const KyeggoFaberge2026 = new Loomian("Faberge Kyeggo (2026 Rainbow)", 300);
 const RainbowLuminami2026 = new Loomian("Rainbow Luminami (2026 Rainbow)", 1);
+const RainbowTahtab2026 = new Loomian("Rainbow Tahtab (2026 Rainbow)", 1);
 const RainbowKyeggo2026 = new Loomian("Rainbow Kyeggo (2026 Rainbow)", 500);
 const RainbowFabergeKyeggo2026 = new Loomian("Rainbow Faberge Kyeggo (2026 Rainbow)", 1000);
 const RbGradientKyeggo2026 = new Loomian("Gradient Kyeggo (2026 Rainbow)", 100);
@@ -509,6 +510,7 @@ var eventLoomianData = [
     rubyGumpod,
     emeraldGumpod,
     sapphireGumpod,
+    RainbowTahtab2026
 ]
 
 // sort Common Loomians alphabetically
